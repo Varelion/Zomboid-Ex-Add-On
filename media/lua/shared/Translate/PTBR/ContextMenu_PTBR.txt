@@ -1,0 +1,35 @@
+ContextMenu_PTBR
+	ContextMenu_ExUrinate = "Urinar",
+	ContextMenu_ExUrinate1 = "Urinar no 1%
+	ContextMenu_ExUrinate_Toilet = "Urinar no vaso sanitário",
+	ContextMenu_ExDefecate = "Defecar
+	ContextMenu_ExDefecate1 = "Defecar no 1%
+	ContextMenu_ExDefecate_Toilet = "Defecar no banheiro",
+	ContextMenu_ExExtractFeces = "Extrair fezes",
+	ContextMenu_ExFeces_Short = "Fezes
+	ContextMenu_ExContainsFeces = "Contém fezes",
+	ContextMenu_TryTearABook = "Rasgue um livro",
+	ContextMenu_ExTearingABook = "Rasgando",
+	ContextMenu_ExWipeMyself = "Limpar-me",
+	ContextMenu_ExWipeWith = "Limpar com",
+	ContextMenu_ExDefecate_Comfort = "Defecar confortavelmente",
+	ContextMenu_ExDefecate_woPaper = "Defecar sem papel",
+	ContextMenu_ExMissingPaper = "Faltando papel.",
+	ContextMenu_ExWiping = "limpando",
+	ContextMenu_ExWithoutPaper = "Sem papel",
+	ContextMenu_ExToiletNeedWater = "Precisa de mais água",
+	
+	ContextMenu_ExDefecate_Newspaper = "Defecar com jornal",
+	ContextMenu_ExDefecate_Magazine = "Defecar com Revista",
+	ContextMenu_ExDefecate_ComicBook = "Defecar com História em Quadrinhos",
+	
+	ContextMenu_ExDefecate_Gloves = "Defecar com luvas",
+	ContextMenu_ExDefecate_Scarf = "Defecar com lenço",
+	ContextMenu_ExDefecate_Shirt = "Defecar com camisa",
+	ContextMenu_ExDefecate_Skirt = "Defecar com saia",
+	ContextMenu_ExDefecate_Socks = "Defecar com meias",
+	ContextMenu_ExDefecate_TankTop = "Defecar com camiseta",
+	ContextMenu_ExDefecate_Tshirt = "Defecar com camiseta",
+	ContextMenu_ExDefecate_Underwear = "Defecar com roupa íntima",
+
+}

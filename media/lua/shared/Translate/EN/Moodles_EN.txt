@@ -1,0 +1,98 @@
+Moodles_EN = {
+
+	Moodles_exc-stomach_Good_lvl1 = "Still Hungry",
+	Moodles_exc-stomach_Good_desc_lvl1 = "Not enough food.",
+	Moodles_exc-stomach_Good_lvl2 = "Snack",
+	Moodles_exc-stomach_Good_desc_lvl2 = "Gnawing hunger absent.",
+	Moodles_exc-stomach_Good_lvl3 = "Some Food",
+	Moodles_exc-stomach_Good_desc_lvl3 = "Feeling full.",
+	Moodles_exc-stomach_Good_lvl4 = "Almost Full",
+	Moodles_exc-stomach_Good_desc_lvl4 = "No more appetite.",
+
+	Moodles_exc-stomach_Bad_lvl1 = "Full Stomach",
+	Moodles_exc-stomach_Bad_desc_lvl1 = "No more appetite. It hurts a little.",
+	Moodles_exc-stomach_Bad_lvl2 = "Overeaten",
+	Moodles_exc-stomach_Bad_desc_lvl2 = "Ate too much. Hurts.",
+	Moodles_exc-stomach_Bad_lvl3 = "Glut",
+	Moodles_exc-stomach_Bad_desc_lvl3 = "The stomach is ready to burst.",
+	Moodles_exc-stomach_Bad_lvl4 = "Full to Bursting",
+	Moodles_exc-stomach_Bad_desc_lvl4 = "Couldn't manage another single, solitary bite.",	
+
+
+
+
+	Moodles_exc-stomach-w_Good_lvl1 = "Still Hungry",
+	Moodles_exc-stomach-w_Good_desc_lvl1 = "Very little liquid in the stomach.",
+	Moodles_exc-stomach-w_Good_lvl2 = "Little Water",
+	Moodles_exc-stomach-w_Good_desc_lvl2 = "Liquid in the stomach. Gnawing hunger absent.",
+	Moodles_exc-stomach-w_Good_lvl3 = "Some Water",
+	Moodles_exc-stomach-w_Good_desc_lvl3 = "Feeling full.",
+	Moodles_exc-stomach-w_Good_lvl4 = "Almost Full",
+	Moodles_exc-stomach-w_Good_desc_lvl4 = "No more appetite.",
+
+	Moodles_exc-stomach-w_Bad_lvl1 = "Full Stomach",
+	Moodles_exc-stomach-w_Bad_desc_lvl1 = "No more appetite. It hurts a little.",
+	Moodles_exc-stomach-w_Bad_lvl2 = "Much Water",
+	Moodles_exc-stomach-w_Bad_desc_lvl2 = "Drunk liquid too much. Hurts.",
+	Moodles_exc-stomach-w_Bad_lvl3 = "Stretched",
+	Moodles_exc-stomach-w_Bad_desc_lvl3 = "The stomach is ready to burst.",
+	Moodles_exc-stomach-w_Bad_lvl4 = "Full to Bursting",
+	Moodles_exc-stomach-w_Bad_desc_lvl4 = "Couldn't manage another single, solitary bite.",	
+
+
+
+
+	Moodles_exc-colon_Good_lvl1 = "Digesting",
+	Moodles_exc-colon_Good_desc_lvl1 = "Digesting food in small intestine.",
+
+	Moodles_exc-colon_Good_lvl3 = "Urges",
+	Moodles_exc-colon_Good_desc_lvl3 = "Urge to defecate.",
+
+	Moodles_exc-colon_Bad_lvl1 = "Strong Urges",
+	Moodles_exc-colon_Bad_desc_lvl1 = "It's time to go to the toilet.",
+	Moodles_exc-colon_Bad_lvl2 = "Hard to Bear",
+	Moodles_exc-colon_Bad_desc_lvl2 = "Intestinal gas hurts.",
+	Moodles_exc-colon_Bad_lvl3 = "Impossible to Bear",
+	Moodles_exc-colon_Bad_desc_lvl3 = "Gas pains in my head.",
+	Moodles_exc-colon_Bad_lvl4 = "About to Explode",
+	Moodles_exc-colon_Bad_desc_lvl4 = "Hellish gas pain.",	
+
+
+	Moodles_exc-urine_Good_lvl1 = "Ready to Pee",
+	Moodles_exc-urine_Good_desc_lvl1 = "Feel the contents in the bladder.",
+
+	Moodles_exc-urine_Bad_lvl1 = "Bearable",
+	Moodles_exc-urine_Bad_desc_lvl1 = "The content of the bladder wants to get out.",
+
+	Moodles_exc-urine_Bad_lvl3 = "It's Time",
+	Moodles_exc-urine_Bad_desc_lvl3 = "Strong feelings that incontinence will happen.",
+	Moodles_exc-urine_Bad_lvl4 = "Oh No!",
+	Moodles_exc-urine_Bad_desc_lvl4 = "Here comes the incontinence.",	
+
+
+	Moodles_exc-smell_Bad_lvl1 = "Faugh!",
+	Moodles_exc-smell_Bad_desc_lvl1 = "Disgusting.",
+	Moodles_exc-smell_Bad_lvl2 = "Bad Smell",
+	Moodles_exc-smell_Bad_desc_lvl2 = "An unpleasant smell.",
+	Moodles_exc-smell_Bad_lvl3 = "Stench",
+	Moodles_exc-smell_Bad_desc_lvl3 = "A strong and very unpleasant smell.",
+	Moodles_exc-smell_Bad_lvl4 = "Strong Stench",
+	Moodles_exc-smell_Bad_desc_lvl4 = "The madness comes.",
+	
+	
+	
+	Moodles_exc-shame_Good_lvl1 = "Curiosity",
+	Moodles_exc-shame_Good_desc_lvl1 = "Wow!",
+	Moodles_exc-shame_Good_lvl2 = "Hehe",
+	Moodles_exc-shame_Good_desc_lvl2 = "I saw it.",
+
+	Moodles_exc-shame_Bad_lvl1 = "Embarrassment", /* First see */
+	Moodles_exc-shame_Bad_desc_lvl1 = "That image is still in your head.",
+	Moodles_exc-shame_Bad_lvl2 = "Shame", /* First time action / second see */
+	Moodles_exc-shame_Bad_desc_lvl2 = "Thinking about that situation.",
+	Moodles_exc-shame_Bad_lvl3 = "Intense Shame", /*Second time */
+	Moodles_exc-shame_Bad_desc_lvl3 = "Brought back memories of a recent event.",
+	Moodles_exc-shame_Bad_lvl4 = "Disgrace",  /* Third time, 4 ---> 2 */
+	Moodles_exc-shame_Bad_desc_lvl4 = "You are a disgrace. It will take time for people to forget this.",
+	
+}

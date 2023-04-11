@@ -1,0 +1,14 @@
+ItemName_EN = {
+	ItemName_Base.HumanFeces = "Human Feces",
+	ItemName_Base.HumanFeces1 = "Human Feces",
+	ItemName_Base.HumanFeces2 = "Human Feces",
+	ItemName_Base.HumanFeces3 = "Human Feces",
+	
+	ItemName_Base.PaintTinDefecate = "Bucket of Feces",
+	ItemName_Base.BucketFullDefecate = "Bucket of Feces",
+	ItemName_Base.BucketDefecatedDirty = "Dirty Bucket",
+	ItemName_Base.PaintTinDefecatedDirty = "Dirty Bucket",
+	
+	ItemName_Base.BathTowelDirty = "Bath Towel Dirty",
+	ItemName_Base.DishClothDirty = "Dish Cloth Dirty",
+}

@@ -1,0 +1,31 @@
+Sandbox_ES = {
+	Sandbox_Excrementum = "Excrementum",
+
+	Sandbox_Excrementum_StomachMultiplier = "Multiplicador de tiempo estomacal",
+	Sandbox_Excrementum_StomachMultiplier_tooltip = "Cuanto tiempo se necesita para pasar el estómago.\nPor Defecto es realista.",
+	
+	Sandbox_Excrementum_ChymeMultiplier = "Multiplicador de Quimo (unidades de hambre)",
+	Sandbox_Excrementum_ChymeMultiplier_tooltip = "Cuanta comida sale del estómago en forma de quimo cada 10 minutos dentro del juego.",
+	
+	Sandbox_Excrementum_DefecateIntMinutes = "Tiempo del Intestino (minutos)",
+	Sandbox_Excrementum_DefecateIntMinutes_tooltip = "Minutos de juego para pasar el intestino \n(entre el estómago y el colon).",
+	
+	Sandbox_Excrementum_ColonMinutes = "Tiempo del Colon (minutos)",
+	Sandbox_Excrementum_ColonMinutes_tooltip = "Cuanto tiempo debe pasar para que el límite del colon comience a bajar.",
+	
+	Sandbox_Excrementum_ColonBaseThreshold = "Límite del Colon (porcentaje)",
+	Sandbox_Excrementum_ColonBaseThreshold_tooltip = "El porcentaje de plenitud del colon para la urgencia de defecar.\nAlgunos alimentos pueden cambiar este umbral.",
+	
+	Sandbox_Excrementum_UrinateIncreaseMultiplier = "Multiplicador de Orina",
+	Sandbox_Excrementum_UrinateIncreaseMultiplier_tooltip = "Multiplicador de producción de orina a partir de agua potable.\nEl valor predeterminado es 1:1, donde 10 unidades de sed = 100 ml.\nTambién afecta el efecto diurético.",
+	
+	Sandbox_Excrementum_UrinatePassiveMultiplier = "Multiplicador Pasivo de Orina",
+	Sandbox_Excrementum_UrinatePassiveMultiplier_tooltip = "Multiplicador pasivo de producción de orina del metabolismo.\nPor defecto, ~ 30 % de toda la producción (si no hay ventajas, ni cols, etc.).",
+
+	Sandbox_Excrementum_StomachVolume = "Volumen del Estómago (unidades de hambre)",
+	Sandbox_Excrementum_StomachVolume_tooltip = "El volumen del estómago que mantiene el Moodle verde el cual restaura salud.",
+
+	Sandbox_Excrementum_AdditionalStomachVolume = "Volumen Adicional del Estómago",
+	Sandbox_Excrementum_AdditionalStomachVolume_tooltip = "El estómago puede estar distendido. La capacidad máxima es 'Volumen estomacal' más esto.\nEl personaje no aceptará comida por encima de la capacidad máxima.",
+
+}

@@ -1,0 +1,9 @@
+name=Excrementum
+authors=Star, AndrewWithRum, Nebula
+id=Excrementum41
+description=Players will need to go to the toilet.
+poster=poster.png
+versionMin=41.65
+modVersion=1.5.7
+require=MoodleFramework
+icon=logo_mini.png

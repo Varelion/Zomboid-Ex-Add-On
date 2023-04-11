@@ -1,0 +1,58 @@
+Moodles_PTBR = {
+
+	Moodles_exc-stomach_Good_lvl1 = "Ainda com fome",
+	Moodles_exc-stomach_Good_desc_lvl1 = "Não há comida suficiente.",
+	Moodles_exc-stomach_Good_lvl2 = "Lanchinho",
+	Moodles_exc-stomach_Good_desc_lvl2 = "Faminto.",
+	Moodles_exc-stomach_Good_lvl3 = "Alguma comida",
+	Moodles_exc-stomach_Good_desc_lvl3 = "Sentindo-se cheio.",
+	Moodles_exc-stomach_Good_lvl4 = "Quase cheio",
+	Moodles_exc-stomach_Good_desc_lvl4 = "Não há mais apetite.",
+
+	Moodles_exc-stomach_Bad_lvl1 = "Estômago Cheio",
+	Moodles_exc-stomach_Bad_desc_lvl1 = "Não há mais apetite. Dói um pouco.",
+	Moodles_exc-stomach_Bad_lvl2 = "Comeu demais",
+	Moodles_exc-stomach_Bad_desc_lvl2 = "Comeu muito. Machuca.",
+	Moodles_exc-stomach_Bad_lvl3 = "Excesso",
+	Moodles_exc-stomach_Bad_desc_lvl3 = "O estômago está pronto para estourar.",
+	Moodles_exc-stomach_Bad_lvl4 = "Cheio a estourar",
+	Moodles_exc-stomach_Bad_desc_lvl4 = "Não aguenta nem mais uma mordida.",	
+
+
+	Moodles_exc-colon_Good_lvl1 = "Digestão",
+	Moodles_exc-colon_Good_desc_lvl1 = "Digestão de alimentos no intestino delgado.",
+
+	Moodles_exc-colon_Good_lvl3 = "Impulsos",
+	Moodles_exc-colon_Good_desc_lvl3 = "Vontade de defecar.",
+
+	Moodles_exc-colon_Bad_lvl1 = "Grande vontade",
+	Moodles_exc-colon_Bad_desc_lvl1 = "É hora de ir ao banheiro.",
+	Moodles_exc-colon_Bad_lvl2 = "Difícil de suportar",
+	Moodles_exc-colon_Bad_desc_lvl2 = "Dor Intestinal.",
+	Moodles_exc-colon_Bad_lvl3 = "Impossível suportar",
+	Moodles_exc-colon_Bad_desc_lvl3 = "Dores na minha cabeça.",
+	Moodles_exc-colon_Bad_lvl4 = "Prestes a explodir",
+	Moodles_exc-colon_Bad_desc_lvl4 = "Dor Infernal.",	
+
+
+	Moodles_exc-urine_Good_lvl1 = "Pronto para fazer xixi",
+	Moodles_exc-urine_Good_desc_lvl1 = "Nada alarmante.",
+
+	Moodles_exc-urine_Bad_lvl1 = "Suportável",
+	Moodles_exc-urine_Bad_desc_lvl1 = "Uma boa hora para mijar",
+
+	Moodles_exc-urine_Bad_lvl3 = "Chegou a hora",
+	Moodles_exc-urine_Bad_desc_lvl3 = "Realmente preciso ir ao banheiro.",
+	Moodles_exc-urine_Bad_lvl4 = "Ah não!",
+	Moodles_exc-urine_Bad_desc_lvl4 = "Ai vem!",	
+
+
+	Moodles_exc-smell_Bad_lvl1 = "Faugh!",
+	Moodles_exc-smell_Bad_desc_lvl1 = "Cagado.",
+	Moodles_exc-smell_Bad_lvl2 = "Fedor",
+	Moodles_exc-smell_Bad_desc_lvl2 = "Um cheiro desagradável.",
+	Moodles_exc-smell_Bad_lvl3 = "Fedor",
+	Moodles_exc-smell_Bad_desc_lvl3 = "Um cheiro forte e muito desagradável.",
+	Moodles_exc-smell_Bad_lvl4 = "Fedor Forte",
+	Moodles_exc-smell_Bad_desc_lvl4 = "A esta vindo loucura.",
+}

@@ -1,0 +1,130 @@
+VERSION = 1,
+
+option Excrementum.StomachMultiplier
+{
+	type = double,
+	min = 0,
+	max = 100.0,
+	default = 1.0,
+
+	page = Excrementum,
+	translation = Excrementum_StomachMultiplier,
+}
+
+option Excrementum.ChymeMultiplier
+{
+	type = double,
+	min = 1.0,
+	max = 100.0,
+	default = 10.0,
+
+	page = Excrementum,
+	translation = Excrementum_ChymeMultiplier,
+}
+
+option Excrementum.DefecateIntMinutes
+{
+	type = double,
+	min = 0,
+	max = 3000.0,
+	default = 300.0,
+
+	page = Excrementum,
+	translation = Excrementum_DefecateIntMinutes,
+}
+
+option Excrementum.ColonMinutes
+{
+	type = double,
+	min = 0,
+	max = 5000.0,
+	default = 1320.0,
+
+	page = Excrementum,
+	translation = Excrementum_ColonMinutes,
+}
+
+option Excrementum.ColonBaseThreshold
+{
+	type = double,
+	min = 50.0,
+	max = 150.0,
+	default = 80.0,
+
+	page = Excrementum,
+	translation = Excrementum_ColonBaseThreshold,
+}
+
+
+option Excrementum.UrinateIncreaseMultiplier
+{
+	type = double,
+	min = 0,
+	max = 10.0,
+	default = 1.0,
+
+	page = Excrementum,
+	translation = Excrementum_UrinateIncreaseMultiplier,
+}
+
+option Excrementum.UrinatePassiveMultiplier
+{
+	type = double,
+	min = 0,
+	max = 10.0,
+	default = 1.0,
+
+	page = Excrementum,
+	translation = Excrementum_UrinatePassiveMultiplier,
+}
+
+
+option Excrementum.StomachVolume
+{
+	type = double,
+	min = 50.0,
+	max = 500.0,
+	default = 50.0,
+
+	page = Excrementum,
+	translation = Excrementum_StomachVolume,
+}
+
+
+option Excrementum.AdditionalStomachVolume
+{
+	type = double,
+	min = 50.0,
+	max = 1000.0,
+	default = 100.0,
+
+	page = Excrementum,
+	translation = Excrementum_AdditionalStomachVolume,
+}
+
+option Excrementum.OverlayIsAllowed
+{
+	type = boolean,
+	default = true,
+	page = Excrementum,
+	translation = Excrementum_OverlayIsAllowed,
+}
+
+option Excrementum.EnabledStatusBars
+{
+	type = boolean,
+	default = true,
+	page = Excrementum,
+	translation = Excrementum_EnabledStatusBars,
+}
+
+option Excrementum.Shame
+{
+	type = enum,
+	numValues = 4,
+	default = 2,
+	page = Excrementum,
+	translation = Excrementum_Shame,
+	valueTranslation = Excrementum_ShameLevels,
+}
+

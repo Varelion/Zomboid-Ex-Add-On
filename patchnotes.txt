@@ -1,0 +1,26 @@
+v1.5.8
+- Fixed: invisible admin was counted in shame mechanics.
+- Removed all penalties in god mode.
+- Added an option to enable the shame even in god mode.
+- Added an option to hide status window/bars for all clients.
+- Now you can use shovel to move feces.
+- Fixed: you was able to read a book each time you defecate.
+- Added halo hint about read pages.
+- Added compatibility with Realistic Inventory (drop sound).
+- Fixed: toilet book animation.
+
+v1.5.7
+- Compatibility patch for recipe "Packing.Pack 4 Toilet Paper".
+- Fixed a bug with ripping clothes.
+
+v1.5.6
+- Fixed a bug with favorite book in inventory.
+
+v1.5.5
+- Fixed useless flush in outhouse toilet.
+- Fixed the order of flush action and walk.
+- Fixed urinal.
+- Fixed peeself action if the queue of actions is not empty.
+- Now the character wakes up on 750+ mL in singleplayer. Then, after urination you can sleep immediately.
+- Now you can't go to sleep on 700+ mL.
+- Fixed: defecated clothing excluded from Wash All action.

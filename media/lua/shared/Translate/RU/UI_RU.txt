@@ -1,0 +1,122 @@
+UI_RU = {
+	UI_Exc_HumanFeces = "Фекалии",
+	UI_Exc_HumanFecesShort = "Фекалии",        /* 5-6 символов максимум! */
+	UI_Exc_HumanUrine = "Моча",
+	UI_Exc_HumanUrineShort = "Моча",
+	UI_Exc_HumanFecesMicro = "ф",
+	UI_Exc_HumanUrineMicro = "м",
+
+	UI_optionscreen_binding_ExcrementumStatus = "Состояние нужды",
+	UI_Exc_Say_Urinated_M = "Я описался...",
+	UI_Exc_Say_Urinated_F = "Я описалась...",
+	UI_Exc_Say_Defecated_M = "Я обкакался...",
+	UI_Exc_Say_Defecated_F = "Я обкакалась...",
+	
+	UI_Exc_UrinationMini = "Мочевой пузырь:  %1  %2 мл",
+	UI_Exc_DefecationMini = "Толстая кишка:  %1  %2%",
+	UI_Exc_InvTooltip_HasFeces = "Запах фекалий",
+	UI_Exc_InvTooltip_Feces = "Прилипло фекалий: %1 шт.",
+	UI_Exc_InvTooltip_Urine = "Запах мочи",
+	UI_Exc_InvTooltip_HasFecesRGB = "<RGB:0.7,0.3,0>Запах фекалий",
+	UI_Exc_InvTooltip_FecesRGB = "<RGB:0.7,0.3,0>Прилипло фекалий: %1 шт.",
+	UI_Exc_InvTooltip_UrineRGB = "<RGB:1,1,0>Запах мочи",
+	UI_Exc_StressChange = "Стресс: %1",
+	
+	UI_Exc_BoredomChange = "Скука: %1",
+	UI_Exc_BoredomChangeP = "Скука: +%1",
+	UI_Exc_UnhappynessChange = "Несчастье: %1",
+	UI_Exc_UnhappynessChangeP = "Несчастье: +%1",
+	UI_Exc_FatigueChange = "Сонливость: %1%",
+	UI_Exc_FatigueChangeP = "Сонливость: +%1%",
+	UI_Exc_PagesChange = "+%1 cтраниц",
+	
+	UI_Exc_Poisoning = "Интоксикация",
+	UI_Exc_Diarrhea = "Диарея",
+	UI_Exc_Diuretic = "Мочегонное",
+	
+	UI_Exc_Seats = "Сиденья", /* в автомобиле */
+	UI_Exc_Room = "Комната",
+	UI_Exc_YourBody = "Ваше тело",
+
+	/* OPTION SOUNDS */
+	
+	UI_Exc_Option_PooSoundTypes = "Типы звуков дефекации",
+	UI_Exc_Option_PooSoundTypes_Tooltip = "Снаружи значит не на унитазе. На унитазе или снаружи включает в себя непроизвольность.",
+	UI_Exc_Option_PooSoundTypes_All = "Все",
+  UI_Exc_Option_PooSoundTypes_NoDefecateProcess = "Без процесса дефекации",
+  UI_Exc_Option_PooSoundTypes_NoFart = "Без отхода газов",
+  UI_Exc_Option_PooSoundTypes_OnlyOutdoors = "Только снаружи",
+  UI_Exc_Option_PooSoundTypes_OnlyToilet = "Только на унитазе",
+  UI_Exc_Option_PooSoundTypes_None = "Отключены",
+  UI_Exc_Option_PooSoundTypes_NoneButPooSelf = "Только непроизвольный акт",
+  UI_Exc_Option_PooSoundTypes_NoneButClothes = "Только снятие одежды",
+
+  UI_Exc_Option_PeeSoundTypes = "Типы звуков мочеиспускания",
+	UI_Exc_Option_PeeSoundTypes_Tooltip = "Снаружи значит не на унитазе. На унитазе или снаружи включает в себя непроизвольность.",
+	UI_Exc_Option_PeeSoundTypes_All = "Все",
+	UI_Exc_Option_PeeSoundTypes_OnlyOutdoors = "Только снаружи",
+	UI_Exc_Option_PeeSoundTypes_OnlyToilet = "Только на унитазе",
+	UI_Exc_Option_PeeSoundTypes_None = "Отключены",
+	UI_Exc_Option_PeeSoundTypes_NoneButPeeSelf = "Только непроизвольный акт",
+	UI_Exc_Option_PeeSoundTypes_NoneButZip = "Только одежда / ширинка",
+	
+	UI_Exc_Option_ExtractSound = "Звук извлечения",
+	UI_Exc_Option_FlushSound = "Звук спуска воды",
+	
+	UI_Exc_Option_GrowlSound = "Звуки урчания",
+	UI_Exc_Option_GrowlSound_Tooltip = "Есть несколько стадий боли, каждая со своим звуком.",
+	UI_Exc_Option_GrowlSound_Always = "Всегда",
+	UI_Exc_Option_GrowlSound_Never = "Никогда",
+	UI_Exc_Option_GrowlSound_OnlyOnce = "Единожды в начале",
+	UI_Exc_Option_GrowlSound_OnlyOnceOnEachStage = "Единожды на каждой стадии",
+	
+	/* OPTION MOODLES */
+	
+	UI_Exc_Option_StomachMoodle = "Мудлет желудка",
+	UI_Exc_Option_StomachMoodle_ShowAny = "Показывать любой",
+  UI_Exc_Option_StomachMoodle_ShowOnlyRed = "Показывать только красный",
+  UI_Exc_Option_StomachMoodle_Hide = "Скрыть",
+
+  UI_Exc_Option_ColonMoodle = "Мудлет толстой кишки",
+  UI_Exc_Option_ColonMoodle_ShowAny = "Показывать любой",
+  UI_Exc_Option_ColonMoodle_NoSmallIntestine = "Без отсылки к тонкой кишке",
+  UI_Exc_Option_ColonMoodle_NoGreen = "Показывать только красный",
+  UI_Exc_Option_ColonMoodle_Hide = "Скрыть",
+
+  UI_Exc_Option_UrineMoodle = "Мудлет мочевого пузыря",
+  UI_Exc_Option_UrineMoodle_ShowAny = "Показывать любой",
+  UI_Exc_Option_UrineMoodle_ShowOnlyRed = "Показывать только красный",
+  UI_Exc_Option_UrineMoodle_ShowOnlyPain = "Показывать только при боли",
+  UI_Exc_Option_UrineMoodle_Hide = "Скрыть",
+
+  UI_Exc_Option_SmellMoodle = "Мудлет вони",
+	UI_Exc_Option_NoAffectGameplay_Tooltip = "Эта опция не влияет на геймплей.",
+	
+	/* REGEN OVERLAY */
+	UI_Exc_Option_Overlay = "Оверлей регена здоровья",
+	UI_Exc_Option_Overlay_Tooltip = "Определяет, хотите ли вы видеть точное значение регена здоровья, вызываемое зелёным мудлетом желудка. <br> 1) Всегда видно в верхнем правом углу экрана. <br> 2) Всегда видно, то оверлей прилипает к мудлету желудка при его показе. <br> 3) Видно только если что-то есть в желудке. <br> 4) Видно только, если персонаж болен. <br> 5) Выключено.",
+	UI_Exc_Option_Overlay_Tooltip2 = "6) Только в панели здоровья.",
+  UI_Exc_Option_Overlay_AlwaysOnTop = "Всегда виден",
+  UI_Exc_Option_Overlay_NearStomachIfPossible = "Около желудка, если возможно",
+  UI_Exc_Option_Overlay_NearStomachOnly = "Только около желудка",
+  UI_Exc_Option_Overlay_OnlyIfSickVisible = "Только если болен",
+  UI_Exc_Option_Overlay_Off = "Выключен",
+	UI_Exc_Option_Overlay_HealthPanel = "Только в панели здоровья",
+
+	/* COMPATIBILITY */
+	UI_MiniHealth_ExcShowClothes = "Показывать одежду",
+	UI_MiniHealth_ExcShowClothesTooltip = "Прикрытые части будут окрашены бледно-фиолетовым. <br> Грудь (только у женщин) и пах будут окрашены в светло-голубой, если оголены.",
+
+	UI_SimpleStatus_ExcHidden = "[скрыто]",
+
+	/* TRAITS */
+	UI_trait_ExcVoyeuristic = "Вуайерист",
+	UI_trait_VoyeuristicDesc = "Получает удовольствие, наблюдая за другими, когда они обнажены.",
+
+
+
+	UI_Exc_defecateTooltipNeed = "Вам требуется по крайней мере комикс, журнал, газета, лист бумаги, туалетная бумага или платок, чтобы подтереться.",
+	
+
+
+}

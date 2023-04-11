@@ -1,0 +1,255 @@
+module Base
+{
+
+	item HumanFeces1
+	{
+		Type = Food,
+		FoodType = Sausage,
+		--Spice = true,
+		Weight = 0.1,
+		DisplayName = Human Feces1,
+		DisplayCategory = Junk,
+		HungerChange = -2,
+		ThirstChange = 2,
+		Proteins = 0,
+		Lipids = 0,
+		Carbohydrates = 5,
+		Calories = 50,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EvolvedRecipe = Pizza:2;Burger:2;Omelette:2;Stew:2;Stir fry Griddle Pan:2;Stir fry:2;Sandwich:2;Sandwich Baguette:2;Salad:2;Roasted Vegetables:2;PastaPot:2;PastaPan:2;RicePot:2;RicePan:2,
+		EvolvedRecipeName = Feces,
+		Poison = true,
+		PoisonPower = 1,
+		UseForPoison = 20,
+		PoisonDetectionLevel = 10,
+		Icon = ExcHumanFeces1,
+		StressChange = 45,
+		UnhappyChange = 30,
+		BoredomChange = -25,
+		Tooltip = Tooltip_HumanFeces,
+		WorldStaticModel = Base.D_Feces1,
+		StaticModel = Base.D_Feces1,
+		Tags = Feces,
+	}
+
+	item HumanFeces2
+	{
+		Type = Food,
+		FoodType = Sausage,
+		--Spice = true,
+		Weight = 0.1,
+		DisplayName = Human Feces2,
+		DisplayCategory = Junk,
+		HungerChange = -2,
+		ThirstChange = 2,
+		Proteins = 0,
+		Lipids = 0,
+		Carbohydrates = 5,
+		Calories = 50,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EvolvedRecipe = Pizza:2;Burger:2;Omelette:2;Stew:2;Stir fry Griddle Pan:2;Stir fry:2;Sandwich:2;Sandwich Baguette:2;Salad:2;Roasted Vegetables:2;PastaPot:2;PastaPan:2;RicePot:2;RicePan:2,
+		EvolvedRecipeName = Feces,
+		Poison = true,
+		PoisonPower = 1,
+		UseForPoison = 20,
+		PoisonDetectionLevel = 10,
+		Icon = ExcHumanFeces2,
+		StressChange = 45,
+		UnhappyChange = 30,
+		BoredomChange = -25,
+		Tooltip = Tooltip_HumanFeces,
+		WorldStaticModel = Base.D_Feces2,
+		StaticModel = Base.D_Feces2,
+		Tags = Feces,
+	}
+
+	item HumanFeces3
+	{
+		Type = Food,
+		FoodType = Sausage,
+		--Spice = true,
+		Weight = 0.1,
+		DisplayName = Human Feces3,
+		DisplayCategory = Junk,
+		HungerChange = -2,
+		ThirstChange = 2,
+		Proteins = 0,
+		Lipids = 0,
+		Carbohydrates = 5,
+		Calories = 50,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EvolvedRecipe = Pizza:2;Burger:2;Omelette:2;Stew:2;Stir fry Griddle Pan:2;Stir fry:2;Sandwich:2;Sandwich Baguette:2;Salad:2;Roasted Vegetables:2;PastaPot:2;PastaPan:2;RicePot:2;RicePan:2,
+		EvolvedRecipeName = Feces,
+		Poison = true,
+		PoisonPower = 1,
+		UseForPoison = 20,
+		PoisonDetectionLevel = 10,
+		Icon = ExcHumanFeces3,
+		StressChange = 45,
+		UnhappyChange = 30,
+		BoredomChange = -25,
+		Tooltip = Tooltip_HumanFeces,
+		WorldStaticModel = Base.D_Feces3,
+		StaticModel = Base.D_Feces3,
+		Tags = Feces,
+	}
+	
+	model D_Feces1
+	{
+		mesh = D_Feces1,
+		texture = D_Feces,
+		scale = 0.13,
+	}
+	
+	model D_Feces2
+	{
+		mesh = D_Feces2,
+		texture = D_Feces,
+		scale = 0.17,
+	}
+	
+	model D_Feces3
+	{
+		mesh = D_Feces3,
+		texture = D_Feces,
+		scale = 0.37,
+	}
+	
+	item BathTowelDirty
+	{
+		DisplayCategory = Household,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Dirty Bath Towel,
+		UseWhileEquipped	=	FALSE,
+		Icon	=	Bathtowel,
+		ReplaceOnUse	=	BathTowel,
+		Tooltip = Tooltip_Bathtowel,
+		WorldStaticModel = BathTowel,
+		cantBeConsolided = TRUE,
+		Tags = DryWiping;ESmell,
+	}
+	
+	item DishClothDirty
+	{
+		DisplayCategory = Household,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Dirty Dish Towel,
+		UseWhileEquipped	=	FALSE,
+		Icon	=	Dishtowel,
+		ReplaceOnUse	=	DishCloth,
+		Tooltip = Tooltip_Bathtowel,
+		WorldStaticModel = DishTowel,
+		cantBeConsolided = TRUE,
+		Tags = DryWiping;ESmell,
+	}
+
+	
+	model PaintTinDefecate
+	{
+		mesh = PaintTinDefecate,
+		texture = PaintTinDefecate,
+		scale = 0.4,
+	}
+	model BucketDefecatedFull
+	{
+		mesh = BucketDefecatedFull,
+		texture = BucketDefecatedFull,
+		scale = 0.4,
+	}
+	model BucketDefecatedDirty
+	{
+		mesh = BucketDefecatedNull,
+		texture = BucketDefecatedNull,
+		scale = 0.4,
+	}
+	model PaintTinDefecatedDirty
+	{
+		mesh = PaintTinDefecatedNull,
+		texture = PaintTinEmptyDirty,
+		scale = 0.4,
+	}
+	
+	item PaintTinDefecate
+	{
+		DisplayCategory = WaterContainer,
+		Type = Drainable,
+		DisplayName = Bucket of Feces,
+		Icon = Paint_Brown,
+		zIsCookable = TRUE,
+		Weight = 3.0,
+		ReplaceOnDeplete = PaintTinDefecatedDirty,
+		MetalValue = 20,
+		UseWhileEquipped = FALSE,
+		UseDelta = 0.25,
+		ReplaceOnUseOn = PaintTinDefecatedDirty,
+		EatType = Bucket,
+		WorldStaticModel = PaintTinDefecate,
+		StaticModel = PaintTinDefecate,
+		Tags = Feces;HasMetal,
+	}
+
+	item BucketFullDefecate
+	{
+		DisplayCategory = WaterContainer,
+		Type = Drainable,
+		DisplayName = Bucket of Feces,
+		Icon = BucketDefecatedFull,
+		zIsCookable = TRUE,
+		Weight = 3.0,
+		ReplaceOnDeplete = BucketDefecatedDirty,
+		MetalValue = 20,
+		UseWhileEquipped = FALSE,
+		UseDelta = 0.25,
+		ReplaceOnUseOn = BucketDefecatedDirty,
+		EatType = Bucket,
+		WorldStaticModel = BucketDefecatedFull,
+		StaticModel = BucketDefecatedFull,
+		Tags = Feces;HasMetal,
+	}
+
+	item BucketDefecatedDirty
+	{
+		DisplayCategory = WaterContainer,
+		CanStoreWater	=	TRUE,
+		Type = Normal,
+		DisplayName = Dirty Bucket,
+		Icon = BucketDefecatedDirty,
+		zIsCookable = TRUE,
+		Weight = 1.0,
+		zReplaceOnUse = BucketEmpty,
+		ReplaceOnUseOn = WaterSource-BucketWaterFull,
+		MetalValue = 20,
+		zRainFactor = 1,
+		UseWhileEquipped = FALSE,
+		EatType = Bucket,
+		WorldStaticModel = BucketDefecatedDirty,
+		StaticModel = BucketDefecatedDirty,
+		Tags = Feces;HasMetal,
+	}
+
+	item PaintTinDefecatedDirty
+	{
+		DisplayCategory = WaterContainer,
+		CanStoreWater	=	TRUE,
+		Type = Normal,
+		DisplayName = Dirty Bucket,
+		Icon = Paint_Brown,
+		zIsCookable = TRUE,
+		Weight = 1.0,
+		zReplaceOnUse = PaintbucketEmpty,
+		ReplaceOnUseOn = WaterSource-WaterPaintbucket,
+		MetalValue = 20,
+		zRainFactor = 1,
+		UseWhileEquipped = FALSE,
+		EatType = Bucket,
+		WorldStaticModel = PaintTinDefecatedDirty,
+		StaticModel = PaintTinDefecatedDirty,
+		Tags = Feces;HasMetal,
+	}
+
+}

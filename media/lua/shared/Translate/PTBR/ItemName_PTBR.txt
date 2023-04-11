@@ -1,0 +1,6 @@
+ItemName_PTBR = {
+	ItemName_Base.HumanFeces = "Fezes Humanas",
+	ItemName_Base.HumanFeces1 = "Fezes Humanas",
+	ItemName_Base.HumanFeces2 = "Fezes Humanas",
+	ItemName_Base.HumanFeces3 = "Fezes Humanas",
+}

@@ -1,0 +1,477 @@
+x	id	Time	FoodType	RUS NAME	Голод	Жажда	Calories	Proteins	Lipids	Carbohydrates	CantEat	CannedFood	EvolvedRecipe	evo_out
+	Base.Acorn	150	Nut	Жёлудь	-10		55	6	24	12			Soup:10;Roasted Vegetables:10;Bread:10	
+	Base.Allsorts	20	Candy	Лакричные сладости	-10		16,6	0	0	4,33			ConeIcecream:5	
+	Base.AmericanLadyCaterpillar			Гусеница	-5		27	27,55	20,24	3				
+	Base.Antibiotics			Антибиотики										
+	Base.Apple	40	Fruits	Яблоко	-16	-7	95	0,47	0,31	25,13			Cake:16;FruitSalad:8;Pancakes:8;Waffles:8;Muffin:8;PieSweet:16;Oatmeal:4;Salad:8	
+	Base.Avocado	50	Vegetables	Авокадо	-16	-7	227	2,67	20,96	11,75			Omelette:8;Soup:16;Stew:16;Pie:16;Stir fry Griddle Pan:16;Stir fry:16;Sandwich:8;Sandwich Baguette:8;Salad:16;Roasted Vegetables:16;RicePot:16;RicePan:16;PastaPot:16;PastaPan:16;Taco:8;Burrito:8;Toast:8	
+	Base.BagelPlain			Бейгл	-10		177	5,9	2,22	33				
+	Base.BagelPoppy			Бейгл с маком	-10		177	5,9	2,22	33				
+	Base.BagelSesame			Бейгл с кунжутом	-10		177	5,9	2,22	33				
+1	Base.Baguette	180	Bread	Багет	-23		532	17,7	6,66	99			Soup:5;Stew:5;Salad:5	Авокадо; Арахисовое масло; Базилик; Баклажан; Банан; Баранья отбивная; Бекон; Бутылка майонеза; Васаби; Виноградная листва; Вяленое мясо; Горчица; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Гуакамоле; Жареная креветка; Жареная креветка; Жареная курица; Жареные луковые кольца; Жареные луковые кольца; Жареные устрицы; Зелёный лук; Икра рыбы; Кальмар; Капуста; Кетчуп; Кинза; Кольца кальмара; Корень имбиря; Креветка; Куриные наггетсы; Курица; Кусочек ветчины; Кусочки бекона; Лобстер; Ломтик болонской колбасы; Ломтик салями; Ломтики бекона; Лосось; Луковые кольца; Мёд; Мальва придорожная; Маргарин; Маринованный имбирь; Мармелад; Масло; Миска бобов; Морковь; Мясо кролика; Мясо маленького животного; Мясо птицы; Одуванчики; Оливковое масло; Омлет; Омлет; Острый соус; Открыт. консерв. бобы; Открыт. консерв. говядина; Открыт. консерв. морковь; Открыт. консерв. мясо с чили; Открыт. консерв. сардины; Открыт. консерв. томат; Открыт. консерв. тунец; Пепперони; Пережаренная фасоль; Перец; Петрушка; Плавленый сыр; Подливка; Растительное масло; Речной рак; Рисовый уксус; Розмарин; Рыба жареная; Салат-латук; Сало; Свиная отбивная; Сладкий перец; Соевый соус; Соленья; Соль; Соус маринара; Стейк; Сыр; Томат; Томатная паста; Устрицы; Фарш; Филе рыбы; Фруктовый джем; Хабанеро; Халапеньо; Хот-дог; Цукини; Чабрец; Черемша; Шалфей; Яичница-болтунья; Яйцо варёное; Яйцо-пашот
+	Base.BaguetteDough			Багет	-15	15	532	17,7	6,66	99				
+2	Base.BaguetteSandwich			Сэндвич	-10		360	5,8	8,5	42				
+	Base.BaitFish			Маленькая рыбка	-3		30	8,52	1,5	0				
+	Base.BakingTrayBread			Противень с хлебом	-15	20	532	17,7	6,66	99				
+1	Base.BakingTray_Muffin			Противень с маффинами	-30		520	54,53	52,61	50,45	TRUE			Ананас; Апельсин; Банан; Виноград; Вишня; Грейпфрут; Груша; Красивоплодник; Куски арбуза; Лайм; Лимон; Ломтик арбуза; Манго; Открыт. консерв. ананасы; Открыт. консерв. персики; Открыт. консерв. фруктовый коктейль; Открыт. консерв. фруктовый напиток; Падуб; Падуб мутовчатый; Персик; Сахарная глазурь; Семечки подсолнуха; Шоколадная крошка; Яблоко; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды
+2	Base.BakingTray_Muffin_Recipe			Противень с маффинами	-30		520	54,53	52,61	50,45	TRUE			
+	Base.Baloney	180	Sausage	Болонская колбаса	-30		200	22,65	6,35	2				
+	Base.BaloneySlice	180	Sausage	Ломтик болонской колбасы	-5		33	3,78	1,06	0,33			Pizza:5;Stew:5;Stir fry Griddle Pan:5;Stir fry:5;Sandwich:5;Sandwich Baguette:5;Roasted Vegetables:5;PastaPot:5;PastaPan:5;RicePot:5;RicePan:5	
+	Base.Banana	50	Fruits	Банан	-16	-5	105	1,29	0,39	26,95			Bread:16;Cake:16;FruitSalad:8;Pancakes:8;Waffles:8;Muffin:8;ConeIcecream:4;PieSweet:16;Oatmeal:4;Sandwich:8;Sandwich Baguette:8	
+	Base.BandedWoolyBearCaterpillar			Гусеница	-5		27	27,55	20,24	3				
+	Base.Basil	-1	Herb	Базилик	-1		0,1	0	0	0			Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1	
+	Base.Bass			Большеротый окунь	-26		403	48	24	1				
+	Base.BeanBowl	120	Bean	Миска бобов	-24		170	7	1	33			Omelette:8;Soup:24;Stew:24;RicePot:24;RicePan:24;Sandwich:8;Sandwich Baguette:8;Toast:8;Salad:8	
+	Base.BeautyBerry	20	Berry	Красивоплодник	-10	-1	23	4	0	5			Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5	
+	Base.BeefJerky	240	Beef	Вяленое мясо	-20		100	1	1	6			Stew:10;Pie:10;Stir fry Griddle Pan:10;Stir fry:10;Sandwich:5;Sandwich Baguette:5;Salad:5;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10	
+2	Base.Beer			Пиво в стакане										
+2	Base.Beer2			Пиво в стаканчике										
+	Base.BeerBottle	80	Beer	Бутылка пива	-9	-13	170	0	0	39			Soup:9;Stew:9;Beer:9;Beer2:9	
+	Base.BeerCan	80	Beer	Банка пива	-8	-13	160	0	0	39			Soup:8;Stew:8;Beer:9;Beer2:9	
+	Base.BellPepper	30	Vegetables	Сладкий перец	-8	-2	30	1	0	7			Pizza:8;Omelette:4;Soup:8;Pie:8;Stir fry Griddle Pan:8;Stir fry:8;Sandwich:2;Sandwich Baguette:2;Burger:2;Salad:4;Roasted Vegetables:8;RicePot:8;RicePan:8;PastaPot:8;PastaPan:8;Taco:2;Burrito:4	
+	Base.BerryBlack	20	Berry	Ягоды	-10	-1	23	4	0	5			Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5	
+	Base.BerryBlue	20	Berry	Ягоды	-10	-1	23	4	0	5			Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5	
+	Base.BerryGeneric1	20	Berry	Ягоды	-5	-1	12	2	0	3			Cake:5;FruitSalad:5;Pancakes:5;Waffles:5;Muffin:5;ConeIcecream:5;PieSweet:5;Oatmeal:5	
+	Base.BerryGeneric2	20	Berry	Ягоды	-10	-1	23	4	0	5			Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5	
+	Base.BerryGeneric3	20	Berry	Ягоды	-5	-1	8	2	0	3			Cake:5;FruitSalad:5;Pancakes:5;Waffles:5;Muffin:5;ConeIcecream:5;PieSweet:5;Oatmeal:5	
+	Base.BerryGeneric4	20	Berry	Ягоды	-10	-1	23	4	0	5			Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5	
+	Base.BerryGeneric5	20	Berry	Ягоды	-10	-1	23	4	0	5			Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5	
+	Base.BerryPoisonIvy	20	Berry	Ягоды	-5	-1	23	4	0	5			Cake:5;FruitSalad:5;Pancakes:5;Waffles:5;Muffin:5;ConeIcecream:5;PieSweet:5;Oatmeal:5	
+2	Base.Beverage			Напиток										
+2	Base.Beverage2			Напиток										
+	Base.Biscuit		NoExplicit	Бисквит	-5		160	1	8	22			Soup:5;Stew:5	
+	Base.BlackSage	-1	Herb	Шалфей клейкий	-1		0,1	0	0	0			HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1	
+	Base.Blackbeans	120	Bean	Чёрная фасоль	-10		45	3,95	0,45	10,45			Soup:10;Stew:10;Stir fry Griddle Pan:10;Stir fry:10;Roasted Vegetables:10;RicePot:10;RicePan:10;Burrito:10;Taco:5	
+	Base.Bleach			Бутылка отбеливателя		-60								
+	Base.BouillonCube	-1	Stock	Бульонный кубик	-3	5	16	0,6	0,5	2,3			Soup:3;Stew:3;Beverage:1;Beverage2:1;HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1	
+	Base.Bread	180	Bread	Хлеб	-30		532	17,7	6,66	99			Soup:5;Stew:5;Salad:5	
+3	Base.BreadDough			Домашний хлеб	-24	15	532	17,7	6,66	99				Базилик; Банан; Жёлудь; Зелёный лук; Мармелад; Орегано; Петрушка; Плавленый сыр; Плоды шиповника; Розмарин; Сахарная глазурь; Семечки подсолнуха; Сыр; Фруктовый джем; Чабрец; Шалфей; Шоколад; Шоколадная крошка
+1	Base.BreadSlices	180	Bread	Ломтики хлеба	-10		177	5,9	2,22	33			Soup:5;Stew:5;Salad:5	Авокадо; Арахисовое масло; Базилик; Базилик; Баклажан; Баклажан; Банан; Баранья отбивная; Баранья отбивная; Бекон; Бекон; Бутылка майонеза; Бутылка майонеза; Васаби; Васаби; Виноградная листва; Вяленое мясо; Горчица; Горчица; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Гуакамоле; Гуакамоле; Жареная креветка; Жареная креветка; Жареная курица; Жареная курица; Жареные луковые кольца; Жареные луковые кольца; Жареные луковые кольца; Жареные луковые кольца; Жареные устрицы; Жареные устрицы; Жареный тофу; Жареный тофу; Зелёный лук; Зелёный лук; Икра рыбы; Кальмар; Кальмар; Капуста; Капуста; Кетчуп; Кетчуп; Кинза; Кинза; Кольца кальмара; Кольца кальмара; Корень имбиря; Котлета; Креветка; Креветка; Кукуруза; Куриные наггетсы; Куриные наггетсы; Курица; Курица; Кусочек ветчины; Кусочек ветчины; Кусочки бекона; Кусочки бекона; Лобстер; Лобстер; Ломтик болонской колбасы; Ломтик салями; Ломтики бекона; Ломтики бекона; Лосось; Луковые кольца; Луковые кольца; Мёд; Мальва придорожная; Маргарин; Маринованный имбирь; Мармелад; Масло; Миска бобов; Морковь; Мясо кролика; Мясо кролика; Мясо маленького животного; Мясо маленького животного; Мясо птицы; Мясо птицы; Одуванчики; Одуванчики; Оливковое масло; Оливковое масло; Омлет; Омлет; Омлет; Омлет; Орегано; Острый соус; Острый соус; Открыт. консерв. бобы; Открыт. консерв. болоньезе; Открыт. консерв. говядина; Открыт. консерв. говядина; Открыт. консерв. грибной суп; Открыт. консерв. кукуруза; Открыт. консерв. морковь; Открыт. консерв. мясо с чили; Открыт. консерв. мясо с чили; Открыт. консерв. сардины; Открыт. консерв. томат; Открыт. консерв. томат; Открыт. консерв. тунец; Пепперони; Пережаренная фасоль; Пережаренная фасоль; Перец; Перец; Петрушка; Петрушка; Плавленый сыр; Плавленый сыр; Подливка; Подливка; Растительное масло; Растительное масло; Редис; Речной рак; Речной рак; Рисовый уксус; Рисовый уксус; Розмарин; Розмарин; Рыба жареная; Рыба жареная; Салат-латук; Салат-латук; Сало; Свиная отбивная; Свиная отбивная; Сладкий перец; Сладкий перец; Соевый соус; Соевый соус; Соленья; Соленья; Соль; Соль; Сосиска; Соус маринара; Соус маринара; Стейк; Сыр; Сыр; Томат; Томат; Томатная паста; Тофу; Тофу; Устрицы; Устрицы; Фарш; Фарш; Филе рыбы; Филе рыбы; Фруктовый джем; Хабанеро; Хабанеро; Халапеньо; Халапеньо; Хот-дог; Хот-дог; Цукини; Чабрец; Чабрец; Черемша; Черемша; Шалфей; Шалфей; Яичница-болтунья; Яичница-болтунья; Яйцо варёное; Яйцо варёное; Яйцо-пашот; Яйцо-пашот
+	Base.Broccoli	40	Vegetables	Брокколи	-9	-4	11	0,87	0,11	2,06			Pizza:9;Omelette:9;Soup:9;Stew:9;Pie:9;Stir fry Griddle Pan:9;Stir fry:9;Salad:9;Roasted Vegetables:9;RicePot:9;RicePan:9;PastaPot:9;PastaPan:9	
+	Base.Burger			Бургер	-25		440	25	37	0				
+2	Base.BurgerRecipe			Бургер	-20		440	25	37	30,5				
+	Base.Burrito			Буррито	-25		500	37	34	100				
+2	Base.BurritoRecipe			Буррито	-5		40	2	2	0				
+	Base.Butter			Масло	-24		3200	0	352	0			Pancakes:4;Waffles:4;Sandwich:4;Sandwich Baguette:4;Stir fry Griddle Pan:4;Stir fry:4;Roasted Vegetables:4;PastaPot:4;PastaPan:4;Taco:4;Burrito:4;Toast:4;Oatmeal:4;Soup:4;Stew:4	
+	Base.CakeBlackForest			Кусочек торта «Шварцвальд»	-10		90	10	12	4				
+	Base.CakeCarrot			Кусочек морковного торта	-7		70	10	12	4				
+	Base.CakeCheeseCake			Кусочек чизкейка	-8		80	10	12	4				
+	Base.CakeChocolate	30		Кусочек шоколадного торта	-10		90	10	12	4				
+1	Base.CakePrep			Заготовка для торта	-30		800	8	48	50				Ананас; Апельсин; Банан; Виноград; Вишня; Груша; Жевательные мишки; Жевательные червячки; Желейные бобы; Клубника; Коф. зёрна в шоколаде; Красивоплодник; Лайм; Леденцы; Лимон; Мёд; Манго; Мармелад; Мармеладки; Маршмеллоу; Открыт. консерв. ананасы; Открыт. консерв. персики; Открыт. консерв. фруктовый коктейль; Открыт. консерв. фруктовый напиток; Открыт. сгущёнка; Падуб; Падуб мутовчатый; Персик; Сахар-кандис на палочке; Сахарная глазурь; Фруктовый джем; Цукаты; Шоколад; Шоколадная крошка; Яблоко; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды
+2	Base.CakeRaw			Торт	-15		560	10	53	9				
+	Base.CakeRedVelvet			Кусочек торта «Красный бархат»	-8		80	10	12	4				
+	Base.CakeSlice			Кусочек торта	-7		70	5	5	1				
+	Base.CakeStrawberryShortcake			Кусочек клубничного торта	-8		75	10	12	4				
+	Base.CandyCorn	20	Candy	Кукурузная конфета	-10		32	0	0	14			ConeIcecream:5	
+	Base.CandyFruitSlices	20	Candy	Цукаты	-5		40	0	0,5	10			Cake:5;ConeIcecream:5	
+	Base.CandyPackage			Пакет леденцов			500	0	2,5	125	TRUE			
+	Base.Candycane			Конфета	-10		16,6	0	0	4,33				
+	Base.CannedBellPepper			Банка перца										
+	Base.CannedBolognese			Консерв. болоньезе			540	18	22	68	TRUE	TRUE		
+	Base.CannedBologneseOpen	240	Meat	Открыт. консерв. болоньезе	-24		540	18	22	68		TRUE	Burger:12;Stew:24;Stir fry Griddle Pan:24;Stir fry:24;Roasted Vegetables:24;RicePot:24;RicePan:24;PastaPot:24;PastaPan:24;Omelette:12	
+	Base.CannedBroccoli			Банка брокколи										
+	Base.CannedCabbage			Банка капусты										
+	Base.CannedCarrots			Банка моркови										
+	Base.CannedCarrots2			Консерв. морковь			10,5	0	0	28	TRUE	TRUE		
+	Base.CannedCarrotsOpen	50	Vegetables	Открыт. консерв. морковь	-12	-4	10,5	0	0	28		TRUE	Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12	
+	Base.CannedChili			Консерв. мясо с чили			260	16	7	33	TRUE	TRUE		
+	Base.CannedChiliOpen	240	Meat	Открыт. консерв. мясо с чили	-16		260	16	7	33		TRUE	Stew:16;Stir fry Griddle Pan:16;Stir fry:16;Roasted Vegetables:16;RicePot:16;RicePan:16;Taco:8;Burrito:8;Omelette:8;Burger:8;Sandwich:8;Sandwich Baguette:8	
+	Base.CannedCorn			Консерв. кукуруза			315	7	1,75	70	TRUE	TRUE		
+	Base.CannedCornOpen	60	Vegetables	Открыт. консерв. кукуруза	-16	-4	315	7	1,75	70		TRUE	Soup:16;Stew:16;Stir fry Griddle Pan:16;Stir fry:16;Burger:8;Salad:16;Roasted Vegetables:16;RicePot:16;RicePan:16;PastaPot:16;PastaPan:16;Omelette:8;Taco:8;Burrito:8	
+	Base.CannedCornedBeef			Консерв. говядина			720	78	48	0	TRUE	TRUE		
+	Base.CannedCornedBeefOpen	240	Beef	Открыт. консерв. говядина	-24		720	78	48	0		TRUE	Pizza:12;Burger:12;Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:8;Sandwich Baguette:8;Salad:12;Roasted Vegetables:12;PastaPot:12;PastaPan:12;RicePot:12;RicePan:12	
+	Base.CannedEggplant			Банка баклажана										
+	Base.CannedFruitBeverage			Консерв. фруктовый напиток			250	10	24	0	TRUE	TRUE		
+	Base.CannedFruitBeverageOpen	20	Juice	Открыт. консерв. фруктовый напиток	-15	-85	250	10	24	0		TRUE	Cake:15;FruitSalad:15;Pancakes:15;Waffles:15;Muffin:15;Beverage:5;Beverage2:5	
+	Base.CannedFruitCocktail			Консерв. фруктовый коктейль			250	10	24	0	TRUE	TRUE		
+	Base.CannedFruitCocktailOpen	30	Fruits	Открыт. консерв. фруктовый коктейль	-15		250	10	24	0		TRUE	Cake:15;FruitSalad:15;Pancakes:15;Waffles:15;Muffin:15;ConeIcecream:5;PieSweet:15;Oatmeal:5	
+	Base.CannedLeek			Банка лука-порея										
+	Base.CannedMilk			Сгущёнка			110	8	2,5	13				
+	Base.CannedMilkOpen	120	Milk	Открыт. сгущёнка	-10	-10	110	8	2,5	13		TRUE	FruitSalad:2;Pancakes:2;Waffles:2;HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Beverage:5;Beverage2:5;Oatmeal:2;PieSweet:5;Cake:5	
+	Base.CannedMushroomSoup			Консерв. грибной суп			160	3	8	19	TRUE	TRUE		
+	Base.CannedMushroomSoupOpen	330	Mushroom	Открыт. консерв. грибной суп	-10	-4	160	3	8	19		TRUE	Omelette:5;Soup:10;Stew:10;Stir fry Griddle Pan:10;Stir fry:10;Burger:5;Salad:10;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10	
+	Base.CannedPeaches			Консерв. персики			250	10	24	0	TRUE	TRUE		
+	Base.CannedPeachesOpen	40	Fruits	Открыт. консерв. персики	-15		250	10	24	0		TRUE	Cake:15;FruitSalad:15;Pancakes:15;Waffles:15;Muffin:15;PieSweet:15;Oatmeal:5	
+	Base.CannedPeas			Консерв. горох			280	14	0	52,5	TRUE	TRUE		
+	Base.CannedPeasOpen	150	Vegetables	Открыт. консерв. горох	-16	-3	280	14	0	52,5		TRUE	Omelette:8;Soup:16;Stew:16;Stir fry Griddle Pan:16;Stir fry:16;Roasted Vegetables:16;RicePot:16;RicePan:16	
+	Base.CannedPineapple			Консерв. ананас			250	10	24	0	TRUE	TRUE		
+	Base.CannedPineappleOpen	50	Fruits	Открыт. консерв. ананасы	-15		250	10	24	0		TRUE	Pizza:15;Cake:15;FruitSalad:15;Pancakes:5;Waffles:5;Muffin:15;ConeIcecream:5;PieSweet:15;Oatmeal:5	
+	Base.CannedPotato			Банка картофеля										
+	Base.CannedPotato2			Консерв. картофель			175	2,5	0	35	TRUE	TRUE		
+	Base.CannedPotatoOpen	60	Vegetables	Открыт. консерв. картофель	-18	-7	175	2,5	0	35		TRUE	Omelette:9;Soup:18;Stew:18;Pie:18;Stir fry Griddle Pan:18;Stir fry:18;Salad:9;Roasted Vegetables:18	
+	Base.CannedRedRadish			Банка редиса										
+	Base.CannedSardines	50		Консерв. сардины			150	14	11	0	TRUE	TRUE		
+	Base.CannedSardinesOpen	50	Fish	Открыт. консерв. сардины	-14		150	14	11	0		TRUE	Pizza:14;Stew:14;Stir fry Griddle Pan:14;Stir fry:14;RicePot:14;RicePan:14;Sandwich:7;Sandwich Baguette:7;Omelette:7;Toast:7	
+	Base.CannedTomato			Банка томата										
+	Base.CannedTomato2			Консерв. томат			90	3	0	18	TRUE	TRUE		
+	Base.CannedTomatoOpen	30	Vegetables	Открыт. консерв. томат	-12	-8	90	3	0	18		TRUE	Pizza:12;Omelette:12;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Burger:6;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12	
+	Base.Carrots	50	Vegetables	Морковь	-8	-4	25	0,57	0,15	5,84			Soup:8;Stew:8;Pie:8;Stir fry Griddle Pan:8;Stir fry:8;Sandwich:4;Sandwich Baguette:4;Salad:4;Roasted Vegetables:8;RicePot:8;RicePan:8;PastaPot:8;PastaPan:8	
+	Base.Catfish	30		Сом	-15		215	28	4	1				
+	Base.Centipede			Сороконожка	-5		60	15,21	6,5	3,5				
+	Base.Centipede2			Сороконожка	-5		60	15,21	6,5	3,5				
+	Base.Cereal			Сухой завтрак	-40		2360	52	26	572				
+	Base.CerealBowl			Миска сухого завтрака	-8	-20	295	6,5	3,25	71,5				
+	Base.Cheese	300	Cheese	Сыр	-15		113	6,4	9,33	0,87			Pizza:15;Soup:10;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;PastaPot:10;PastaPan:10;Taco:5;Burrito:5;Bread:5;Toast:5	
+	Base.CheeseSandwich			Бутерброд с сыром	-15		366	12	22,5	28				
+	Base.Cherry	40	Fruits	Вишня	-3	-1	5	0,09	0	1,31			Cake:3;FruitSalad:3;Pancakes:3;Waffles:3;Muffin:3;ConeIcecream:3;PieSweet:3;Oatmeal:5	
+	Base.Chicken	90	Poultry	Курица	-36		150	18	9	0			Pizza:12;Soup:18;Stew:18;Pie:12;Stir fry Griddle Pan:18;Stir fry:18;Sandwich:6|Cooked;Sandwich Baguette:6|Cooked;Burger:12|Cooked;Salad:6|Cooked;Roasted Vegetables:18;RicePot:18;RicePan:18;PastaPot:18;PastaPan:18;Taco:6|Cooked;Burrito:12|Cooked	
+	Base.ChickenFoot	90		Куриная лапка	-12		70	16	14	17				
+	Base.ChickenFried	90	NoExplicit	Жареная курица	-15		260	16	14	17			Sandwich:15;Sandwich Baguette:15;Burger:15;Salad:15;Taco:15;Burrito:15	
+	Base.ChickenNuggets	90	NoExplicit	Куриные наггетсы	-10		230	26,441	8,1	10,2			Sandwich:5;Sandwich Baguette:5;Burger:10;Salad:5;Taco:5;Burrito:10	
+	Base.Chives	-1	Herb	Зелёный лук	-1		0,1	0	0	0			Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;Roasted Vegetables:1;Salad:1;Sandwich:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1	
+	Base.ChocoCakes			Шоколадное пирожное	-10		200	1,8	8	30				
+	Base.Chocolate	120	NoExplicit	Шоколад	-20		850	10	66	110			Cake:20;PieSweet:20;Bread:10;ConeIcecream:5	
+	Base.ChocolateChips	120	Chocolate	Шоколадная крошка	-6		50	1	8	17			Muffin:3;ConeIcecream:3;Cake:6;Pancakes:3;Waffles:3;PieSweet:6;Bread:6;ConeIcecream:3	
+	Base.ChocolateCoveredCoffeeBeans		NoExplicit	Коф. зёрна в шоколаде	-5		40	0	0,5	10			Cake:5;ConeIcecream:5	
+	Base.Cigarettes			Сигарета	0									
+	Base.Cilantro	-1	Herb	Кинза	-1		0,1	0	0	0			Pizza:1;Omelette:1;Burrito:1;Salad:1;Sandwich:1;Sandwich Baguette:1;Soup:1;Stew:1;Taco:1;Burger:1	
+	Base.CinnamonRoll			Булочка с корицей	-12		350	4	24	50				
+	Base.Cockroach			Таракан	-5		30	7,41	3,9	1,27				
+	Base.CocoaPowder	90	Cocoa	Какао-порошок	-30	50	60	2	5	8			HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5;ConeIcecream:5;Pancakes:5;Waffles:5	
+	Base.Coffee2	90	Coffee	Кофе	-30	60	2	1	0	0			HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5	
+	Base.ColdCuppa			Кружка холодного напитка	-5	-50	4	0,12	0	0,75				
+	Base.ColdDrinkRed			Кружка холодного напитка	-5	-50	4	0,12	0	0,75				
+	Base.ColdDrinkSpiffo			Кружка холодного напитка	-5	-50	4	0,12	0	0,75				
+	Base.ColdDrinkWhite			Кружка холодного напитка	-5	-50	4	0,12	0	0,75				
+	Base.CommonMallow	-1	Herb	Мальва придорожная	-1		0,1	0	0	0			HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1;Soup:1;Stew:1;Stir fry Griddle Pan:1;Stir fry:1;Sandwich:1;Sandwich Baguette:1;Salad:1	
+	Base.Cone			Рожок	-5		15	2	5	10				
+1	Base.ConeIcecream	130		Мороженое в рожке	-15		470	20	44	120				Ананас; Арахис; Арахисовое масло; Банан; Вишня; Жевательные мишки; Жевательные червячки; Желейные бобы; Какао-порошок; Кленовый сироп; Клубника; Коф. зёрна в шоколаде; Красивоплодник; Красная лакрица; Кукурузная конфета; Лакричные сладости; Леденцы; Мёд; Мармелад; Мармеладки; Маршмеллоу; Открыт. консерв. ананасы; Открыт. консерв. фруктовый коктейль; Падуб; Падуб мутовчатый; Сахар-кандис на палочке; Сахарная глазурь; Соленья; Фруктовый джем; Цукаты; Черная лакрица; Шоколад; Шоколадная крошка; Шоколадная крошка; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды
+	Base.ConeIcecreamMelted	130		Растаявший рожок мороженого	-15		470	20	44	120				
+2	Base.ConeIcecreamToppings	130		Рожок мороженого	-15		470	20	44	120				
+	Base.CookieChocolateChip			Печенье	-5		160	1	8	22				
+	Base.CookieChocolateChipDough			Противень с печеньем с шок. крошкой	-23		960	1	48	132				
+	Base.CookieJelly			Печенье с малиной	-5		160	1	8	22				
+	Base.CookiesChocolate			Шоколадное печенье	-5		170	2	9	25				
+	Base.CookiesChocolateDough			Противень с шоколадным печеньем	-23		1020	12	54	150				
+	Base.CookiesOatmeal			Овсяное печенье	-5		110	1	6	20				
+	Base.CookiesOatmealDough			Противень с овсяным печеньем	-23		660	6	36	120				
+	Base.CookiesShortbread			Песочное печенье	-5		120	2	8	22				
+	Base.CookiesShortbreadDough			Противень с песочным печеньем	-23		720	12	48	132				
+	Base.CookiesSugar			Сахарное печенье	-5		120	2	8	22				
+	Base.CookiesSugarDough			Противень с сахарным печеньем	-23		720	12	48	132				
+	Base.Corn	60	Vegetables	Кукуруза	-14	-4	88	4,68	1,93	26,74			Soup:14;Stew:14;Stir fry Griddle Pan:14;Stir fry:14;Burger:7;Salad:7;Roasted Vegetables:14;RicePot:14;RicePan:14;PastaPot:14;PastaPan:14;Burrito:7;Taco:7	
+	Base.CornFrozen	60	Vegetables	Кукуруза	-20	-5	396	15	5	94			Soup:10;Stew:10;Stir fry Griddle Pan:10;Stir fry:10;Roasted Vegetables:10;RicePot:10;RicePan:10;Omelette:5	
+	Base.Cornbread		NoExplicit	Кукурузный хлеб	-10		300	7	10	54			Soup:5;Stew:5	
+	Base.Corndog			Корн-дог	-12		180	19	9	7				
+	Base.Crackers		NoExplicit	Крекеры	-5		70	1	6	12			Soup:5;Stew:5	
+	Base.Crappie			Краппи	-15		165	35	1	1				
+	Base.Crayfish	30	Seafood	Речной рак	-10		40	8	2	0			Pizza:10;Soup:10;Stew:10;Pie:10;Stir fry Griddle Pan:10;Stir fry:10;Sandwich:10|Cooked;Sandwich Baguette:10|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10;Burrito:10|Cooked;Taco:10|Cooked	
+	Base.Cricket			Сверчок	-5		20	3,6	1,32	1,34				
+	Base.Crisps			Чипсы	-15		720	4,5	45	72				
+	Base.Crisps2			Чипсы	-15		720	4,5	45	72				
+	Base.Crisps3			Чипсы	-15		720	4,5	45	72				
+	Base.Crisps4			Чипсы	-15		720	4,5	45	72				
+	Base.Croissant			Круассан	-8		180	4	15	32				
+	Base.Cupcake			Кекс	-20		305	4	4	67				
+	Base.Daikon	50	Vegetables	Дайкон	-12	-5	54	1,34	0,27	12,59			Soup:6;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Salad:4;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12	
+	Base.Dandelions	-1	Greens	Одуванчики	-5		25	1,5	0,5	5			Pizza:5;HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Omelette:5;Sandwich:5;Salad:5;Sandwich Baguette:5;Soup:5;Burger:5	
+	Base.DeadBird			Мёртвая птица	-15		161	22	2	0,5				
+	Base.DeadMouse			Мёртвая мышь	-10		220	9,5	3,15	0,7				
+	Base.DeadRabbit			Мёртвый кролик	-45		1730	330	35	0				
+	Base.DeadRat			Мёртвая крыса	-22		324	40	16	0				
+	Base.DeadSquirrel			Мёртвая белка	-32		480	84,8	15	0				
+	Base.DehydratedMeatStick			Вяленая колбаска	-10		100	21,63	5,1	5,3				
+	Base.Dogfood			Собачий корм			498	16,04	12,58	77,56	TRUE	TRUE		
+	Base.DogfoodOpen	240	Meat	Открыт. собачий корм	-30		498	16,04	12,58	77,56		TRUE		
+	Base.Dough			Тесто	-15	20	532	17,7	6,66	99				
+	Base.DoughRolled			Раскатанное тесто	-15	20	532	17,7	6,66	99				
+	Base.DoughnutChocolate			Шоколадный пончик	-7		180	3	15	35				
+	Base.DoughnutFrosted			Глазированный пончик	-7		180	3	15	35				
+	Base.DoughnutJelly			Пончик с желе	-7		180	3	15	35				
+	Base.DoughnutPlain			Пончик	-7		180	3	15	35				
+	Base.DriedBlackBeans	120	Bean	Сушёная чёрная фасоль	-60	60	3084	199	0	580			Soup:10;Stew:10;RicePot:10;PastaPot:10	
+	Base.DriedChickpeas	90	Bean	Сушёный нут	-60	60	2851	181	0	544			Soup:10;Stew:10;RicePot:10;PastaPot:10	
+	Base.DriedKidneyBeans	90	Bean	Сушёная красная фасоль	-60	60	3265	272	13	508			Soup:10;Stew:10;RicePot:10;PastaPot:10	
+	Base.DriedLentils	90	Vegetables	Сушёная чечевица	-60	60	3000	220	0	540			Soup:10;Stew:10;RicePot:10;PastaPot:10	
+	Base.DriedSplitPeas	150	Vegetables	Сушёный колотый горох	-60	60	2217	221	0	544			Soup:10;Stew:10;RicePot:10;PastaPot:10	
+	Base.DriedWhiteBeans	120	Bean	Сушёная белая фасоль	-60	60	2823	188	10	527			Soup:10;Stew:10;RicePot:10;PastaPot:10	
+	Base.Edamame	50	Vegetables	Эдамаме	-5		25	3,95	0,45	10,45			Soup:5;Stew:5;Stir fry Griddle Pan:5;Stir fry:5;Roasted Vegetables:5;RicePot:5;RicePan:5	
+	Base.Egg	45	Egg	Яйцо	-7		63	5,55	4,18	0,32			Stir fry Griddle Pan:7;Stir fry:7;Roasted Vegetables:7;RicePot:7;RicePan:7;PastaPot:7;PastaPan:7	
+	Base.EggBoiled	45	Egg	Яйцо варёное	-10		63	5,55	4,18	0,32			Sandwich:10;Sandwich Baguette:10;Burger:10;Salad:10;Burrito:10;Taco:5;Soup:10;Stew:10	
+	Base.EggCarton			Упаковка яиц										
+	Base.EggOmelette	120	Egg	Омлет	-20		120	10,55	6,18	0,52			Sandwich:20;Sandwich Baguette:20;Burger:20;Salad:20;Burrito:20;Taco:10	
+	Base.EggPoached	45	Egg	Яйцо-пашот	-10		63	5,55	4,18	0,32			Sandwich:10;Sandwich Baguette:10;Burger:10;Salad:10;Burrito:10;Taco:5	
+	Base.EggScrambled	45	Egg	Яичница-болтунья	-20		120	10,55	6,18	0,52			Sandwich:20;Sandwich Baguette:20;Burger:20;Salad:20;Burrito:20;Taco:10	
+	Base.Eggplant	50	Vegetables	Баклажан	-16	-9	114	4,49	0,82	26,93			Pizza:8;Omelette:8;Soup:16;Stew:16;Pie:16;Stir fry Griddle Pan:16;Stir fry:16;Burger:8;Sandwich:4;Sandwich Baguette:4;Salad:8;Roasted Vegetables:16;RicePot:16;RicePan:16;PastaPot:16;PastaPan:16	
+	Base.FishFillet	50	Fish	Филе рыбы	-25		205	28,52	12	1			Pizza:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;Taco:10|Cooked;Burrito:15|Cooked	
+	Base.FishFried	50	Fish	Рыба жареная	-30		210	16	12	7			Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5;Sandwich Baguette:5;Burger:10;Salad:10;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;Burrito:10;Taco:5	
+	Base.FishRoe		NoExplicit	Икра рыбы	-10		63	5,55	4,18	0,32			Salad:2;Sandwich:2;Sandwich Baguette:2;Soup:2	
+	Base.FriedOnionRings	50	Vegetables	Жареные луковые кольца	-10		200	2	12	22			Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5	
+	Base.FriedOnionRingsCraft	50	Vegetables	Жареные луковые кольца	-10		200	2	12	22			Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:5|Cooked;Salad:5|Cooked	
+	Base.Fries			Картофель фри	-10		203	3,35	5,19	35,97				
+	Base.FrogMeat	120	Game	Мясо лягушки	-10		66	14,6	0,28	0			Soup:10;Stew:10;Stir fry Griddle Pan:10;Stir fry:10;Salad:10|Cooked;Roasted Vegetables:10	
+	Base.FruitSalad			Салат фруктовый	-60		97	1,4	0,5	25				
+	Base.GingerPickled		NoExplicit	Маринованный имбирь	-5		23	2,55	1,18	0,22			Salad:1;Sandwich:1;Sandwich Baguette:1;Soup:1;Stew:1;Stir fry:1;Stir fry Griddle Pan:1	
+	Base.GingerRoot		NoExplicit	Корень имбиря	-5		46	5,10	2,36	0,44			Beverage:1;Beverage2;Salad:1;Sandwich:1;Sandwich Baguette:1;Soup:2;Stew:2;Stir fry:2;Stir fry Griddle Pan:2;HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1	
+	Base.Ginseng		NoExplicit	Женьшень	-1		0,1	0	0	0			Beverage:1;Beverage2;HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1	
+	Base.GrahamCrackers			Галеты	-5		70	1	6	12				
+	Base.GranolaBar			Злаковый батончик	-15		270	20	44	120				
+	Base.GrapeLeaves	50	Vegetables	Виноградная листва	-4		73	4	2	11			Soup:4;Stew:4;Salad:4;RicePot:4;RicePan:4;Pie:4;Sandwich:4;Sandwich Baguette:4	
+	Base.Grapefruit	30	Fruits	Грейпфрут	-20	-50	15	17,56	3,78	101,11			Salad:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10	
+	Base.Grapes	30	Fruits	Виноград	-15	-5	62	0,58	0,32	15,78			Cake:15;FruitSalad:15;Pancakes:15;Waffles:15;Muffin:15;Salad:5	
+	Base.Grasshopper			Кузнечик	-5		25	5,55	0,24	3				
+	Base.Gravy		NoExplicit	Подливка	-8		79	2	6	5			Sandwich:1;Sandwich Baguette:1;Burger:1;RicePot:4;RicePan:4;Roasted Vegetables:4;Stew:4;Pie:4	
+2	Base.GriddlePanFriedVegetables			Стир-фрай			190	11	2	25				
+	Base.GrilledCheese			Поджаренный бутерброд с сыром	-16		366	12	22,5	28				
+	Base.Guacamole		NoExplicit	Гуакамоле	-8		182	4,6	16,6	2			Taco:2;Burrito:2;Sandwich:2;Sandwich Baguette:2;Burger:2;Omelette:2	
+	Base.Gum			Жевательная резинка	-1		30	0	0	10				
+	Base.GummyBears	20	Candy	Жевательные мишки	-5		40	0	0,5	10			Cake:5;ConeIcecream:5	
+	Base.GummyWorms	20	Candy	Жевательные червячки	-5		40	0	0,5	10			Cake:5;ConeIcecream:5	
+	Base.HalloweenPumpkin	60		Фонарь из тыквы	-40		404	34,53	20,61	20,45				
+	Base.Ham	240	Meat	Ветчина	-60		1560	117	78	91				
+	Base.HamSlice	240	Meat	Кусочек ветчины	-10		260	19,5	13	15,16			Pizza:10;Soup:10;Stew:10;Omelette:10;Sandwich:10;Sandwich Baguette:10;Burger:10;Salad:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10	
+	Base.HardCandies	20	Candy	Леденцы	-5		40	0	0,5	10			Cake:5;ConeIcecream:5	
+	Base.HiHis			Шоколадный рулет	-10		200	1,8	8	30				
+	Base.HollyBerry	20	Berry	Падуб	-10	-1	23	4	0	5			Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5	
+	Base.Honey	70		Мёд	-20		660	0	0	187			Beverage:2;Beverage2:2;Cake:5;Sandwich:2;Sandwich Baguette:2;FruitSalad:2;HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Pancakes:2;Waffles:2;ConeIcecream:2;PieSweet:5;Toast:2;Oatmeal:2	
+2	Base.HotDrink			Кружка напитка		-20								
+2	Base.HotDrinkRed			Кружка горячего напитка		-20								
+2	Base.HotDrinkSpiffo			Кружка горячего напитка		-20								
+2	Base.HotDrinkTea			Кружка горячего напитка		-20								
+2	Base.HotDrinkWhite			Кружка горячего напитка		-20								
+	Base.Hotdog	240	Meat	Хот-дог	-20		100	2	12	2			Soup:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Roasted Vegetables:20;RicePot:20;RicePan:20;Taco:20;Burrito:20;Omelette:20;Burger:20;Sandwich:20;Sandwich Baguette:20	
+	Base.Hotsauce		NoExplicit	Острый соус	-16		430	0	0	270			Pizza:4;Omelette:2;Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Taco:2;Burrito:2;Beverage:1;Beverage2:1;Stir fry:4;Stir fry Griddle Pan:4;Beer:1;Beer2:1	
+	Base.Icecream	130		Мороженое	-30		1680	26	84	180				
+	Base.IcecreamMelted	130		Растаявшее мороженое	-30		1680	26	84	180				
+	Base.Icing		NoExplicit	Сахарная глазурь	-10		110	16	44	80			Cake:10;Pancakes:5;Waffles:5;Muffin:10;ConeIcecream:5;PieSweet:10;Toast:5;Bread:10	
+	Base.JamFruit		NoExplicit	Фруктовый джем	-30		550	1	0	130			Sandwich:3;Sandwich Baguette:3;Pancakes:5;Waffles:5;ConeIcecream:5;Cake:15;Toast:3;Bread:15;Oatmeal:3	
+	Base.JamMarmalade		NoExplicit	Мармелад	-30		550	1	0	130			Sandwich:3;Sandwich Baguette:3;Pancakes:5;Waffles:5;ConeIcecream:5;Cake:15;Toast:3;Bread:15;Oatmeal:3	
+	Base.JellyBeans	20	Candy	Желейные бобы	-5		40	0	0,5	10			Cake:5;ConeIcecream:5	
+	Base.JuiceBox	20	Juice	Коробка сока	-2	-13	60	0	0	14			Beverage:2;Beverage2:2	
+	Base.Jujubes	20	Candy	Мармеладки	-5		40	0	0,5	10			Cake:5;ConeIcecream:5	
+	Base.Ketchup		NoExplicit	Кетчуп	-20		1480	0	0	370			Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Taco:2;Burrito:2	
+	Base.Lard	360	NoExplicit	Сало	-24		4095	0	454	0			Sandwich:2;Sandwich Baguette:2;Stir fry Griddle Pan:4;Stir fry:4;Roasted Vegetables:4;PastaPot:4;PastaPan:4;Taco:2;Burrito:2;Toast:2;Soup:4;Stew:4	
+	Base.Leek	50	Vegetables	Лук-порей	-12	-5	54	1,34	0,27	12,59			Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12	
+	Base.Lemon	30	Citrus	Лимон	-10	-5	17	0,64	0,17	5,41			HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Cake:5;FruitSalad:5;Pancakes:5;Waffles:5;Muffin:5;PieSweet:5;Stir fry Griddle Pan:5;Stir fry:5;Soup:10;Beverage:2;Beverage2:2;Beer:2;Beer2;Taco:2;Burrito:2	
+	Base.LemonGrass	-1	Herb	Лимонная трава	-1		0,1	0	0	0			Soup:1;Stew:1;Stir fry Griddle Pan:1;Stir fry:1;Roasted Vegetables:1;RicePot:1;RicePan:1;HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1	
+	Base.Lettuce	30	Greens	Салат-латук	-15	-7	54	4,9	0,54	10,33			Sandwich:3;Burger:3;Salad:5;Sandwich Baguette:3	
+	Base.LicoriceBlack	20	Candy	Черная лакрица	-2		22	0	0	7			ConeIcecream:2	
+	Base.LicoriceRed	20	Candy	Красная лакрица	-2		22	0	0	7			ConeIcecream:2	
+	Base.Lime	30	Citrus	Лайм	-10	-5	17	0,64	0,17	5,41			HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Cake:5;FruitSalad:2;Pancakes:2;Waffles:2;Muffin:5;PieSweet:5;Stir fry Griddle Pan:5;Stir fry:5;Soup:10;Beverage:2;Beverage2:2;Beer:2;Beer2;Taco:2;Burrito:2	
+	Base.Lobster	30	Seafood	Лобстер	-40		120	28	7	0			Taco:5|Cooked;Burrito:10|Cooked;Pizza:10;Soup:20;Stew:20;Pie:10;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:5|Cooked;Roasted Vegetables:20;RicePot:20;RicePan:20;PastaPot:20;PastaPan:20	
+	Base.Lollipop			Леденец	-5		40	0	0,5	10				
+	Base.Macandcheese			Макароны с сыром	-40		690	21	12	126				
+	Base.Maggots			Личинки	-1		1,5	0,25	0,05	0				
+	Base.Maggots2			Личинки	-1		1,5	0,25	0,05	0				
+	Base.Maki			Роллы	-8		12	2	1	5				
+	Base.Mango	90	Fruits	Манго	-20	-13	252	3,89	1,09	78,7			Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10;PieSweet:10;Oatmeal:5	
+	Base.MapleSyrup		NoExplicit	Кленовый сироп	-45		1100	0	0	270			Pancakes:3;Waffles:3;ConeIcecream:3;Oatmeal:3;Beverage:3;Beverage2:3;Oatmeal:3	
+	Base.Margarine		NoExplicit	Маргарин	-24		3255	1	368	4			Pancakes:4;Waffles:4;Sandwich:2;Sandwich Baguette:2;Stir fry Griddle Pan:4;Stir fry:4;Roasted Vegetables:4;PastaPot:4;PastaPan:4;Taco:2;Burrito:2;Toast:2;Oatmeal:2	
+	Base.Marinara		NoExplicit	Соус маринара	-10		350	10	7,5	55			Pizza:5;Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2	
+	Base.Marshmallows		NoExplicit	Маршмеллоу	-5		30	0,5	0	8			Cake:5;Pancakes:5;Waffles:5;ConeIcecream:5;PieSweet:5	
+	Base.MeatDumpling	240	Meat	Дамплинг	-10		28	15	3	8			Soup:15;Stew:15	
+	Base.MeatPatty	240	Beef	Котлета	-40		380	46	30	0			Stew:20;Pie:20;Burger:10|Cooked;Taco:10|Cooked;Burrito:10|Cooked	
+	Base.MeatSteamBun			Паровая булочка с мясом	-15		35	18	4	12				
+	Base.Milk	120	Milk	Молоко	-10	-100	110	8	2,5	13			HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Beverage:2;Beverage2:2;Oatmeal:2;Soup:5;Stew:5	
+	Base.Millipede			Многоножка	-5		60	15,21	6,5	3,5				
+	Base.Millipede2			Многоножка	-5		60	15,21	6,5	3,5				
+	Base.MincedMeat	240	Beef	Фарш	-40		300	46	30	0			Pizza:20;Stew:20;Pie:20;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Taco:10|Cooked;Burrito:10|Cooked	
+	Base.MintCandy			Мятная конфета	-2		60	0	0	15				
+	Base.MixedVegetables	50	Vegetables	Овощная смесь	-20	-5	271	9	0	37			Soup:10;Stew:10;Stir fry Griddle Pan:10;Stir fry:10;Roasted Vegetables:10;RicePot:10;RicePan:10;Omelette:5	
+	Base.Modjeska			Конфета моджеска	-10		60	0	0	15				
+	Base.MonarchCaterpillar			Гусеница	-5		27	27,55	20,24	3				
+	Base.MuffinFruit			Фруктовый маффин	-7		120	14,53	12,61	10,45				
+	Base.MuffinGeneric			Маффин	-7		120	14,53	12,61	10,45				
+	Base.Muffintray_Biscuit				-23		960	6	48	132	TRUE			
+	Base.Mugfull			Кружка горячего напитка	-5	-50	4	0,12	0	0,75				
+	Base.MushroomGeneric1	330	Mushroom	Грибы	-13	-1	30	2,04	0,24	2,12			Pizza:13;Burger:13;Omelette:13;Stir fry Griddle Pan:13;Stir fry:13;Stew:13;Pie:13;Soup:13;Sandwich:13;Sandwich Baguette:13;Salad:13;Roasted Vegetables:13;RicePot:13;RicePan:13;PastaPot:13;PastaPan:13;HotDrink:6;HotDrinkRed:6;HotDrinkWhite:6;HotDrinkSpiffo:6;HotDrinkTea:6	
+	Base.MushroomGeneric2	330	Mushroom	Грибы	-13	-1	30	2,04	0,24	2,12			Pizza:13;Burger:13;Omelette:13;Stir fry Griddle Pan:13;Stir fry:13;Stew:13;Pie:13;Soup:13;Sandwich:13;Sandwich Baguette:13;Salad:13;Roasted Vegetables:13;RicePot:13;RicePan:13;PastaPot:13;PastaPan:13;HotDrink:6;HotDrinkRed:6;HotDrinkWhite:6;HotDrinkSpiffo:6;HotDrinkTea:6	
+	Base.MushroomGeneric3	330	Mushroom	Грибы	-15	-1	32	2,36	0,32	2,56			Pizza:15;Burger:15;Omelette:15;Stir fry Griddle Pan:15;Stir fry:15;Stew:15;Pie:15;Soup:15;Sandwich:15;Sandwich Baguette:15;Salad:15;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5	
+	Base.MushroomGeneric4	330	Mushroom	Грибы	-13	-1	30	2,04	0,24	2,12			Pizza:13;Burger:13;Omelette:13;Stir fry Griddle Pan:13;Stir fry:13;Stew:13;Pie:13;Soup:13;Sandwich:13;Sandwich Baguette:13;Salad:13;Roasted Vegetables:13;RicePot:13;RicePan:13;PastaPot:13;PastaPan:13;HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5	
+	Base.MushroomGeneric5	330	Mushroom	Грибы	-15	-1	32	2,36	0,32	2,56			Pizza:15;Burger:15;Omelette:15;Stir fry Griddle Pan:15;Stir fry:15;Stew:15;Pie:15;Soup:15;Sandwich:15;Sandwich Baguette:15;Salad:15;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5	
+	Base.MushroomGeneric6	330	Mushroom	Грибы	-13	-1	30	2,04	0,24	2,12			Pizza:13;Burger:13;Omelette:13;Stir fry Griddle Pan:13;Stir fry:13;Stew:13;Pie:13;Soup:13;Sandwich:13;Sandwich Baguette:13;Salad:13;Roasted Vegetables:13;RicePot:13;RicePan:13;PastaPot:13;PastaPan:13;HotDrink:6;HotDrinkRed:6;HotDrinkWhite:6;HotDrinkSpiffo:6;HotDrinkTea:6	
+	Base.MushroomGeneric7	330	Mushroom	Грибы	-13	-1	32	2,04	0,24	2,12			Pizza:13;Burger:13;Omelette:13;Stir fry Griddle Pan:13;Stir fry:13;Stew:13;Pie:13;Soup:13;Sandwich:13;Sandwich Baguette:13;Salad:13;Roasted Vegetables:13;RicePot:13;RicePan:13;PastaPot:13;PastaPan:13;HotDrink:6;HotDrinkRed:6;HotDrinkWhite:6;HotDrinkSpiffo:6;HotDrinkTea:6	
+	Base.Mustard		NoExplicit	Горчица	-20		510	0	0	0			Sandwich:2;Sandwich Baguette:2;Burger:2;Salad:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2	
+	Base.MuttonChop	240	Meat	Баранья отбивная	-30		234	33	11	0,08			Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15	
+	Base.Nettles	-1	Herb	Крапива	-4		50	2	0	15			Salad:2;HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Soup:2	
+	Base.NoodleSoup			Суп с лапшой	-10		52	10	14	0				
+3	Base.Oatmeal			Миска овсянки	-8		300	15	9	81				Ананас; Банан; Вишня; Груша; Йогурт; Кленовый сироп; Кленовый сироп; Клубника; Коричневый сахар; Красивоплодник; Мёд; Манго; Маргарин; Мармелад; Масло; Молоко; Открыт. консерв. ананасы; Открыт. консерв. персики; Открыт. консерв. фруктовый коктейль; Открыт. сгущёнка; Падуб; Падуб мутовчатый; Пакетик сахара; Персик; Сахар; Фруктовый джем; Яблоко; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды
+	Base.OatsRaw	80		Банка овсянки	-50		1500	75	45	405				
+	Base.OilOlive	180	Oil	Оливковое масло	-30		2480	0	150	0			Pizza:5;Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Stir fry Griddle Pan:2;Stir fry:2;Salad:2;Roasted Vegetables:2;Taco:2;Burrito:2;Soup:2;Stew:2	
+	Base.OilVegetable	180	Oil	Растительное масло	-30		2120	0	130	0			Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Stir fry Griddle Pan:2;Stir fry:2;Salad:2;Roasted Vegetables:2;Taco:2;Burrito:2;Soup:5;Stew:5	
+3	Base.OmeletteRecipe	120	Egg	Омлет	-14		123	11	8,33	2			Sandwich:14|Cooked;Sandwich Baguette:14|Cooked;Burger:14|Cooked;Burrito:14|Cooked;Taco:7|Cooked	Авокадо; Базилик; Баклажан; Брокколи; Горох; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Гуакамоле; Зелёный лук; Картофель; Кинза; Кукуруза; Кусочек ветчины; Кусочки бекона; Ломтики бекона; Лук-порей; Луковые кольца; Миска бобов; Овощная смесь; Одуванчики; Орегано; Острый соус; Открыт. консерв. бобы; Открыт. консерв. болоньезе; Открыт. консерв. говядина; Открыт. консерв. горох; Открыт. консерв. грибной суп; Открыт. консерв. картофель; Открыт. консерв. кукуруза; Открыт. консерв. морковь; Открыт. консерв. мясо с чили; Открыт. консерв. сардины; Открыт. консерв. томат; Открыт. консерв. тунец; Пережаренная фасоль; Петрушка; Розмарин; Сладкий перец; Томат; Томатная паста; Хабанеро; Халапеньо; Хот-дог; Цукини; Чабрец; Черемша; Шалфей
+	Base.Onigiri			Онигири	-10		25	18	4	12				
+	Base.Onion	50	Vegetables	Лук	-10		28	0,77	0,07	6,54				
+	Base.OnionRings	50	Vegetables	Луковые кольца	-5		30	1	3	12			Pizza:5;Omelette:5;Soup:5;Stew:5;Pie:5;Stir fry Griddle Pan:5;Stir fry:5;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;Roasted Vegetables:5;RicePot:5;RicePan:5;PastaPot:5;PastaPan:5;Taco:5;Burrito:5	
+	Base.OpenBeans	120	Bean	Открыт. консерв. бобы	-24		170	7	1	33		TRUE	Omelette:8;Soup:24;Stew:24;RicePot:24;RicePan:24;Sandwich:8;Sandwich Baguette:8;Toast:8;Salad:8	
+	Base.Orange	30	Fruits	Апельсин	-12	-8	65	1	0,3	16,27			Cake:12;FruitSalad:6;Pancakes:6;Waffles:6;Muffin:6;PieSweet:12;Salad:6	
+	Base.Oregano	-1	Herb	Орегано	-1		0,1	0	0	0			Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;Roasted Vegetables:1;Salad:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1	
+	Base.Oysters	30	Seafood	Устрицы	-5		15	22	4	10			Pizza:5;Soup:5;Stew:5;Pie:5;Stir fry Griddle Pan:5;Stir fry:5;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:5|Cooked;Salad:5|Cooked;Roasted Vegetables:5;RicePot:5;RicePan:5;PastaPot:5;PastaPan:5	
+	Base.OystersFried	30	Seafood	Жареные устрицы	-6		25	20	4	11			Pizza:6;Soup:6;Stew:6;Pie:6;Stir fry Griddle Pan:6;Stir fry:6;Sandwich:6|Cooked;Sandwich Baguette:6|Cooked;Burger:6|Cooked;Salad:6|Cooked;Roasted Vegetables:6;RicePot:6;RicePan:6;PastaPot:6;PastaPan:6	
+	Base.Painauchocolat			Шоколатин	-2		414	6,9	21,1	47,4				
+2	Base.PanFriedVegetables			Стир-фрай			516	4,8	41,5	36				
+2	Base.PanFriedVegetables2			Жаркое			180	6	2,5	36				
+1	Base.Pancakes			Блины	-16		210	6	2	42				Ананас; Апельсин; Банан; Виноград; Вишня; Грейпфрут; Груша; Какао-порошок; Кленовый сироп; Клубника; Красивоплодник; Куски арбуза; Лайм; Лимон; Ломтик арбуза; Мёд; Манго; Маргарин; Мармелад; Маршмеллоу; Масло; Открыт. консерв. ананасы; Открыт. консерв. персики; Открыт. консерв. фруктовый коктейль; Открыт. консерв. фруктовый напиток; Открыт. сгущёнка; Падуб; Падуб мутовчатый; Персик; Сахарная глазурь; Фруктовый джем; Шоколадная крошка; Яблоко; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды
+	Base.PancakesCraft			Блины	-20		210	6	2	42				
+2	Base.PancakesRecipe			Блины	-20		210	6	2	42				
+	Base.Panfish			Рыба-солнце	-15		155	25	2	1				
+	Base.Parsley	-1	Herb	Петрушка	-1		0,1	0	0	0			Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Roasted Vegetables:1;Salad:1;Sandwich:1;Sandwich Baguette:1;Stew:1;Soup:1;Bread:1;Toast:1;Burger:1	
+	Base.Pasta			Спагетти	-60	60	3360	112	16	656				
+	Base.PastaBowl			Миска спагетти	-12		330	24	6,5	41				
+2	Base.PastaPan			Спагетти			560	18,66	2,66	109,3				
+2	Base.PastaPot			Спагетти			560	18,66	2,66	109,3				
+	Base.Peach	40	Fruits	Персик	-12	-5	58	1,36	0,38	14,31			Cake:12;FruitSalad:6;Pancakes:6;Waffles:6;Muffin:6;PieSweet:12;Oatmeal:5	
+	Base.PeanutButter		NoExplicit	Арахисовое масло	-25		2660	84	224	128			Soup:5;Stir fry Griddle Pan:5;Stir fry:5;Sandwich:5;Sandwich Baguette:5;Toast:5;ConeIcecream:5	
+	Base.PeanutButterSandwich			Бутерброд с арахисовым маслом	-17		250	7	25	14				
+	Base.Peanuts	180	Nut	Арахис	-8		161	7,31	13,96	4,57			Soup:8;Stir fry Griddle Pan:8;Stir fry:8;Salad:4;RicePot:8;RicePan:8;ConeIcecream:4	
+	Base.Pear	40	Fruits	Груша	-16	-7	75	0,27	0,21	20,13			Cake:8;FruitSalad:8;Pancakes:8;Waffles:8;Muffin:8;PieSweet:8;Oatmeal:4;Salad:8	
+	Base.Peas	150	Vegetables	Горох	-20	-5	119	7,95	0,85	20,45			Pie:10;Omelette:5;Soup:10;Stew:10;Stir fry Griddle Pan:10;Stir fry:10;Roasted Vegetables:10;RicePot:10;RicePan:10;Salad:5	
+	Base.Pepper		NoExplicit	Перец	-10	20							Pizza:1;Soup:1;Stew:1;Pie:1;Stir fry Griddle Pan:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1;Sandwich:1;Sandwich Baguette:1;Taco:1;Burrito:1;Beverage:1;Beverage2:1;Beer:1;Beer2:1	
+	Base.PepperHabanero	-1	HotPepper	Хабанеро	-2		15	0	0,21	0			Pizza:2;Omelette:1;Burger:1;Soup:2;Stew:2;Stir fry Griddle Pan:2;Stir fry:2;Sandwich:1;Sandwich Baguette:1;Salad:1;Roasted Vegetables:2;PastaPot:2;PastaPan:2;RicePot:2;RicePan:2;Taco:1;Burrito:1;Beverage:1;Beverage2:1;Beer:1;Beer2:1	
+	Base.PepperJalapeno	-1	HotPepper	Халапеньо	-2		15	0	0,21	0			Pizza:2;Omelette:1;Burger:1;Soup:2;Stew:2;Stir fry Griddle Pan:2;Stir fry:2;Sandwich:1;Sandwich Baguette:1;Salad:1;Roasted Vegetables:2;PastaPot:2;PastaPan:2;RicePot:2;RicePan:2;Taco:1;Burrito:1;Beverage:1;Beverage2:1;Beer:1;Beer2:1	
+	Base.Peppermint			Мятная конфета	-10		16,6	0	0	4,33				
+	Base.Pepperoni	180	Sausage	Пепперони	-20		180	15,62	4,35	0			Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5;Sandwich Baguette:5;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20	
+	Base.Perch			Окунь	-15		165	35	1	1				
+	Base.Perogies			Вареники	-7		160	5	2	31				
+	Base.Pickles	30	NoExplicit	Соленья	-5		5	0	0	1			Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;RicePot:5;RicePan:5;PastaPot:5;PastaPan:5;ConeIcecream:5	
+	Base.Pie			Кусочек пирога	-30		404	54,53	20,61	20,45				
+	Base.PieApple			Яблочный пирог	-30		404	54,53	20,61	20,45				
+	Base.PieBlueberry			Черничный пирог	-30		404	54,53	20,61	20,45				
+	Base.PieKeyLime			Лаймовый пирог	-30		404	54,53	20,61	20,45				
+	Base.PieLemonMeringue			Лимонный пирог с безе	-30		404	54,53	20,61	20,45				
+1	Base.PiePrep			Заготовка для пирога	-15		189	9,6	11,5	11,2				Авокадо; Ананас; Апельсин; Баклажан; Банан; Баранья отбивная; Бекон; Брокколи; Васаби; Виноградная листва; Вишня; Вяленое мясо; Горох; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Груша; Дайкон; Жареные устрицы; Кальмар; Картофель; Клубника; Кольца кальмара; Котлета; Красивоплодник; Креветка; Курица; Кусочки бекона; Лайм; Лимон; Лобстер; Ломтики бекона; Лосось; Лук-порей; Луковые кольца; Мёд; Манго; Маршмеллоу; Морковь; Мясо кролика; Мясо маленького животного; Мясо птицы; Открыт. консерв. ананасы; Открыт. консерв. картофель; Открыт. консерв. морковь; Открыт. консерв. персики; Открыт. консерв. томат; Открыт. консерв. фруктовый коктейль; Открыт. сгущёнка; Падуб; Падуб мутовчатый; Перец; Персик; Плоды шиповника; Подливка; Речной рак; Рыба жареная; Сахарная глазурь; Свиная отбивная; Сладкий перец; Соль; Томат; Томатная паста; Тыква; Устрицы; Фарш; Филе рыбы; Цукини; Черемша; Шоколад; Шоколадная крошка; Яблоко; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды
+	Base.PiePumpkin			Кусок тыквенного пирога	-30		404	54,53	20,61	20,45				
+2	Base.PieWholeRaw			Пирог	-15		189	9,6	11,5	11,2				
+2	Base.PieWholeRawSweet			Пирог	-15		189	9,6	11,5	11,2				
+	Base.Pike			Щука	-15		159	35	1	1				
+	Base.Pillbug			Мокрица	-1		1,5	0,25	0,05	0				
+	Base.Pineapple	50	Fruits	Ананас	-24	-13	452	4,89	1,09	118,7			Pizza:12;Cake:12;FruitSalad:8;Pancakes:8;Waffles:8;Muffin:8;ConeIcecream:4;PieSweet:12;Oatmeal:4	
+	Base.Pizza			Пицца	-25		990	42	39	120				
+3	Base.PizzaRecipe			Пицца	-80		1529	41,8	34	231				Ананас; Базилик; Баклажан; Бекон; Брокколи; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Жареные устрицы; Зелёный лук; Кальмар; Кинза; Кольца кальмара; Креветка; Курица; Кусочек ветчины; Кусочки бекона; Лобстер; Ломтик болонской колбасы; Ломтик салями; Ломтики бекона; Лосось; Луковые кольца; Одуванчики; Оливковое масло; Орегано; Острый соус; Открыт. консерв. ананасы; Открыт. консерв. говядина; Открыт. консерв. сардины; Открыт. консерв. томат; Пепперони; Перец; Петрушка; Речной рак; Сладкий перец; Соль; Сосиска; Соус маринара; Стейк; Сыр; Томат; Томатная паста; Тофу; Устрицы; Фарш; Филе рыбы; Хабанеро; Халапеньо; Цукини; Черемша
+	Base.PizzaWhole			Пицца	-150		5940	252	234	720				
+	Base.Plonkies			Бисквитное пирожное	-10		200	1,8	8	30				
+	Base.Pop	40	SoftDrink	Газировка	-8	-60	140	0	0	39			Beverage:4;Beverage2:4	
+	Base.Pop2	40	SoftDrink	Газировка	-8	-60	140	0	0	39			Beverage:4;Beverage2:4	
+	Base.Pop3	40	SoftDrink	Газировка	-8	-60	140	0	0	39			Beverage:4;Beverage2:4	
+	Base.PopBottle	40	SoftDrink	Бутылка газировки	-12	-85	400	0	0	104			Beverage:4;Beverage2:4	
+	Base.Popcorn			Попкорн	-10	10	120	3,57	2,69	20,41				
+	Base.PorkChop	280	Meat	Свиная отбивная	-30		150	25	6	0			Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15	
+	Base.PotOfSoup			Кастрюля супа	-30	-30	202	14	4,5	25				
+2	Base.PotOfSoupRecipe			Кастрюля супа	-40	-40	202	14	4,5	25				
+2	Base.PotOfStew			Кастрюля рагу	-40	-40	310	3,8	14,5	26,3				
+	Base.PotatoPancakes			Драники	-15		268	6	15	35				
+	Base.Pretzel			Крендельки	-5		80	1	2	11				
+	Base.Processedcheese	120	Cheese	Плавленый сыр	-5		70	4	6	0			Sandwich:5;Sandwich Baguette:5;Burger:5;RicePot:5;RicePan:5;PastaPot:5;PastaPan:5;Bread:5;Toast:5	
+	Base.Pumpkin	60	NoExplicit	Тыква	-40		404	34,53	20,61	20,45			PieSweet:20	
+	Base.QuaggaCakes			Полосатое пирожное	-10		200	1,8	8	30				
+	Base.Rabbitmeat	120	Game	Мясо кролика	-30		969	185	20	20			Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15	
+	Base.Ramen	180	Pasta	Сухая лапша	-10	40	52	10	14	0			Soup:10;Stir fry Griddle Pan:10;Stir fry:10	
+	Base.RamenBowl			Миска лапши	-10		52	10	14	0				
+	Base.RefriedBeans	120	Bean	Пережаренная фасоль	-10		70	10	1,5	25			Burrito:10;Taco:5;Omelette:5;Burger:5;Sandwich:5;Sandwich Baguette:5	
+	Base.Rice			Рис	-60	60	2880	72	0	648				
+	Base.RiceBowl			Миска риса	-12		160	3	0	36				
+2	Base.RicePan	80		Рис			720	78	48	0				
+	Base.RicePaper			Рисовая бумага	-4		10	0	0	0				
+2	Base.RicePot	80		Рис			720	78	48	0				
+	Base.RiceVinegar		NoExplicit	Рисовый уксус	-20		20	0	0	0			Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Stir fry Griddle Pan:2;Stir fry:2;Salad:2;Roasted Vegetables:2;Taco:2;Burrito:2	
+	Base.RockCandy	20	Candy	Сахар-кандис на палочке	-5		40	0	0	60			Cake:5;ConeIcecream:5	
+	Base.Rosehips	20	Berry	Плоды шиповника	-6		81	2	0	19			HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Salad:3;FruitSalad:3;Soup:6;PieSweet:6;Bread:6	
+	Base.Rosemary	-1	Herb	Розмарин	-1		0,1	0	0	0			Omelette:1;Roasted Vegetables:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1;Sandwich:1;Sandwich Baguette:1;PastaPan:1;PastaPot:1	
+	Base.SackProduce_Apple			Мешок яблок							TRUE			
+	Base.SackProduce_BellPepper			Мешок болгарского перца							TRUE			
+	Base.SackProduce_Broccoli			Мешок брокколи							TRUE			
+	Base.SackProduce_Cabbage			Мешок капусты							TRUE			
+	Base.SackProduce_Carrot			Мешок моркови							TRUE			
+	Base.SackProduce_Cherry			Мешок вишни							TRUE			
+	Base.SackProduce_Corn			Мешок кукурузы							TRUE			
+	Base.SackProduce_Eggplant			Мешок баклажанов							TRUE			
+	Base.SackProduce_Grapes			Мешок винограда							TRUE			
+	Base.SackProduce_Leek			Мешок лука-порея							TRUE			
+	Base.SackProduce_Lettuce			Мешок салата-латука							TRUE			
+	Base.SackProduce_Onion			Мешок лука							TRUE			
+	Base.SackProduce_Peach			Мешок персиков							TRUE			
+	Base.SackProduce_Pear			Мешок груш							TRUE			
+	Base.SackProduce_Potato			Мешок картошки							TRUE			
+	Base.SackProduce_RedRadish			Мешок редиса							TRUE			
+	Base.SackProduce_Strawberry			Мешок клубники							TRUE			
+	Base.SackProduce_Tomato			Мешок томатов							TRUE			
+	Base.Sage	-1	Herb	Шалфей	-1		0,1	0	0	0			Omelette:1;Roasted Vegetables:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1;Sandwich:1;Sandwich Baguette:1;PastaPan:1;PastaPot:1	
+	Base.Salami	180	Sausage	Салями	-20		330	22	26	2				
+	Base.SalamiSlice	180	Sausage	Ломтик салями	-4		66	4,4	5,2	0,4			Pizza:4;Stew:4;Stir fry Griddle Pan:4;Stir fry:4;Sandwich:4;Sandwich Baguette:4;Roasted Vegetables:4;PastaPot:4;PastaPan:4;RicePot:4;RicePan:4	
+	Base.Salmon	50	Fish	Лосось	-30		270	34,28	10,55	0			Pizza:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;Taco:8|Cooked;Burrito:16|Cooked	
+	Base.Salt		NoExplicit	Соль	-10	20							Pizza:1;Soup:1;Stew:1;Pie:1;Stir fry Griddle Pan:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1;Sandwich:1;Sandwich Baguette:1;Taco:1;Burrito:1;Beverage:1;Beverage2:1;Beer:1;Beer2:1	
+2	Base.Sandwich			Сэндвич	-10		360	5,8	8,5	42				
+	Base.Sausage	180	Sausage	Сосиска	-20		180	15,62	4,35	0			Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Burger:20|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:5|Cooked;Burrito:10|Cooked	
+	Base.SawflyLarva			Гусеница	-5		27	27,55	20,24	3				
+	Base.Seaweed		NoExplicit	Морские водоросли	-3		3	0	0	0			Soup:3	
+	Base.Shrimp	30	Seafood	Креветка	-10		80	10	7	0			Pizza:10;Soup:10;Stew:10;Pie:10;Stir fry Griddle Pan:10;Stir fry:10;Sandwich:10|Cooked;Sandwich Baguette:10|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10;Burrito:10|Cooked;Taco:5|Cooked	
+	Base.ShrimpDumpling	30	Seafood	Дамплинг с креветкой	-15		120	15	7	5			Soup:15;Stew:15	
+	Base.ShrimpFried	30	Seafood	Жареная креветка	-15		160	16	14	17			Sandwich:15;Sandwich Baguette:15;Salad:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;PastaPot:15;PastaPan:15;Stir fry Griddle Pan:15;Stir fry:15;Burrito:15;Taco:5	
+	Base.ShrimpFriedCraft	30	Seafood	Жареная креветка	-15		160	16	14	17			Sandwich:15|Cooked;Sandwich Baguette:15|Cooked;Salad:15|Cooked;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;Stir fry Griddle Pan:15;Stir fry:15;Burrito:15|Cooked;Taco:5|Cooked	
+	Base.SilkMothCaterpillar			Гусеница	-5		27	27,55	20,24	3				
+	Base.Slug			Слизняк	-5		90	17,41	1,9	2,11				
+	Base.Slug2			Слизняк	-5		90	17,41	1,9	2,11				
+	Base.Smallanimalmeat	120	Game	Мясо маленького животного	-15		201	45	7,25	5			Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15	
+	Base.Smallbirdmeat	120	Game	Мясо птицы	-15		261	90	8,25	5			Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15	
+	Base.Smore			Смор	-10		200	3	10	33				
+	Base.Snail			Улитка	-5		90	17,41	1,9	2,11				
+	Base.SnoGlobes			Розовое пирожное	-10		200	1,8	8	30				
+	Base.SoupBowl			Миска супа	-15	-15	124	6,3	4,7	15				
+	Base.Soysauce		NoExplicit	Соевый соус	-10	40	20	0	0	0			Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Stir fry Griddle Pan:2;Stir fry:2;Salad:2;Roasted Vegetables:2	
+	Base.Springroll			Спринг-ролл	-20		180	9	17	22				
+	Base.Squid	30	Seafood	Кальмар	-30		205	32,52	13	1			Pizza:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;Taco:5|Cooked;Burrito:10|Cooked	
+	Base.SquidCalamari	30	Seafood	Кольца кальмара	-10		105	18	0	3			Pizza:19;Soup:10;Stew:10;Pie:10;Stir fry Griddle Pan:10;Stir fry:10;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10;Taco:5|Cooked;Burrito:10|Cooked	
+	Base.Steak	240	Beef	Стейк	-40		220	31,62	9,35	0			Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Salad:10|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:20|Cooked;Burrito:20|Cooked	
+	Base.StewBowl			Миска рагу	-15		250	23	3	34				
+	Base.Sugar	0	Sugar	Сахар	-30		387	0	0	100			HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1;Toast:1;Oatmeal:1;Beverage:1;Beverage2:1	
+	Base.SugarBrown	0	Sugar	Коричневый сахар	-30		337	0	0	90			HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1;Toast:1;Oatmeal:1;Beverage:1;Beverage2:1	
+	Base.SugarPacket	0	Sugar	Пакетик сахара	-1		11	0	0	3			HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1;Toast:1;Oatmeal:1;Beverage:1;Beverage2:1	
+	Base.SunflowerSeeds	120	Seed	Семечки подсолнуха	-5		155	4,34	5,48	14,12			Salad:1;Bread:5;Muffin:5	
+	Base.SushiEgg			Суши с яйцом	-12		19	12	3	7				
+	Base.SushiFish			Суши	-12		19	10	0	5				
+	Base.SwallowtailCaterpillar			Гусеница	-5		27	27,55	20,24	3				
+	Base.TVDinner			Полуфабрикат	-23		670	30	25	81				
+	Base.Taco			Тако	-25		400	32	28	80				
+2	Base.TacoRecipe			Тако	-5		55	0,8	3	8,4				
+1	Base.TacoShell			Лепёшка для тако	-5		55	0,8	3	8,4				Авокадо; Бекон; Бутылка майонеза; Гуакамоле; Жареная креветка; Жареная креветка; Жареная курица; Жареный тофу; Кальмар; Капуста; Кетчуп; Кинза; Кольца кальмара; Котлета; Креветка; Кукуруза; Куриные наггетсы; Курица; Кусочки бекона; Лайм; Лимон; Лобстер; Ломтики бекона; Лосось; Луковые кольца; Маргарин; Масло; Оливковое масло; Омлет; Омлет; Острый соус; Открыт. консерв. кукуруза; Открыт. консерв. мясо с чили; Открыт. консерв. тунец; Пережаренная фасоль; Перец; Растительное масло; Речной рак; Рисовый уксус; Рыба жареная; Сало; Сладкий перец; Соль; Сосиска; Стейк; Сыр; Томат; Тофу; Фарш; Филе рыбы; Хабанеро; Халапеньо; Хот-дог; Чёрная фасоль; Черемша; Яичница-болтунья; Яйцо варёное; Яйцо-пашот
+	Base.Teabag2	90	Tea	Чайный пакетик	-5	10							HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5	
+	Base.Termites			Термит	-1		2,5	0,5	0,5	0				
+	Base.Thistle	-1	Herb	Чертополох	-4		45	3	0	18			Salad:2;HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Soup:2	
+	Base.Thyme	-1	Herb	Чабрец	-1		0,1	0	0	0			Omelette:1;Roasted Vegetables:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1;Sandwich:1;Sandwich Baguette:1;PastaPan:1;PastaPot:1	
+	Base.TinnedBeans			Консерв. бобы			170	7	1	33	TRUE	TRUE		
+	Base.TinnedSoup			Консерв. суп			125	7,5	2,5	20	TRUE	TRUE		
+	Base.TinnedSoupOpen			Открыт. консерв. суп	-25		125	7,5	2,5	20		TRUE		
+3	Base.Toast			Тост	-8		177	5,9	2,22	33				Авокадо; Арахисовое масло; Зелёный лук; Коричневый сахар; Кусочки бекона; Ломтики бекона; Мёд; Маргарин; Мармелад; Масло; Миска бобов; Орегано; Открыт. консерв. бобы; Открыт. консерв. сардины; Пакетик сахара; Петрушка; Плавленый сыр; Розмарин; Сало; Сахар; Сахарная глазурь; Сыр; Фруктовый джем; Чабрец; Черемша; Шалфей
+	Base.Tofu	50	Vegetables	Тофу	-10		30	5	1	1			Pizza:10;Soup:10;Stew:10;Stir fry Griddle Pan:10;Stir fry:10;Burger:10;Salad:10;RicePot:10;RicePan:10;Roasted Vegetables:10;PastaPot:10;PastaPan:10;Taco:5;Burrito:10;Burger:10	
+	Base.TofuFried	50	Vegetables	Жареный тофу	-15		35	5	1	3			Soup:15;Stew:15;Stir fry Griddle Pan:15;Stir fry:15;Burger:15;Salad:15;RicePot:15;RicePan:15;Roasted Vegetables:15;PastaPot:15;PastaPan:15;Taco:5;Burrito:15;Burger:15	
+	Base.TomatoPaste		NoExplicit	Томатная паста	-15		120	0	8	32			Pizza:3;Soup:3;Stew:3;Omelette:3;RicePot:3;RicePan:3;PastaPot:3;PastaPan:3;Stir fry:3;Stir fry Griddle Pan:3;Pie:3;Salad:3;Roasted Vegetables:3;Sandwich:3;Sandwich Baguette:3	
+1	Base.Tortilla			Тортилья	-5		40	2	2	0				Авокадо; Бекон; Бутылка майонеза; Гуакамоле; Жареная креветка; Жареная креветка; Жареная курица; Жареный тофу; Кальмар; Капуста; Кастрюлька с рисом; Кастрюля с рисом; Кетчуп; Кинза; Кольца кальмара; Котлета; Креветка; Кукуруза; Куриные наггетсы; Курица; Кусочки бекона; Лайм; Лимон; Лобстер; Ломтики бекона; Лосось; Луковые кольца; Маргарин; Масло; Оливковое масло; Омлет; Омлет; Острый соус; Открыт. консерв. кукуруза; Открыт. консерв. мясо с чили; Открыт. консерв. тунец; Пережаренная фасоль; Перец; Растительное масло; Речной рак; Рисовый уксус; Рыба жареная; Сало; Сладкий перец; Соль; Сосиска; Стейк; Сыр; Томат; Тофу; Фарш; Филе рыбы; Хабанеро; Халапеньо; Хот-дог; Чёрная фасоль; Черемша; Яичница-болтунья; Яйцо варёное; Яйцо-пашот
+	Base.TortillaChips			Начос	-15		420	2,5	40	42				
+	Base.Trout	50		Форель	-15		230	36	10	1				
+	Base.TunaTin			Консерв. тунец			370	15	34	0	TRUE	TRUE		
+	Base.TunaTinOpen	50	Fish	Открыт. консерв. тунец	-18		370	15	34	0		TRUE	Omelette:9;Stew:18;Stir fry Griddle Pan:18;Stir fry:18;RicePot:18;RicePan:18;Sandwich:9;Sandwich Baguette:9;Taco:9;Burrito:18	
+	Base.Violets	-1	Flower	Фиалки	-2		27	1	0	7			Salad:2;HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2	
+1	Base.Waffles			Вафли	-15		80	3	4	13				Ананас; Апельсин; Банан; Виноград; Вишня; Грейпфрут; Груша; Какао-порошок; Кленовый сироп; Клубника; Красивоплодник; Куски арбуза; Лайм; Лимон; Ломтик арбуза; Мёд; Манго; Маргарин; Мармелад; Маршмеллоу; Масло; Открыт. консерв. ананасы; Открыт. консерв. персики; Открыт. консерв. фруктовый коктейль; Открыт. консерв. фруктовый напиток; Открыт. сгущёнка; Падуб; Падуб мутовчатый; Персик; Сахарная глазурь; Фруктовый джем; Шоколадная крошка; Яблоко; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды; Ягоды
+2	Base.WafflesRecipe			Вафли	-15		80	3	4	13				
+	Base.Wasabi		NoExplicit	Васаби	-10	20							Soup:1;Stew:1;Pie:1;Stir fry Griddle Pan:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1;Sandwich:1;Sandwich Baguette:1	
+1	Base.WaterPotPasta			Кастрюля со спагетти	-10		560	18,66	2,66	109,3				Авокадо; Базилик; Баклажан; Баранья отбивная; Бекон; Брокколи; Бутылка белого вина; Бутылка красного вина; Бутылка майонеза; Васаби; Вяленое мясо; Горчица; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Дайкон; Жареная креветка; Жареная креветка; Жареная креветка; Жареные устрицы; Жареный тофу; Зелёный лук; Кальмар; Кетчуп; Кольца кальмара; Креветка; Кукуруза; Курица; Кусочек ветчины; Кусочки бекона; Лобстер; Ломтик болонской колбасы; Ломтик салями; Ломтики бекона; Лосось; Лук-порей; Луковые кольца; Маргарин; Масло; Морковь; Мясо кролика; Мясо маленького животного; Мясо птицы; Оливковое масло; Орегано; Острый соус; Открыт. консерв. болоньезе; Открыт. консерв. говядина; Открыт. консерв. грибной суп; Открыт. консерв. кукуруза; Открыт. консерв. морковь; Открыт. консерв. томат; Пепперони; Перец; Петрушка; Плавленый сыр; Растительное масло; Речной рак; Рисовый уксус; Розмарин; Рыба жареная; Сало; Свиная отбивная; Сладкий перец; Соевый соус; Соленья; Соль; Сосиска; Соус маринара; Стейк; Сушёная белая фасоль; Сушёная красная фасоль; Сушёная чёрная фасоль; Сушёная чечевица; Сушёный колотый горох; Сушёный нут; Сыр; Томат; Томатная паста; Тофу; Устрицы; Филе рыбы; Хабанеро; Халапеньо; Цукини; Чабрец; Черемша; Шалфей; Яйца птиц; Яйцо
+1	Base.WaterPotRice	80	Rice	Кастрюля с рисом	-10		480	12	0	108			Soup:10;Stew:10;Burrito:10|Cooked	Авокадо; Арахис; Базилик; Баклажан; Баранья отбивная; Бекон; Брокколи; Бутылка майонеза; Васаби; Виноградная листва; Вяленое мясо; Горох; Горчица; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Дайкон; Жареная креветка; Жареная креветка; Жареные устрицы; Жареный тофу; Кальмар; Кетчуп; Кольца кальмара; Креветка; Кукуруза; Кукуруза; Курица; Кусочек ветчины; Кусочки бекона; Лимонная трава; Лобстер; Ломтик болонской колбасы; Ломтик салями; Ломтики бекона; Лосось; Лук-порей; Луковые кольца; Миска бобов; Морковь; Мясо кролика; Мясо маленького животного; Мясо птицы; Овощная смесь; Оливковое масло; Острый соус; Открыт. консерв. бобы; Открыт. консерв. болоньезе; Открыт. консерв. говядина; Открыт. консерв. горох; Открыт. консерв. грибной суп; Открыт. консерв. кукуруза; Открыт. консерв. морковь; Открыт. консерв. мясо с чили; Открыт. консерв. сардины; Открыт. консерв. томат; Открыт. консерв. тунец; Пепперони; Перец; Петрушка; Плавленый сыр; Подливка; Растительное масло; Речной рак; Рисовый уксус; Рыба жареная; Свиная отбивная; Сладкий перец; Соевый соус; Соленья; Соль; Сосиска; Соус маринара; Стейк; Сушёная белая фасоль; Сушёная красная фасоль; Сушёная чёрная фасоль; Сушёная чечевица; Сушёный колотый горох; Сушёный нут; Томат; Томатная паста; Тофу; Устрицы; Филе рыбы; Хабанеро; Халапеньо; Хот-дог; Цукини; Чёрная фасоль; Черемша; Эдамаме; Яйца птиц; Яйцо
+1	Base.WaterSaucepanPasta			Кастрюлька со спагетти	-10		560	18,66	2,66	109,3				Авокадо; Базилик; Баклажан; Баранья отбивная; Бекон; Брокколи; Бутылка белого вина; Бутылка красного вина; Бутылка майонеза; Васаби; Вяленое мясо; Горчица; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Дайкон; Жареная креветка; Жареная креветка; Жареная креветка; Жареные устрицы; Жареный тофу; Зелёный лук; Кальмар; Кетчуп; Кольца кальмара; Креветка; Кукуруза; Курица; Кусочек ветчины; Кусочки бекона; Лобстер; Ломтик болонской колбасы; Ломтик салями; Ломтики бекона; Лосось; Лук-порей; Луковые кольца; Маргарин; Масло; Морковь; Мясо кролика; Мясо маленького животного; Мясо птицы; Оливковое масло; Орегано; Острый соус; Открыт. консерв. болоньезе; Открыт. консерв. говядина; Открыт. консерв. грибной суп; Открыт. консерв. кукуруза; Открыт. консерв. морковь; Открыт. консерв. томат; Пепперони; Перец; Петрушка; Плавленый сыр; Растительное масло; Речной рак; Рисовый уксус; Розмарин; Рыба жареная; Сало; Свиная отбивная; Сладкий перец; Соевый соус; Соленья; Соль; Сосиска; Соус маринара; Стейк; Сыр; Томат; Томатная паста; Тофу; Устрицы; Филе рыбы; Хабанеро; Халапеньо; Цукини; Чабрец; Черемша; Шалфей; Яйца птиц; Яйцо
+1	Base.WaterSaucepanRice	80	Rice	Кастрюлька с рисом	-10		480	12	0	108			Soup:10;Stew:10;Burrito:10|Cooked	Авокадо; Арахис; Базилик; Баклажан; Баранья отбивная; Бекон; Брокколи; Бутылка майонеза; Васаби; Виноградная листва; Вяленое мясо; Горох; Горчица; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Грибы; Дайкон; Жареная креветка; Жареная креветка; Жареные устрицы; Жареный тофу; Кальмар; Кетчуп; Кольца кальмара; Креветка; Кукуруза; Кукуруза; Курица; Кусочек ветчины; Кусочки бекона; Лимонная трава; Лобстер; Ломтик болонской колбасы; Ломтик салями; Ломтики бекона; Лосось; Лук-порей; Луковые кольца; Миска бобов; Морковь; Мясо кролика; Мясо маленького животного; Мясо птицы; Овощная смесь; Оливковое масло; Острый соус; Открыт. консерв. бобы; Открыт. консерв. болоньезе; Открыт. консерв. говядина; Открыт. консерв. горох; Открыт. консерв. грибной суп; Открыт. консерв. кукуруза; Открыт. консерв. морковь; Открыт. консерв. мясо с чили; Открыт. консерв. сардины; Открыт. консерв. томат; Открыт. консерв. тунец; Пепперони; Перец; Петрушка; Плавленый сыр; Подливка; Растительное масло; Речной рак; Рисовый уксус; Рыба жареная; Свиная отбивная; Сладкий перец; Соевый соус; Соленья; Соль; Сосиска; Соус маринара; Стейк; Томат; Томатная паста; Тофу; Устрицы; Филе рыбы; Хабанеро; Халапеньо; Хот-дог; Цукини; Чёрная фасоль; Черемша; Эдамаме; Яйца птиц; Яйцо
+	Base.Watermelon	20	Fruits	Арбуз	-60	-140	1355	27,56	6,78	341,11	TRUE			
+	Base.WatermelonSliced	20	Fruits	Ломтик арбуза	-6	-20	135,5	2,75	0,67	34,11			Salad:6;FruitSalad:6;Pancakes:6;Waffles:6;Muffin:6	
+	Base.WatermelonSmashed	20	Fruits	Куски арбуза	-12	-25	271	5,51	1,35	68,2			Salad:12;FruitSalad:12;Pancakes:12;Waffles:12;Muffin:12	
+	Base.WhiskeyFull	80	Liquor	Бутылка виски	-20	-20	1500	0	0	0			Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4;Soup:4;Stew:4	
+	Base.WildEggs	45	Egg	Яйца птиц	-7		63	5,55	4,18	0,32			Stir fry Griddle Pan:7;Stir fry:7;Roasted Vegetables:7;RicePot:7;RicePan:7;PastaPot:7;PastaPan:7	
+	Base.WildGarlic2	-1	Herb	Черемша	-1		0,1	0	0	0			Pizza:1;Omelette:1;Soup:1;Stew:1;Pie:1;Stir fry Griddle Pan:1;Stir fry:1;Sandwich:1;Sandwich Baguette:1;Burger:1;Salad:1;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1;Taco:1;Burrito:1;Salad:1;Toast:1	
+	Base.Wine	80	Wine	Бутылка белого вина	-20	-20	481	0	0	0			Beverage:4;Beverage2:4;Soup:4;Stew:4;PastaPot:4;PastaPan:4;WineInGlass:4	
+	Base.Wine2	80	Wine	Бутылка красного вина	-20	-20	510	0	0	0			Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4;Soup:4;Stew:4;PastaPot:4;PastaPan:4;WineInGlass:4	
+2	Base.WineInGlass			Бокал для вина										
+	Base.WinterBerry	20	Berry	Падуб мутовчатый	-10	-1	23	4	0	5			Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5	
+	Base.Worm			Червь	-2		3	0,5	0,1	0				
+	Base.Yoghurt	120	NoExplicit	Йогурт	-10		30	5	1	1			Oatmeal:5	
+	Base.Zucchini	50	Vegetables	Цукини	-10	-10	33	2,37	0,63	6,10			Pizza:10;Soup:10;Stew:10;Pie:10;Stir fry Griddle Pan:10;Stir fry:10;Salad:10;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10;Sandwich:5;Sandwich Baguette:5;Omelette:5	
+	farming.Bacon	240	Bacon	Бекон	-12		160	10	14	0			Pizza:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:12|Cooked;Sandwich Baguette:12|Cooked;Burger:12|Cooked;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12;Taco:12;Burrito:12	
+	farming.BaconBits	240	Bacon	Кусочки бекона	-1		10	0,7	1	0			Pizza:1;Omelette:1;Stew:1;Pie:1;Stir fry Griddle Pan:1;Stir fry:1;Sandwich:1|Cooked;Sandwich Baguette:1|Cooked;Burger:1|Cooked;Salad:1|Cooked;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1;Taco:1|Cooked;Burrito:1|Cooked;Toast:1|Cooked	
+	farming.BaconRashers	240	Bacon	Ломтики бекона	-4		40	2,5	3,5	0			Pizza:4;Omelette:4;Stew:4;Pie:4;Stir fry Griddle Pan:4;Stir fry:4;Sandwich:4|Cooked;Sandwich Baguette:4|Cooked;Burger:4|Cooked;Salad:4|Cooked;Roasted Vegetables:4;RicePot:4;RicePan:4;PastaPot:4;PastaPan:4;Taco:4|Cooked;Burrito:4|Cooked;Toast:4|Cooked	
+	farming.BloomingBroccoli	40		Посев брокколи	-10		11	0,87	0,11	2,06				
+	farming.Cabbage	40	Vegetables	Капуста	-24	-10	178	9,14	0,71	41,41			Soup:12;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Burger:6;Salad:12;Roasted Vegetables:12;Taco:6;Burrito:6	
+	farming.MayonnaiseFull		NoExplicit	Бутылка майонеза	-30		3000	0	330	0			Sandwich:2;Sandwich Baguette:2;Burger:2;Salad:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Taco:2;Burrito:2	
+	farming.MayonnaiseHalf		NoExplicit		-10								Sandwich:2;Sandwich Baguette:2;Burger:2;Salad:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Taco:2;Burrito:2	
+	farming.Potato	60	Vegetables	Картофель	-18	-7	70	2,88	0,15	14,52			Omelette:9;Soup:18;Stew:18;Pie:18;Stir fry Griddle Pan:18;Stir fry:18;Salad:9;Roasted Vegetables:18	
+	farming.RedRadish	20	Vegetables	Редис	-3	-1	1	0	0	0,15			Soup:3;Stew:3;Stir fry Griddle Pan:3;Stir fry:3;Burger:3;Salad:3;Roasted Vegetables:3	
+	farming.RemouladeFull			Бутылка ремулада	-10		150	0	50	0				
+	farming.RemouladeHalf				-10									
+	farming.Salad			Салат	-60									
+	farming.Strewberrie	20	Berry	Клубника	-5	-1	4	0,08	0,04	0,92			Cake:5;FruitSalad:5;Pancakes:5;Waffles:5;ConeIcecream:5;Oatmeal:5;PieSweet:5;Salad:5;HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5	
+	farming.Tomato	50	Vegetables	Томат	-12	-8	14	1,29	0,21	3,53			Pizza:12;Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Burger:6;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12;Taco:6;Burrito:6	

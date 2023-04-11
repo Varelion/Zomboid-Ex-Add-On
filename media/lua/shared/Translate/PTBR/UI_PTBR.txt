@@ -1,0 +1,28 @@
+UI_PTBR = {
+	UI_optionscreen_binding_ExcrementumStatus = "Status do excremento",
+	UI_Exc_Say_Urinated_M = "Eu me mijei...",
+	UI_Exc_Say_Urinated_F = "Eu me mijei...",
+	UI_Exc_Say_Defecated_M = "Eu me caguei...",
+	UI_Exc_Say_Defecated_F = "Eeu me caguei...",
+	
+	UI_Exc_UrinationMini = "Bexiga:  %1  %2 мл",
+	UI_Exc_DefecationMini = "Côlon:  %1  %2%",
+	UI_Exc_InvTooltip_HasFeces = "Odor Fecal",
+	UI_Exc_InvTooltip_Feces = "Fezes Presas: %1",
+	UI_Exc_InvTooltip_Urine = "Odor de urina",
+	UI_Exc_InvTooltip_HasFecesRGB = "<RGB:0.7,0.3,0>Odor Fecal",
+	UI_Exc_InvTooltip_FecesRGB = "<RGB:0.7,0.3,0>Fezes Presas: %1",
+	UI_Exc_InvTooltip_UrineRGB = "<RGB:1,1,0>Odor de urina",
+	UI_Exc_StressChange = "Estresse: %1",
+	
+	UI_Exc_BoredomChange = "Tédio: %1",
+	UI_Exc_BoredomChangeP = "Tédio: +%1",
+	UI_Exc_UnhappynessChange = "Infelicidade: %1",
+	UI_Exc_UnhappynessChangeP = "Infelicidade: +%1",
+	UI_Exc_FatigueChange = "Fadiga: %1%",
+	UI_Exc_FatigueChangeP = "Fadiga: +%1%",
+	
+	UI_Exc_Poisoning = "Substância tóxica",
+	UI_Exc_Diarrhea = "Diarréia",
+	UI_Exc_Diuretic = "Diurético",
+}

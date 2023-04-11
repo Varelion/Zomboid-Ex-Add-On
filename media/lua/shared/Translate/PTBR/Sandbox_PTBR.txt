@@ -1,0 +1,31 @@
+Sandbox_PTBR = {
+	Sandbox_Excrementum = "Excremento",
+
+	Sandbox_Excrementum_StomachMultiplier = "Multiplicador de tempo estomacal",
+	Sandbox_Excrementum_StomachMultiplier_tooltip = "Quanto tempo é necessário para passar pelo estômago.O padrão é realista.",
+	
+	Sandbox_Excrementum_ChymeMultiplier = "Multiplicador de quimo (unidades de fome)",
+	Sandbox_Excrementum_ChymeMultiplier_tooltip = "Quanta comida deixa o estômago em forma de quimo a cada 10 minutos de jogo.",
+	
+	Sandbox_Excrementum_DefecateIntMinutes = "Tempo do Intestino (minutos)",
+	Sandbox_Excrementum_DefecateIntMinutes_tooltip = "Minutos de jogo para passar o intestino(entre o estômago e o cólon).",
+	
+	Sandbox_Excrementum_ColonMinutes = "Tempo do Cólon (minutos)",
+	Sandbox_Excrementum_ColonMinutes_tooltip = "Quanto tempo deve passar para começar a baixar o Limite do Cólon.",
+	
+	Sandbox_Excrementum_ColonBaseThreshold = "Limite do Cólon (porcentagem)",
+	Sandbox_Excrementum_ColonBaseThreshold_tooltip = "A porcentagem de preenchimento do cólon para o desejo de defecar.Alguns alimentos podem alterar esse limite.",
+	
+	Sandbox_Excrementum_UrinateIncreaseMultiplier = "Multiplicador de Urina",
+	Sandbox_Excrementum_UrinateIncreaseMultiplier_tooltip = "Multiplicador de produção de urina da água bebida.O padrão é 1:1, onde 10 unidades de sede = 100 ml.Também afeta o efeito diurético.",
+	
+	Sandbox_Excrementum_UrinatePassiveMultiplier = "Multiplicador passivo de urina",
+	Sandbox_Excrementum_UrinatePassiveMultiplier_tooltip = "Multiplicador passivo da produção de urina do metabolismo.Por padrão ~ 30% de toda a produção (se não houver vantagens, não haverá cols etc.).",
+
+	Sandbox_Excrementum_StomachVolume = "Volume do estômago (unidades de fome)",
+	Sandbox_Excrementum_StomachVolume_tooltip = "O volume do estômago que mantém o moodle verde que restaura a saúde.",
+
+	Sandbox_Excrementum_AdditionalStomachVolume = "Volume Adicional do Estômago",
+	Sandbox_Excrementum_AdditionalStomachVolume_tooltip = "O estômago pode estar distendido. A capacidade máxima é 'Volume do estômago' mais isso.Personagem não aceitará comida acima da capacidade máxima.",
+
+}

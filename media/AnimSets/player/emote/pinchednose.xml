@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default_exc.xml">
+	<m_Name>pinchednose</m_Name>
+	<m_AnimName>Bob_PinchedNose</m_AnimName>
+	<!--m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_EarlyTransitionOut>true</m_EarlyTransitionOut-->
+	<m_SpeedScale>0.1</m_SpeedScale>
+	<!--m_BlendTime>0.60</m_BlendTime-->
+	<m_Conditions>
+		<m_StringValue>pinchednose</m_StringValue>
+	</m_Conditions>
+	<!--m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights-->
+</animNode>

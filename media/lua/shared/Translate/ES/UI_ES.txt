@@ -1,0 +1,83 @@
+UI_ES = {
+	UI_optionscreen_binding_ExcrementumStatus = "Excrementum Status",
+	UI_Exc_Say_Urinated_M = "Me acabo de mear encima...",
+	UI_Exc_Say_Urinated_F = "Me acabo de mear encima...",
+	UI_Exc_Say_Defecated_M = "Me cagué encima...",
+	UI_Exc_Say_Defecated_F = "Me cagué encima...",
+	
+	UI_Exc_UrinationMini = "Vejiga:  %1  %2 ??",
+	UI_Exc_DefecationMini = "Colon:  %1  %2%",
+	UI_Exc_InvTooltip_HasFeces = "Olor Fecal",
+	UI_Exc_InvTooltip_Feces = "Heces Atascadas: %1",
+	UI_Exc_InvTooltip_Urine = "Olor a Orina",
+	UI_Exc_InvTooltip_HasFeces = "<RGB:0.7,0.3,0>Olor Fecal",
+	UI_Exc_InvTooltip_Feces = "<RGB:0.7,0.3,0>Heces Atascadas: %1",
+	UI_Exc_InvTooltip_Urine = "<RGB:1,1,0>Olor a Orina",
+	UI_Exc_StressChange = "Estrés: %1",
+	
+	UI_Exc_BoredomChange = "Aburrimiento: %1",
+	UI_Exc_BoredomChangeP = "Aburrimiento: +%1",
+	UI_Exc_UnhappynessChange = "Infelicidad: %1",
+	UI_Exc_UnhappynessChangeP = "Infelicidad: +%1",
+	UI_Exc_FatigueChange = "Fatiga: %1%",
+	UI_Exc_FatigueChangeP = "Fatiga: +%1%",
+	
+	UI_Exc_Poisoning = "Sustancia Tóxica",
+	UI_Exc_Diarrhea = "Diarrea",
+	UI_Exc_Diuretic = "Diurético",
+	
+	/* OPTION SOUNDS */
+	
+	UI_Exc_Option_PooSoundTypes = "Tipos de Sonidos al Defecar",
+	UI_Exc_Option_PooSoundTypes_Tooltip = "Exteriores significa nada de baños. Exteriores/Inodoros incluyen solo defecar.",
+	UI_Exc_Option_PooSoundTypes_All = "Todos",
+  UI_Exc_Option_PooSoundTypes_NoDefecateProcess = "Sin proceso de defecar",
+  UI_Exc_Option_PooSoundTypes_NoFart = "Sin gases",
+  UI_Exc_Option_PooSoundTypes_OnlyOutdoors = "Solo Exteriores",
+  UI_Exc_Option_PooSoundTypes_OnlyToilet = "Solo Inodoros",
+  UI_Exc_Option_PooSoundTypes_None = "Ninguno",
+  UI_Exc_Option_PooSoundTypes_NoneButPooSelf = "Solo Defecar",
+  UI_Exc_Option_PooSoundTypes_NoneButClothes = "Solo Ropas",
+
+  UI_Exc_Option_PeeSoundTypes = "Tipos de Sonidos al Orinar",
+	UI_Exc_Option_PeeSoundTypes_Tooltip = "Exteriores significa nada de baños. Exteriores/Inodoros incluyen solo orinar.",
+	UI_Exc_Option_PeeSoundTypes_All = "Todo",
+	UI_Exc_Option_PeeSoundTypes_OnlyOutdoors = "Solo Exteriores",
+	UI_Exc_Option_PeeSoundTypes_OnlyToilet = "Solo Inodoros",
+	UI_Exc_Option_PeeSoundTypes_None = "Ninguno",
+	UI_Exc_Option_PeeSoundTypes_NoneButPeeSelf = "Solo Orinar",
+	UI_Exc_Option_PeeSoundTypes_NoneButZip = "Solo ropa con cremallera",
+	
+	UI_Exc_Option_ExtractSound = "Sonido de extracción",
+	UI_Exc_Option_FlushSound = "Sonido del inodoro",
+	
+	UI_Exc_Option_GrowlSound = "Sonido de Gruñido",
+	UI_Exc_Option_GrowlSound_Tooltip = "Hay unas cuantas etapas de dolor con diferentes sonidos.",
+	UI_Exc_Option_GrowlSound_Always = "Siempre",
+	UI_Exc_Option_GrowlSound_Never = "Nunca",
+	UI_Exc_Option_GrowlSound_OnlyOnce = "Una vez",
+	UI_Exc_Option_GrowlSound_OnlyOnceOnEachStage = "Solo una vez por cada Etapa",
+	
+	/* OPTION MOODLES */
+	
+	UI_Exc_Option_StomachMoodle = "Moodle Estómago",
+	UI_Exc_Option_StomachMoodle_ShowAny = "Mostrar Cualquiera",
+  UI_Exc_Option_StomachMoodle_ShowOnlyRed = "Mostrar solo Rojo",
+  UI_Exc_Option_StomachMoodle_Hide = "Ocultar",
+
+  UI_Exc_Option_ColonMoodle = "Moodle Colon",
+  UI_Exc_Option_ColonMoodle_ShowAny = "Mostrar Cualquiera",
+  UI_Exc_Option_ColonMoodle_NoSmallIntestine = "Intestino Delgado NO",
+  UI_Exc_Option_ColonMoodle_NoGreen = "Mostrar solo Rojo",
+  UI_Exc_Option_ColonMoodle_Hide = "Ocultar",
+
+  UI_Exc_Option_UrineMoodle = "Moodle Orina",
+  UI_Exc_Option_UrineMoodle_ShowAny = "Mostrar Cualquiera",
+  UI_Exc_Option_UrineMoodle_ShowOnlyRed = "Mostrar solo Rojo",
+  UI_Exc_Option_UrineMoodle_ShowOnlyPain = "Mostrar solo Dolor",
+  UI_Exc_Option_UrineMoodle_Hide = "Ocultar",
+
+  UI_Exc_Option_SmellMoodle = "Moodle Olor",
+	UI_Exc_Option_NoAffectGameplay_Tooltip = "Esta opción no afecta el gameplay!",
+
+}

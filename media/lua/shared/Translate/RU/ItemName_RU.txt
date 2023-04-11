@@ -1,0 +1,15 @@
+ItemName_RU = {
+	ItemName_Base.HumanFeces = "Фекалии",
+	ItemName_Base.HumanFeces1 = "Фекалии",
+	ItemName_Base.HumanFeces2 = "Фекалии",
+	ItemName_Base.HumanFeces3 = "Фекалии",
+	
+	ItemName_Base.PaintTinDefecate = "Ведро с фекалиями",
+	ItemName_Base.BucketFullDefecate = "Ведро с фекалиями",
+	ItemName_Base.BucketDefecatedDirty = "Ведро грязное",
+	ItemName_Base.PaintTinDefecatedDirty = "Ведро грязное",
+
+	ItemName_Base.BathTowelDirty = "Полотенце грязное",
+	ItemName_Base.DishClothDirty = "Тряпка для посуды грязная",
+
+}

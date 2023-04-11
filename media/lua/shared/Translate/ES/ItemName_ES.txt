@@ -1,0 +1,6 @@
+ItemName_ES = {
+	ItemName_Base.HumanFeces = "Heces Humanas",
+	ItemName_Base.HumanFeces1 = "Heces Humanas",
+	ItemName_Base.HumanFeces2 = "Heces Humanas",
+	ItemName_Base.HumanFeces3 = "Heces Humanas",
+}

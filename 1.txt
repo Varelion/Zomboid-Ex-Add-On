@@ -1,0 +1,90 @@
+Reading file C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\scripts\farming.txt...
+end_of_file
+Found: 39 item definitions.
+Reading file C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\scripts\items.txt...
+ERROR (line 769): bad string format - Flour
+/*EvolvedRecipe = Soup:1;Stew:1,
+WARNING (line 773): no comma
+end_of_file
+Found: 92 item definitions.
+Reading file C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\scripts\items_food.txt...
+ERROR (line 3815): bad string format - CookieChocolateChip
+/*DaysFresh = 7,
+WARNING (line 3816): no comma
+ERROR (line 5925): bad string format - CookiesChocolate
+/*DaysFresh = 7,
+WARNING (line 5926): no comma
+ERROR (line 5945): bad string format - CookiesOatmeal
+/*DaysFresh = 7,
+WARNING (line 5946): no comma
+ERROR (line 5965): bad string format - CookiesShortbread
+/*DaysFresh = 7,
+WARNING (line 5966): no comma
+ERROR (line 7702): bad string format - GranolaBar
+/*DaysFresh = 40,
+WARNING (line 7703): no comma
+end_of_file
+Found: 469 item definitions.
+Reading file C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\scripts\newitems.txt...
+WARNING (line 2396): no comma
+WARNING (line 3710): no comma
+WARNING (line 4839): no comma
+end_of_file
+Found: 374 item definitions.
+Reading file C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\scripts\evolvedrecipes.txt...
+end_of_file
+Found: 38 item definitions.
+Reading file ...
+ERROR (line 290): duplicate Base.ColdCuppa
+ERROR (line 1773): duplicate Base.Shoes_FlipFlop
+ERROR (line 1958): duplicate Base.CornFrozen
+Reading file ...
+ERROR (line 1499): bad string format.
+filcher.Jack_o'_Lantern = "Фонарь-тыква",
+CHECKING...
+SEARCHING EVO...
+ERROR in evo: Base.Lime
+ERROR in evo: Base.GingerRoot
+ERROR in evo: Base.Ginseng
+ERROR in evo: Base.Lemon
+WRITING...
+NO TRANS: Base.CannedTomatoOpen = "Открыт. консерв. томат",(имеется в ItemName_RU.txt)
+NO TRANS: Base.Crackers = "Крекеры",
+NO TRANS: Base.Dandelions = "Одуванчики",
+NO TRANS: Base.Edamame = "Эдамаме",
+NO TRANS: Base.EggPoached = "Яйцо-пашот",
+NO TRANS: Base.EggScrambled = "Яичница-болтунья",
+NO TRANS: Base.Guacamole = "Гуакамоле",
+NO TRANS: Base.GummyBears = "Жевательные мишки",
+NO TRANS: Base.GummyWorms = "Жевательные червячки",
+NO TRANS: Base.HardCandies = "Леденцы",
+NO TRANS: Base.HollyBerry = "Падуб",
+NO TRANS: Base.JamFruit = "Фруктовый джем",
+NO TRANS: Base.JamMarmalade = "Мармелад",
+NO TRANS: Base.JellyBeans = "Желейные бобы",
+NO TRANS: Base.Jujubes = "Мармеладки",
+NO TRANS: Base.Marshmallows = "Маршмеллоу",
+NO TRANS: Base.MeatDumpling = "Дамплинг",
+NO TRANS: Base.MixedVegetables = "Овощная смесь",
+NO TRANS: Base.Oregano = "Орегано",
+NO TRANS: Base.Oysters = "Устрицы",
+NO TRANS: Base.OystersFried = "Жареные устрицы",
+NO TRANS: Base.PepperHabanero = "Хабанеро",
+NO TRANS: Base.PepperJalapeno = "Халапеньо",
+NO TRANS: Base.Pepperoni = "Пепперони",
+NO TRANS: Base.Pumpkin = "Тыква",
+NO TRANS: Base.RefriedBeans = "Пережаренная фасоль",
+NO TRANS: Base.RiceVinegar = "Рисовый уксус",
+NO TRANS: Base.RockCandy = "Сахар-кандис на палочке",
+NO TRANS: Base.Rosemary = "Розмарин",
+NO TRANS: Base.ShrimpDumpling = "Дамплинг с креветкой",
+NO TRANS: Base.Soysauce = "Соевый соус",
+NO TRANS: Base.Squid = "Кальмар",
+NO TRANS: Base.SquidCalamari = "Кольца кальмара",
+NO TRANS: Base.Thistle = "Чертополох",
+NO TRANS: Base.Thyme = "Чабрец",
+NO TRANS: Base.TofuFried = "Жареный тофу",
+NO TRANS: Base.TomatoPaste = "Томатная паста",
+NO TRANS: Base.WildGarlic2 = "Черемша",
+NO TRANS: Base.WinterBerry = "Падуб мутовчатый",
+DONE.

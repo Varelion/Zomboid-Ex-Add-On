@@ -1,0 +1,50 @@
+Sandbox_EN = {
+	Sandbox_Excrementum = "Excrementum",
+
+	Sandbox_Excrementum_StomachMultiplier = "Stomach Time Multiplier",
+	Sandbox_Excrementum_StomachMultiplier_tooltip = "How much time is needed to pass the stomach.\nDefault is realistic.",
+	
+	Sandbox_Excrementum_ChymeMultiplier = "Chyme Multiplier (hunger units)",
+	Sandbox_Excrementum_ChymeMultiplier_tooltip = "How much food leaves stomach in form of chyme every 10 ingame minutes.",
+	
+	Sandbox_Excrementum_DefecateIntMinutes = "Intestine Time (minutes)",
+	Sandbox_Excrementum_DefecateIntMinutes_tooltip = "Ingame minutes to pass the intestine\n(between the stomach and the colon).",
+	
+	Sandbox_Excrementum_ColonMinutes = "Colon Time (minutes)",
+	Sandbox_Excrementum_ColonMinutes_tooltip = "How much time must pass to start Colon Threshold moving down.",
+	
+	Sandbox_Excrementum_ColonBaseThreshold = "Colon Threshold (percentage)",
+	Sandbox_Excrementum_ColonBaseThreshold_tooltip = "The colon percentage of fullness for urge to defecate.\nSome food may change this threshold.",
+	
+	Sandbox_Excrementum_UrinateIncreaseMultiplier = "Urine Multiplier",
+	Sandbox_Excrementum_UrinateIncreaseMultiplier_tooltip = "Urine production multiplier from drunk water.\nDefault is 1:1, where 10 thirst units = 100 ml.\nAlso affects diuretic effect.",
+	
+	Sandbox_Excrementum_UrinatePassiveMultiplier = "Passive Urine Multiplier",
+	Sandbox_Excrementum_UrinatePassiveMultiplier_tooltip = "Passive urine production multiplier from metabolism.\nBy default ~ 30% from all production (if no perks, no cold etc).",
+
+	Sandbox_Excrementum_StomachVolume = "Stomach Volume (hunger units)",
+	Sandbox_Excrementum_StomachVolume_tooltip = "The volume of stomach that keeps green moodle which restores health.",
+
+	Sandbox_Excrementum_AdditionalStomachVolume = "Additional Stomach Volume",
+	Sandbox_Excrementum_AdditionalStomachVolume_tooltip = "The stomach may be distended. Max capacity is 'Stomach Volume' plus this.\nCharacter won't accept food over maximum capacity.",
+	
+	Sandbox_Excrementum_OverlayIsAllowed = "Health Regen Overlay",
+	Sandbox_Excrementum_OverlayIsAllowed_tooltip = "Regen overlay is allowed for clients.\nThey will be able to turn it on/off and change position by client options.",
+
+	Sandbox_Excrementum_EnabledStatusBars = "Status Bars",
+	Sandbox_Excrementum_EnabledStatusBars_tooltip = "Status window is allowed for clients.\nThey will be able to turn it on/off, switch to bars, change position etc.",
+
+	Sandbox_Excrementum_Shame = "Shame",
+	Sandbox_Excrementum_Shame_tooltip = "How the shame is enabled (including multiplayer).",
+	Sandbox_Excrementum_ShameLevels_option1 = "Off",
+	Sandbox_Excrementum_ShameLevels_option2 = "Retexture Auto Detect",
+	Sandbox_Excrementum_ShameLevels_option3 = "Always On",
+	Sandbox_Excrementum_ShameLevels_option4 = "On even in god mode",
+
+
+
+
+
+
+
+}

@@ -1,0 +1,98 @@
+Moodles_RU = {
+	
+	Moodles_exc-stomach_Good_lvl1 = "Мало еды",
+	Moodles_exc-stomach_Good_desc_lvl1 = "Всё ещё чувствуется голод.",
+	Moodles_exc-stomach_Good_lvl2 = "Перекусил",
+	Moodles_exc-stomach_Good_desc_lvl2 = "Заморил червячка.",
+	Moodles_exc-stomach_Good_lvl3 = "Еда в желудке",
+	Moodles_exc-stomach_Good_desc_lvl3 = "Чувствуется сытость.",
+	Moodles_exc-stomach_Good_lvl4 = "Почти полный",
+	Moodles_exc-stomach_Good_desc_lvl4 = "Больше нет аппетита.",
+
+	Moodles_exc-stomach_Bad_lvl1 = "Полный желудок",
+	Moodles_exc-stomach_Bad_desc_lvl1 = "Больше нет аппетита. Немного болит.",
+	Moodles_exc-stomach_Bad_lvl2 = "Переел",
+	Moodles_exc-stomach_Bad_desc_lvl2 = "Слишком много съел. Болит.",
+	Moodles_exc-stomach_Bad_lvl3 = "Обожрался",
+	Moodles_exc-stomach_Bad_desc_lvl3 = "Желудок трещит по швам, вот-вот лопнет.",
+	Moodles_exc-stomach_Bad_lvl4 = "Разрыв желудка",
+	Moodles_exc-stomach_Bad_desc_lvl4 = "Невозможно столько съесть за раз.",	
+
+
+
+
+	Moodles_exc-stomach-w_Good_lvl1 = "Всё ещё голодный",
+	Moodles_exc-stomach-w_Good_desc_lvl1 = "В желудке есть немного жидкости.",
+	Moodles_exc-stomach-w_Good_lvl2 = "Немного воды",
+	Moodles_exc-stomach-w_Good_desc_lvl2 = "Немного жидкости в желудке, голод отсутствует.",
+	Moodles_exc-stomach-w_Good_lvl3 = "Вода в желудке",
+	Moodles_exc-stomach-w_Good_desc_lvl3 = "Вода плещется в желудке, создавая чувство сытости.",
+	Moodles_exc-stomach-w_Good_lvl4 = "Почти полный",
+	Moodles_exc-stomach-w_Good_desc_lvl4 = "Больше нет аппетита.",
+
+	Moodles_exc-stomach-w_Bad_lvl1 = "Полный желудок",
+	Moodles_exc-stomach-w_Bad_desc_lvl1 = "Больше нет аппетита. Немного болит.",
+	Moodles_exc-stomach-w_Bad_lvl2 = "Много воды",
+	Moodles_exc-stomach-w_Bad_desc_lvl2 = "Слишком много выпил жидкости. Болит.",
+	Moodles_exc-stomach-w_Bad_lvl3 = "Растянутый желудок",
+	Moodles_exc-stomach-w_Bad_desc_lvl3 = "Желудок трещит по швам, вот-вот лопнет.",
+	Moodles_exc-stomach-w_Bad_lvl4 = "Разрыв желудка",
+	Moodles_exc-stomach-w_Bad_desc_lvl4 = "Невозможно столько выпить за раз.",	
+
+
+
+
+	Moodles_exc-colon_Good_lvl1 = "Кишечник работает",
+	Moodles_exc-colon_Good_desc_lvl1 = "Происходит переваривание в тонком кишечнике.",
+
+	Moodles_exc-colon_Good_lvl3 = "Позывы",
+	Moodles_exc-colon_Good_desc_lvl3 = "Пора в туалет.",
+
+	Moodles_exc-colon_Bad_lvl1 = "Сильные позывы",
+	Moodles_exc-colon_Bad_desc_lvl1 = "Давно уже пора в туалет.",
+	Moodles_exc-colon_Bad_lvl2 = "Сложно терпеть",
+	Moodles_exc-colon_Bad_desc_lvl2 = "Газы мучают изнутри.",
+	Moodles_exc-colon_Bad_lvl3 = "Невозможно терпеть",
+	Moodles_exc-colon_Bad_desc_lvl3 = "Сильная боль от газов.",
+	Moodles_exc-colon_Bad_lvl4 = "Сейчас взорвусь",
+	Moodles_exc-colon_Bad_desc_lvl4 = "Адская боль от газов.",	
+
+
+	Moodles_exc-urine_Good_lvl1 = "Уже можно",
+	Moodles_exc-urine_Good_desc_lvl1 = "В мочевом пузыре ощущается содержимое.",
+
+	Moodles_exc-urine_Bad_lvl1 = "Терпимо",
+	Moodles_exc-urine_Bad_desc_lvl1 = "Содержимое мочевого пузыря просится наружу.",
+
+	Moodles_exc-urine_Bad_lvl3 = "Пора",
+	Moodles_exc-urine_Bad_desc_lvl3 = "Сильные переживания, что случится недержание.",
+	Moodles_exc-urine_Bad_lvl4 = "Не-е-ет!",
+	Moodles_exc-urine_Bad_desc_lvl4 = "Вот-вот случится недержание.",	
+
+
+	Moodles_exc-smell_Bad_lvl1 = "Неприятный запах",
+	Moodles_exc-smell_Bad_desc_lvl1 = "Фу, чем это пахнет?",
+	Moodles_exc-smell_Bad_lvl2 = "Вонища",
+	Moodles_exc-smell_Bad_desc_lvl2 = "Сильный неприятный запах.",
+	Moodles_exc-smell_Bad_lvl3 = "Зловоние",
+	Moodles_exc-smell_Bad_desc_lvl3 = "Отвратительный запах.",
+	Moodles_exc-smell_Bad_lvl4 = "Смрад",
+	Moodles_exc-smell_Bad_desc_lvl4 = "Невыносимый запах, лучше повеситься.",
+
+
+
+	Moodles_exc-shame_Good_lvl1 = "Любопытство",
+	Moodles_exc-shame_Good_desc_lvl1 = "Ух ты!",
+	Moodles_exc-shame_Good_lvl2 = "Хе-хе",
+	Moodles_exc-shame_Good_desc_lvl2 = "А я это видел.",
+
+	Moodles_exc-shame_Bad_lvl1 = "Смущение", /* First see */
+	Moodles_exc-shame_Bad_desc_lvl1 = "Тот образ всё ещё в голове.",
+	Moodles_exc-shame_Bad_lvl2 = "Стыд", /* First time action / second see */
+	Moodles_exc-shame_Bad_desc_lvl2 = "Мысли всё крутятся о той самой ситуации.",
+	Moodles_exc-shame_Bad_lvl3 = "Сильный стыд", /*Second time */
+	Moodles_exc-shame_Bad_desc_lvl3 = "Нахлынули воспоминания о недавнем событии.",
+	Moodles_exc-shame_Bad_lvl4 = "Позор",  /* Third time, 4 ---> 2 */
+	Moodles_exc-shame_Bad_desc_lvl4 = "Вы - позорище. Другим нужно время, чтобы забыть всё это.",
+
+}

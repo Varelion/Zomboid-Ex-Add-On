@@ -1,0 +1,121 @@
+UI_EN = {
+	UI_Exc_HumanFeces = "Human Feces",
+	UI_Exc_HumanFecesShort = "Feces",    /* 5-6 symbols maximum! */
+	UI_Exc_HumanUrine = "Urine",
+	UI_Exc_HumanUrineShort = "Urine",
+	UI_Exc_HumanFecesMicro = "f",
+	UI_Exc_HumanUrineMicro = "u",
+
+	UI_optionscreen_binding_ExcrementumStatus = "Excrementum Status",
+	UI_Exc_Say_Urinated_M = "I've peed myself...",
+	UI_Exc_Say_Urinated_F = "I've peed myself...",
+	UI_Exc_Say_Defecated_M = "I've shit myself...",
+	UI_Exc_Say_Defecated_F = "I've shit myself...",
+
+	UI_Exc_UrinationMini = "Bladder:  %1  %2 мл",
+	UI_Exc_DefecationMini = "Colon:  %1  %2%",
+	UI_Exc_InvTooltip_HasFeces = "Fecal Odor",
+	UI_Exc_InvTooltip_Feces = "Stuck Feces: %1",
+	UI_Exc_InvTooltip_Urine = "Urine Odor",
+	UI_Exc_InvTooltip_HasFecesRGB = "<RGB:0.7,0.3,0>Fecal Odor",
+	UI_Exc_InvTooltip_FecesRGB = "<RGB:0.7,0.3,0>Stuck Feces: %1",
+	UI_Exc_InvTooltip_UrineRGB = "<RGB:1,1,0>Urine Odor",
+	UI_Exc_StressChange = "Stress: %1",
+
+	UI_Exc_BoredomChange = "Boredom: %1",
+	UI_Exc_BoredomChangeP = "Boredom: +%1",
+	UI_Exc_UnhappynessChange = "Unhappiness: %1",
+	UI_Exc_UnhappynessChangeP = "Unhappiness: +%1",
+	UI_Exc_FatigueChange = "Fatigue: %1%",
+	UI_Exc_FatigueChangeP = "Fatigue: +%1%",
+	UI_Exc_PagesChange = "+%1 pages",
+
+	UI_Exc_Poisoning = "Toxic Substance",
+	UI_Exc_Diarrhea = "Diarrhea",
+	UI_Exc_Diuretic = "Diuretic",
+
+	UI_Exc_Seats = "Seats", /* in vehicle */
+	UI_Exc_Room = "The room",
+	UI_Exc_YourBody = "Your body",
+
+	/* OPTION SOUNDS */
+
+	UI_Exc_Option_PooSoundTypes = "Poo Sound Types",
+	UI_Exc_Option_PooSoundTypes_Tooltip = "Outdoors means not toilet. Outdoors/toilet includes poo self.",
+	UI_Exc_Option_PooSoundTypes_All = "All",
+  UI_Exc_Option_PooSoundTypes_NoDefecateProcess = "No Defecate Process",
+  UI_Exc_Option_PooSoundTypes_NoFart = "No Fart",
+  UI_Exc_Option_PooSoundTypes_OnlyOutdoors = "Only Outdoors",
+  UI_Exc_Option_PooSoundTypes_OnlyToilet = "Only Toilet",
+  UI_Exc_Option_PooSoundTypes_None = "None",
+  UI_Exc_Option_PooSoundTypes_NoneButPooSelf = "Only Poo Self",
+  UI_Exc_Option_PooSoundTypes_NoneButClothes = "Only Clothes",
+
+  UI_Exc_Option_PeeSoundTypes = "Pee Sound Types",
+	UI_Exc_Option_PeeSoundTypes_Tooltip = "Outdoors means not toilet. Outdoors/toilet includes pee self.",
+	UI_Exc_Option_PeeSoundTypes_All = "All",
+	UI_Exc_Option_PeeSoundTypes_OnlyOutdoors = "Only Outdoors",
+	UI_Exc_Option_PeeSoundTypes_OnlyToilet = "Only Toilet",
+	UI_Exc_Option_PeeSoundTypes_None = "None",
+	UI_Exc_Option_PeeSoundTypes_NoneButPeeSelf = "Only Pee Self",
+	UI_Exc_Option_PeeSoundTypes_NoneButZip = "Only Zip/Clothes",
+
+	UI_Exc_Option_ExtractSound = "Extract Sound",
+	UI_Exc_Option_FlushSound = "Flush Sound",
+
+	UI_Exc_Option_GrowlSound = "Growl Sound",
+	UI_Exc_Option_GrowlSound_Tooltip = "There are few pain stages with different sounds.",
+	UI_Exc_Option_GrowlSound_Always = "Always",
+	UI_Exc_Option_GrowlSound_Never = "Never",
+	UI_Exc_Option_GrowlSound_OnlyOnce = "Only Once",
+	UI_Exc_Option_GrowlSound_OnlyOnceOnEachStage = "Only Once on Each Stage",
+
+	/* OPTION MOODLES */
+
+	UI_Exc_Option_StomachMoodle = "Stomach Moodle",
+	UI_Exc_Option_StomachMoodle_ShowAny = "Show Any",
+  UI_Exc_Option_StomachMoodle_ShowOnlyRed = "Show Only Red",
+  UI_Exc_Option_StomachMoodle_Hide = "Hide",
+
+  UI_Exc_Option_ColonMoodle = "Colon Moodle",
+  UI_Exc_Option_ColonMoodle_ShowAny = "Show Any",
+  UI_Exc_Option_ColonMoodle_NoSmallIntestine = "No Small Intestine",
+  UI_Exc_Option_ColonMoodle_NoGreen = "Show Only Red",
+  UI_Exc_Option_ColonMoodle_Hide = "Hide",
+
+  UI_Exc_Option_UrineMoodle = "Bladder Moodle",
+  UI_Exc_Option_UrineMoodle_ShowAny = "Show Any",
+  UI_Exc_Option_UrineMoodle_ShowOnlyRed = "Show Only Red",
+  UI_Exc_Option_UrineMoodle_ShowOnlyPain = "Show Only Pain",
+  UI_Exc_Option_UrineMoodle_Hide = "Hide",
+
+  UI_Exc_Option_SmellMoodle = "Smell Moodle",
+	UI_Exc_Option_NoAffectGameplay_Tooltip = "This options doesn't affect gameplay.",
+
+	/* REGEN OVERLAY */
+	UI_Exc_Option_Overlay = "Health Regen Overlay",
+	UI_Exc_Option_Overlay_Tooltip = "Specifies whether you want to see the overlay of regen caused by green stomach moodle. <br> 1) Always visible in top right corner under the watch. <br> 2) Always visible but sticks to stomach moodle if possible. <br> 3) Visible only if you have somehting in stomach. <br> 4) Visible only if your character is sick. <br> 5) Disabled.",
+	UI_Exc_Option_Overlay_Tooltip2 = "6) Only on health panel.",
+  UI_Exc_Option_Overlay_AlwaysOnTop = "Always Visible",
+  UI_Exc_Option_Overlay_NearStomachIfPossible = "Near Stomach if Possible",
+  UI_Exc_Option_Overlay_NearStomachOnly = "Near Stomach Only",
+  UI_Exc_Option_Overlay_OnlyIfSickVisible = "Visible Only if Sick",
+  UI_Exc_Option_Overlay_Off = "Off",
+	UI_Exc_Option_Overlay_HealthPanel = "Health Panel Only",
+
+	/* COMPATIBILITY */
+	UI_MiniHealth_ExcShowClothes = "Show Covered Parts",
+	UI_MiniHealth_ExcShowClothesTooltip = "Covered parts are blue. <br> Chest (femaly only) and groin are light blue if uncovered.",
+
+	UI_SimpleStatus_ExcHidden = "[hidden]",
+
+
+	/* TRAITS */
+	UI_trait_ExcVoyeuristic = "Voyeuristic",
+	UI_trait_VoyeuristicDesc = "Gets pleasure gained from watching others when they are naked.",
+	UI_trait_ExcExhibitionist = "Exhibitionist",
+	UI_trait_ExhibitionistDesc = "Gets pleasure gained from being watched by others when you are naked.",
+
+
+
+}

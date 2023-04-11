@@ -1,0 +1,44 @@
+Sandbox_RU = {
+	Sandbox_Excrementum = "Excrementum (справление нужды)",
+
+	Sandbox_Excrementum_StomachMultiplier = "Множитель времени желудка",
+	Sandbox_Excrementum_StomachMultiplier_tooltip = "Сколько времени требуется, чтобы еда переварилась в желудке (по сравнению с реальным).",
+	
+	Sandbox_Excrementum_ChymeMultiplier = "Порция химуса (ед. сытости)",
+	Sandbox_Excrementum_ChymeMultiplier_tooltip = "Количество переваренной еды, которое в норме уходит из желудка каждые 10 игровых минут.",
+	
+	Sandbox_Excrementum_DefecateIntMinutes = "Время тонкой кишки (минуты)",
+	Sandbox_Excrementum_DefecateIntMinutes_tooltip = "Сколько игровых минут нужно для прохождения по тонкому кишечнику.",
+	
+	Sandbox_Excrementum_ColonMinutes = "Время толстой кишки (минуты)",
+	Sandbox_Excrementum_ColonMinutes_tooltip = "Сколько игровых минут должно пройти, прежде чем порог начала дефекации начнёт опускаться.\nЭто скажется на ситуации, когда в кишке мало кала и он очень долго хранится.",
+	
+	Sandbox_Excrementum_ColonBaseThreshold = "Порог начала дефекации (проценты)",
+	Sandbox_Excrementum_ColonBaseThreshold_tooltip = "Процент заполнения толстой кишки, при котором в норме начнутся позывы.\nЕда может менять этот порог.",
+	
+	Sandbox_Excrementum_UrinateIncreaseMultiplier = "Множитель производства мочи",
+	Sandbox_Excrementum_UrinateIncreaseMultiplier_tooltip = "Насколько больше будет копиться моча от выпитого.\nПо умолчанию 1 к 1, где 10 жажды = 100 мл.\nТакже влияет на эффект от мочегонного.",
+	
+	Sandbox_Excrementum_UrinatePassiveMultiplier = "Множитель пассивного производства мочи",
+	Sandbox_Excrementum_UrinatePassiveMultiplier_tooltip = "Насколько больше будет копиться моча от метаболизма.\nПо умолчанию примерно 30% от всего производства, при прочих равных (без перков, жары, холода и пр.)",
+	
+	Sandbox_Excrementum_StomachVolume = "Объём желудка (ед. сытости)",
+	Sandbox_Excrementum_StomachVolume_tooltip = "В пределах объёма желудка сохраняется зелёный мудлет сытости,\nкоторый восстанавливает здоровье аналогично ванильному.",
+
+	Sandbox_Excrementum_AdditionalStomachVolume = "Доп. объём желудка",
+	Sandbox_Excrementum_AdditionalStomachVolume_tooltip = "Желудок может растягиваться. Максимальная вместимость равна "базовый объём" плюс "доп. объём".\nПерсонаж будет отказываться принимать еду сверх максимальной вместимости желудка.",
+
+	Sandbox_Excrementum_OverlayIsAllowed = "Оверлей регена здоровья",
+	Sandbox_Excrementum_OverlayIsAllowed_tooltip = "Разрешён ли этот оверлей всем на сервере. \nЕсли да, то пользователи смогут по своему усмотрению настраивать его (включать, отключать и т.д.)",
+
+	Sandbox_Excrementum_EnabledStatusBars = "Показатели нужды",
+	Sandbox_Excrementum_EnabledStatusBars_tooltip = "Панель нужды будет разрешена все клиентам в мультиплеере.\nИм будет разрешено включать/выключать окна, переключать на столбики, менять позицию и т.д.",
+
+	Sandbox_Excrementum_Shame = "Стыд",
+	Sandbox_Excrementum_Shame_tooltip = "Включён ли стыд и как именно (включая мультиплеер).",
+	Sandbox_Excrementum_ShameLevels_option1 = "Выключен",
+	Sandbox_Excrementum_ShameLevels_option2 = "Автоопределение (ретекстуры тела)",
+	Sandbox_Excrementum_ShameLevels_option3 = "Всегда включён",
+	Sandbox_Excrementum_ShameLevels_option4 = "Включён даже в режиме бога",
+
+}
