@@ -1,8 +1,8 @@
 --[[
-Основной "движок" для внутренних шкал и процессов.
-Частично содержит функции изменения самого персонажа (стресс), но работает больше как API к движку.
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ), пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ API пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 
-"$" в имени файла необходим, чтобы он был наверняка загружен раньше других файлов мода.
+"$" пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ.
 --]]
 if not STAR_MODS then
 	STAR_MODS = {}
@@ -27,13 +27,13 @@ Excrementum = {
 	urinate_fns = {},
 	update_fns = {},
 	DEBUG = getActivatedMods():contains('Excrementum41old'), --getDebug(),
-	urine = 0, -- в миллилитрах
-	Ms = 0.3, -- стрессовая моча
-	feces = 0, -- в процентах (1 = 100%)
+	urine = 0, -- пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	Ms = 0.3, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	feces = 0, -- пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (1 = 100%)
 	feces_threshold = SandboxVars_Excrementum.ColonBaseThreshold * 0.01,
-	ColonPain = 0, -- боль в толстом кишечнике от удерживания (усилием воли)
+	ColonPain = 0, -- пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ)
 	UrinePain = 0, -- exactly 19
-	StomachPain = 0, -- когда сытость от 100 до 500, боль меняется от 0 до 100.
+	StomachPain = 0, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 100 пїЅпїЅ 500, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 0 пїЅпїЅ 100.
 	tm_GameStarted = 0,
 	tm_LastSleep = 0,
 	now = 0,
@@ -67,14 +67,14 @@ print('Excrementum defined: ', Excrementum.VERSION)
 
 local IS_RETEXTURE_MOD = nil
 
---local INTESTINE_TIME = SandboxVars_Excrementum.DefecateIntMinutes -- время прохождения еды по тонкому кишечнику (должно быть 5 часов)
---local COLON_TIME = SandboxVars_Excrementum.ColonMinutes -- сколько времени кал может просто храниться до того, как порог начнёт снижаться (-10% каждый час).
+--local INTESTINE_TIME = SandboxVars_Excrementum.DefecateIntMinutes -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ 5 пїЅпїЅпїЅпїЅпїЅ)
+--local COLON_TIME = SandboxVars_Excrementum.ColonMinutes -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (-10% пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ).
 --print('COLON_TIME = ',COLON_TIME)
 local CELL; --getCell()
-local _last_room = nil; -- ссылка на последнюю комнату, в которой был перс (возможно, уже далеко)
+local _last_room = nil; -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)
 
 if Excrementum.DEBUG then
-	--INTESTINE_TIME = INTESTINE_TIME / 10 -- 30 минут в целях тестирования. На общий объём и прочие свойства кала не влияет.
+	--INTESTINE_TIME = INTESTINE_TIME / 10 -- 30 пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 end
 
 --local function OnApplyInGame(self, val)
@@ -85,7 +85,7 @@ local IS_HUMAN_FECES = {
 }
 
 -- These are the default options.
-local OPTIONS = { 
+local OPTIONS = {
 	poo_sound_types = 1,
 	pee_sound_types = 1,
   flush_sound = true,
@@ -123,66 +123,66 @@ if ModOptions and ModOptions.getInstance then
 		OPTIONS.clothes_blue_parts = false -- by default
 	end
   ModOptions:getInstance(SETTINGS)
-  
+
   local poo = SETTINGS:getData("poo_sound_types")
-  poo[1] = getText("UI_Exc_Option_PooSoundTypes_All") 
-  poo[2] = getText("UI_Exc_Option_PooSoundTypes_NoDefecateProcess") 
-  poo[3] = getText("UI_Exc_Option_PooSoundTypes_NoFart") 
-  poo[4] = getText("UI_Exc_Option_PooSoundTypes_OnlyOutdoors") 
-  poo[5] = getText("UI_Exc_Option_PooSoundTypes_OnlyToilet") 
-  poo[6] = getText("UI_Exc_Option_PooSoundTypes_None") 
-  poo[7] = getText("UI_Exc_Option_PooSoundTypes_NoneButPooSelf") 
-  --poo[8] = getText("UI_Exc_Option_PooSoundTypes_NoneButClothes") 
+  poo[1] = getText("UI_Exc_Option_PooSoundTypes_All")
+  poo[2] = getText("UI_Exc_Option_PooSoundTypes_NoDefecateProcess")
+  poo[3] = getText("UI_Exc_Option_PooSoundTypes_NoFart")
+  poo[4] = getText("UI_Exc_Option_PooSoundTypes_OnlyOutdoors")
+  poo[5] = getText("UI_Exc_Option_PooSoundTypes_OnlyToilet")
+  poo[6] = getText("UI_Exc_Option_PooSoundTypes_None")
+  poo[7] = getText("UI_Exc_Option_PooSoundTypes_NoneButPooSelf")
+  --poo[8] = getText("UI_Exc_Option_PooSoundTypes_NoneButClothes")
   poo.tooltip = "UI_Exc_Option_PooSoundTypes_Tooltip"
 
   local pee = SETTINGS:getData("pee_sound_types")
-  pee[1] = getText("UI_Exc_Option_PeeSoundTypes_All") 
-  pee[2] = getText("UI_Exc_Option_PeeSoundTypes_OnlyOutdoors") 
-  pee[3] = getText("UI_Exc_Option_PeeSoundTypes_OnlyToilet") 
-  pee[4] = getText("UI_Exc_Option_PeeSoundTypes_None") 
-  pee[5] = getText("UI_Exc_Option_PeeSoundTypes_NoneButPeeSelf") 
-  --pee[6] = getText("UI_Exc_Option_PeeSoundTypes_NoneButZip") 
+  pee[1] = getText("UI_Exc_Option_PeeSoundTypes_All")
+  pee[2] = getText("UI_Exc_Option_PeeSoundTypes_OnlyOutdoors")
+  pee[3] = getText("UI_Exc_Option_PeeSoundTypes_OnlyToilet")
+  pee[4] = getText("UI_Exc_Option_PeeSoundTypes_None")
+  pee[5] = getText("UI_Exc_Option_PeeSoundTypes_NoneButPeeSelf")
+  --pee[6] = getText("UI_Exc_Option_PeeSoundTypes_NoneButZip")
   pee.tooltip = "UI_Exc_Option_PeeSoundTypes_Tooltip"
 
   local growl = SETTINGS:getData("growl_sound")
-  growl[1] = getText("UI_Exc_Option_GrowlSound_Always") 
-  growl[2] = getText("UI_Exc_Option_GrowlSound_Never") 
-  growl[3] = getText("UI_Exc_Option_GrowlSound_OnlyOnce") 
-  growl[4] = getText("UI_Exc_Option_GrowlSound_OnlyOnceOnEachStage") 
+  growl[1] = getText("UI_Exc_Option_GrowlSound_Always")
+  growl[2] = getText("UI_Exc_Option_GrowlSound_Never")
+  growl[3] = getText("UI_Exc_Option_GrowlSound_OnlyOnce")
+  growl[4] = getText("UI_Exc_Option_GrowlSound_OnlyOnceOnEachStage")
   growl.tooltip = "UI_Exc_Option_GrowlSound_Tooltip"
 
   local st = SETTINGS:getData("stomach_moodle")
-  st[1] = getText("UI_Exc_Option_StomachMoodle_ShowAny") 
-  st[2] = getText("UI_Exc_Option_StomachMoodle_ShowOnlyRed") 
-  st[3] = getText("UI_Exc_Option_StomachMoodle_Hide") 
+  st[1] = getText("UI_Exc_Option_StomachMoodle_ShowAny")
+  st[2] = getText("UI_Exc_Option_StomachMoodle_ShowOnlyRed")
+  st[3] = getText("UI_Exc_Option_StomachMoodle_Hide")
 	st.tooltip = "UI_Exc_Option_NoAffectGameplay_Tooltip"
 
   local colon = SETTINGS:getData("colon_moodle")
-  colon[1] = getText("UI_Exc_Option_ColonMoodle_ShowAny") 
-  colon[2] = getText("UI_Exc_Option_ColonMoodle_NoSmallIntestine") 
-  colon[3] = getText("UI_Exc_Option_ColonMoodle_NoGreen") 
-  colon[4] = getText("UI_Exc_Option_ColonMoodle_Hide") 
+  colon[1] = getText("UI_Exc_Option_ColonMoodle_ShowAny")
+  colon[2] = getText("UI_Exc_Option_ColonMoodle_NoSmallIntestine")
+  colon[3] = getText("UI_Exc_Option_ColonMoodle_NoGreen")
+  colon[4] = getText("UI_Exc_Option_ColonMoodle_Hide")
 	colon.tooltip = "UI_Exc_Option_NoAffectGameplay_Tooltip"
 
   local urine = SETTINGS:getData("urine_moodle")
-  urine[1] = getText("UI_Exc_Option_UrineMoodle_ShowAny") 
-  urine[2] = getText("UI_Exc_Option_UrineMoodle_ShowOnlyRed") 
-  urine[3] = getText("UI_Exc_Option_UrineMoodle_ShowOnlyPain") 
-  urine[4] = getText("UI_Exc_Option_UrineMoodle_Hide") 
+  urine[1] = getText("UI_Exc_Option_UrineMoodle_ShowAny")
+  urine[2] = getText("UI_Exc_Option_UrineMoodle_ShowOnlyRed")
+  urine[3] = getText("UI_Exc_Option_UrineMoodle_ShowOnlyPain")
+  urine[4] = getText("UI_Exc_Option_UrineMoodle_Hide")
 	urine.tooltip = "UI_Exc_Option_NoAffectGameplay_Tooltip"
 
 	local smell_moodle = SETTINGS:getData("smell_moodle")
 	smell_moodle.tooltip = "UI_Exc_Option_NoAffectGameplay_Tooltip"
 
   local overlay = SETTINGS:getData("overlay")
-  overlay[1] = getText("UI_Exc_Option_Overlay_AlwaysOnTop") 
-  overlay[2] = getText("UI_Exc_Option_Overlay_NearStomachIfPossible") 
+  overlay[1] = getText("UI_Exc_Option_Overlay_AlwaysOnTop")
+  overlay[2] = getText("UI_Exc_Option_Overlay_NearStomachIfPossible")
   overlay[3] = getText("UI_Exc_Option_Overlay_NearStomachOnly")  -- default
-  overlay[4] = getText("UI_Exc_Option_Overlay_OnlyIfSickVisible") 
-  overlay[5] = getText("UI_Exc_Option_Overlay_Off") 
-  overlay[6] = getText("UI_Exc_Option_Overlay_HealthPanel") 
+  overlay[4] = getText("UI_Exc_Option_Overlay_OnlyIfSickVisible")
+  overlay[5] = getText("UI_Exc_Option_Overlay_Off")
+  overlay[6] = getText("UI_Exc_Option_Overlay_HealthPanel")
 	overlay.tooltip = "UI_Exc_Option_Overlay_Tooltip"
-	
+
 
 end
 
@@ -191,21 +191,21 @@ end
 
 
 --[[
-	Новая система дефекации, в которой продвижение по ШД зависит от количества съеденного.
+	пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 ]]
 
 
 --known food types
 local DEFAULT_SPEED = 59.5 -- one ingame hour
-local FOOD_SPEED = { -- Время переваривания в желудке (для 50 ед. сытости).
-	-- 0 = моментальное переваривание; -1 = не учитывать ингредиент.
+local FOOD_SPEED = { -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ 50 пїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ).
+	-- 0 = пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ; -1 = пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	--LIQUIDS
-	--сок
+	--пїЅпїЅпїЅ
 	Juice = 20,
-	--перемолотые овощи и фрукты = 30,
-	--газировка
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ = 30,
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	SoftDrink = 40,
-	
+
 	--FRUITS - 30 min by default
 	Berry = 20,
 	Fruits = 30,
@@ -220,11 +220,11 @@ local FOOD_SPEED = { -- Время переваривания в желудке (для 50 ед. сытости).
 	["Base.Cherry"] = 40,
 	["Base.Mango"] = 90,
 	["Base.Banana"] = 50,
-	["Base.Grapes"] = 30, --виноград
+	["Base.Grapes"] = 30, --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	["Base.CannedPineappleOpen"] = 50,
 	["Base.Pineapple"] = 50,
-	
-	--ОВОЩИ. обычные = 50 мин, крахмалистые = 60 мин. приготовленные = 40
+
+	--пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ = 50 пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ = 60 пїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ = 40
 	Vegetables = 50,
 	["Base.Pumpkin"] = 60,
 	["Base.HalloweenPumpkin"] = 60,
@@ -236,141 +236,141 @@ local FOOD_SPEED = { -- Время переваривания в желудке (для 50 ед. сытости).
 	["Base.Corn"] = 60,
 	["Base.CornFrozen"] = 60,
 	["farming.RedRadish"] = 20,
-	--капуста - 40
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ - 40
 	["farming.Cabbage"] = 40,
 	["Base.Broccoli"] = 40,
 	["farming.BloomingBroccoli"] = 40,
-	--водяницстые: салат, огурцы, перец, помидоры
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	["Base.Lettuce"] = 30,
 	["Base.Pickles"] = 30,
 	["Base.CannedTomatoOpen"] = 30,
 	["Base.Tomat"] = 30,
 	["Base.BellPepper"] = 30,
-	
+
 	--GRAINS & BEANS
-	--фасоль
+	--пїЅпїЅпїЅпїЅпїЅпїЅ
 	Bean = 120,
-	Seed = 120, --семена подсолнуха (1 предмет)
+	Seed = 120, --пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (1 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 	Nut = 150,
 	Rice = 80,
-	["Base.Peas"] = 150, -- горох
+	["Base.Peas"] = 150, -- пїЅпїЅпїЅпїЅпїЅ
 	["Base.CannedPeasOpen"] = 150,
 	["Base.DriedSplitPeas"] = 150,
-	["Base.DriedLentils"] = 90, --чечевица
-	["Base.DriedChickpeas"] = 90, --нут
-	["Base.DriedKidneyBeans"] = 90, --красная фасоль
-	["Base.OatsRaw"] = 80, --овсянка
+	["Base.DriedLentils"] = 90, --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	["Base.DriedChickpeas"] = 90, --пїЅпїЅпїЅ
+	["Base.DriedKidneyBeans"] = 90, --пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	["Base.OatsRaw"] = 80, --пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	["Base.WaterSaucepanRice"] = 80,
 	["Base.WaterPotRice"] = 80,
 	["Base.RicePan"] = 80,
 	["Base.RicePot"] = 80,
-	["Base.Peanuts"] = 180, --арахис
-	
-	--грибы
+	["Base.Peanuts"] = 180, --пїЅпїЅпїЅпїЅпїЅпїЅ
+
+	--пїЅпїЅпїЅпїЅпїЅ
 	Mushroom = 330,
-	
-	--МОЛОЧКА
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	Milk = 120,
-	Cheese = 300, --твёрдые сыры 5 часов
+	Cheese = 300, --пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ 5 пїЅпїЅпїЅпїЅпїЅ
 	["Base.Processedcheese"] = 120,
 	["Base.Yoghurt"] = 120,
-	["Base.Icecream"] = 130, --мороженое
+	["Base.Icecream"] = 130, --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	["Base.ConeIcecream"] = 130,
 	["Base.IcecreamMelted"] = 130,
 	["Base.ConeIcecreamMelted"] = 130,
 	["Base.ConeIcecreamToppings"] = 130,
-	
+
 	--ANIMAL PROTEINS
 	Egg = 45,
 	["Base.EggOmelette"] = 120,
 	["Base.OmeletteRecipe"] = 120,
 	Seafood = 30,
 	["Base.Catfish"] = 30,
-	Fish = 50, -- жирная рыба 60 (лосось, сардины, форель и т.д); не жирное=30 (треска, сом, палтус, морепродукты)
+	Fish = 50, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ 60 (пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅ.пїЅ); пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ=30 (пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 	["Base.Salmon"] = 50,
 	["Base.CannedSardinesOpen"] = 50,
 	["Base.CannedSardines"] = 50,
 	["Base.Trout"] = 50,
-	Poultry = 90, --курица (1 предмет)
+	Poultry = 90, --пїЅпїЅпїЅпїЅпїЅпїЅ (1 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 	["Base.ChickenFried"] = 90,
 	["Base.ChickenNuggets"] = 90,
 	["Base.Chicken"] = 90,
 	["Base.ChickenFoot"] = 90,
-	Game = 120, -- дичь (условно не жирное мясо мелких животных)
-	Beef = 240, -- говядина, баранина = 240; свинина = 280
-	Meat = 240, -- всякое мясо, включая хот-дог
-	Bacon = 240, --бекон
+	Game = 120, -- пїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+	Beef = 240, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ = 240; пїЅпїЅпїЅпїЅпїЅпїЅпїЅ = 280
+	Meat = 240, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅпїЅ
+	Bacon = 240, --пїЅпїЅпїЅпїЅпїЅ
 	["Base.PorkChop"] = 280,
-	
-	-- добавление в салат прибавляет +20 мин
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ +20 пїЅпїЅпїЅ
 	Oil = 180,
 	["Base.Lard"] = 360,
 
-	
-	--колбасы, сосиски, (кочёности)
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 	Sausage=180,
-	
-	--хлеб
+
+	--пїЅпїЅпїЅпїЅ
 	Bread = 180,
-	
+
 	Chocolate = 120,
 	["Base.Chocolate"] = 120,
-	Sugar = 0, --всякий сахар не усваивается в желудке и сразу идёт дальше (если может)
+	Sugar = 0, --пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
 	["Base.Honey"] = 70,
-	-- прочие сладости - около получаса, КРОМЕ ЖИРНОГО. торт=210, мороженое=130(в молочке), 
+	-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅ=210, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ=130(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ),
 	["Base.CakeChocolate"] = 30,
 	Candy = 20,
-	
-	
+
+
 	Coffee = 90,
 	Tea = 90,
 	Cocoa = 90,
-	
-	
-	Beer=80, Liquor=80, Wine=80,
-	
-	--фиалки
-	Flower = -1,
-	--одуванчики, салат-лук
-	Greens = -1,
-	--травы, включая зелёный лук и петрушку
-	Herb = -1,
-	--Хабанеро, Халапеньо
-	HotPepper = -1,
-	--бульонный кубик (1 предмет)
-	Stock = -1,
-	
-	--сухая лапша
-	Pasta = 180,
-	
 
-	--экземпляры отсутствуют, но типы еды существуют
+
+	Beer=80, Liquor=80, Wine=80,
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅ
+	Flower = -1,
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅ
+	Greens = -1,
+	--пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	Herb = -1,
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	HotPepper = -1,
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (1 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+	Stock = -1,
+
+	--пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+	Pasta = 180,
+
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	Herbal=-1, Sauce=-1, Pepper=-1,
-	
-	
-	--ОСТАЛЬНОЕ, не перечисляемое, включая арахисовое масло, жареную курицу, йогурт, коф. зёрна, кукурузный хлеб, майонез, наггетсы и т.д.
-	--желательно распихать по категориям выше
+
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ. пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅ.пїЅ.
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	--NoExplicit
-	["Base.Butter"] = 180, --сливочное
-	["Base.PeanutButter"] = 150, --арахисовое
+	["Base.Butter"] = 180, --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	["Base.PeanutButter"] = 150, --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 }
 
--- Насколько еда вяжет (кал), т.е. насколько способствует запорам
-local DEFAULT_VISC = 0.999 -- по умолчанию
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ), пїЅ.пїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+local DEFAULT_VISC = 0.999 -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local FOOD_VISC = { -- X + .....
 	Vegetables = 0.3,
-	
+
 	Fruits = 0.4,
 	Berry = 0.4,
 	Mushroom = 0.4,
 	Greens = 0.4,
 	Bean = 0.4,
 	Nut = 0.4,
-	
+
 	Seed = 0.6,
 	Pasta = 0.6,
 	Bread = 0.6,
-	
+
 	Rice = 1.5,
 	["Base.CannedPotato"] = 1.5,
 	["Base.CannedPotato2"] = 1.5,
@@ -400,21 +400,21 @@ local function lerp(a, b, t)
 	return a + (b - a) * t
 end
 
--- очередь типа FIFO, сборник функций
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ FIFO, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local QList; QList = {
 	pushright = function(list, value)
 		local last = list.last + 1
 		list.last = last
 		list[last] = value
 	end,
-	
+
 	optimize = function(list)
 		if list.first > list.last then -- reset on empty
 			list.first = 1
 			list.last = 0
 		end
 	end,
-	
+
 	popleft = function(list)
 		local first = list.first
 		local last = list.last
@@ -435,24 +435,24 @@ local QList; QList = {
 		end
 		return value
 	end,
-	
+
 	getleft = function(list)
 		local first = list.first
 		if first > list.last then return nil end
 		return list[first]
 	end,
-	
+
 	getLength = function(list)
 		return 1 + list.last - list.first
 	end,
-	
+
 	init = function()
 		return {
 			first = 1,
 			last = 0,
 		}
 	end,
-	
+
 	reinit = function(list)
 		table.wipe(list)
 		list.first = 1
@@ -461,8 +461,8 @@ local QList; QList = {
 }
 
 
--- Возвращает угол отклонения обзора в радианах от линии к предмету
--- b - направление взгляда
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- b - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local pi = math.pi
 local pi2 = pi * 2
 local atan2 = math.atan2
@@ -473,7 +473,7 @@ function MathCanSee(dx,dy,b)
 	while r > pi do
 		r = r - pi2
 	end
-	return abs(r); -- угол между направлением взгляда и вектором к точке (dx;dy)
+	return abs(r); -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ (dx;dy)
 end
 
 --xx1=10887
@@ -509,17 +509,17 @@ end
 Excrementum.SqProxyOfs = SqProxyOfs
 
 
--- повышает стресс до num (не более чем на plus), игнорирует/вычитает стресс от сигарет
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ num (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ plus), пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local function StressUpTo(num, player, plus)
 	local stats = player:getStats()
-	local real = stats:getStress() -- реальный = base + cig
+	local real = stats:getStress() -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ = base + cig
 	if real >= num then
-		return -- если уже максимум, то всё
+		return -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅ
 	end
-	local cig = stats:getStressFromCigarettes() -- стресс от сиг
+	local cig = stats:getStressFromCigarettes() -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ
 	local base = real - cig;
 	if plus == nil then
-		stats:setStress(num - cig) -- Меняем только базовый. Реально к num потом добавляется стресс от сиг.
+		stats:setStress(num - cig) -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ num пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ.
 		return
 	end
 	--print('plus = ',tostring(plus))
@@ -527,7 +527,7 @@ local function StressUpTo(num, player, plus)
 		stats:setStress(num - cig)
 		return
 	end
-	-- не выходит за порог, значит можно просто прибавить
+	-- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	stats:setStress(base + plus)
 end
 Excrementum.StressUpTo = StressUpTo
@@ -571,7 +571,7 @@ local function getNearestVisiblePlayers(me) --, ignore_gender)
 	if not me then
 		return result
 	end
-	
+
 	--[[if Excrementum.DEBUG then -- debug in sp. Tempry!!!
 		local z = CELL:getNearestVisibleZombie(0)
 		if z and z:CanSee(me) then
@@ -580,15 +580,15 @@ local function getNearestVisiblePlayers(me) --, ignore_gender)
 		end
 		return result
 	end--]]
-	
+
 	local online = getOnlinePlayers()
 	local cnt1 = online and online:size() or 0
 	local objects = CELL:getObjectList()
 	local cnt2 = objects:size()
 	--local gender = not ignore_gender and me:isFemale()
-	
+
 	--fn=function() return MathCanSee(xx1-p:getX(), yy1-p:getY(), p:getLookAngleRadians())
-	
+
 	if cnt1 > 0 and cnt1 < cnt2 then -- survivors compatible?
 		for i=0,cnt1-1 do
 			local obj = online:get(i)
@@ -606,7 +606,7 @@ local function getNearestVisiblePlayers(me) --, ignore_gender)
 			end
 		end
 	end
-	
+
 	return result
 end
 Excrementum.getNearestVisiblePlayers = getNearestVisiblePlayers
@@ -621,20 +621,20 @@ local function ShameIsEnabled(player)
 end
 
 local SHAME_TIMES = { -- ingame minutes
-	1440, -- 1 day, я видел АМ
-	1440, -- мой АМ видели
-	1440*2, -- мой НАМ видели
-	60, -- видели голым
-	10, -- зомбак спалил АМ
-	60, -- вуайерист
+	1440, -- 1 day, пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
+	1440, -- пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	1440*2, -- пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	60, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+	10, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
+	60, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 }
 local SHAME_LEVELS = { 1, 2, 3, 0.5, 0.25, -1 }
 local SHAME_ADD_LEVELS = { 0, 0.25, 0.5, 0, 0, -0.5 }
 local SHAME_HIDES = { 120, 120, 120, 999, 999, 999 }
-local SHAME_AMOUNTS = { 240, 360, 360, -180, 999, 999 } -- минус означает, что значение не обновляется, при этом тикает
+local SHAME_AMOUNTS = { 240, 360, 360, -180, 999, 999 } -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 local MAX_SHAMES = #SHAME_LEVELS
 
---Применяем стыд типа typ по отношению к персу с именем name. Уже окончательно.
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ typ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ name. пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 local function ApplyShame(name, typ)
 	if typ == 6 then
 		local bd = Excrementum.bd
@@ -679,14 +679,15 @@ local function ApplyShame(name, typ)
 end
 Excrementum.ApplyShame = ApplyShame
 
--- Обновляем значение стыда, основываясь на всём.
--- is_change=true, значит меняем данные
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ.
+-- is_change=true, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 local function UpdateShame(me, is_change)
 	local shame = 0
 	local shame_max = 0
 	local now = Excrementum.now
 	local rel = Excrementum.exc.rel
-	local voyeur = 0 -- тупо сумма всех составляющих отношений
+	local voyeur = 0 -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	local exhibitionist = 0 -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 	-- Check relations
 	if ShameIsEnabled(me) then
@@ -698,16 +699,18 @@ local function UpdateShame(me, is_change)
 				if data then
 					if data.a == 0 or now >= data.b then
 						user[i] = nil
-						if i == 4 then -- привыкание к голому виду
+						if i == 4 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 							user.c = user.c + 1
 						end
 					else
 						if now < data.h then
 							--shame = shame + data.l
 							if data.l > 0 then
-								_shame = math.max(_shame, data.l) -- не учитывает отрицательные
+								_shame = math.max(_shame, data.l) -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							else
 								voyeur = voyeur + data.l
+							else
+								exhibitionist = exhibitionist - data.l
 							end
 						end
 						if is_change then
@@ -716,7 +719,7 @@ local function UpdateShame(me, is_change)
 								local p = NEIGHBOR_BY_NAME[name]
 								if p and not p:isInvisible() and ShameIsEnabled(p) then
 									local dist = p:DistTo(me)
-									if dist < 10 or dist < 25 and p:CanSee(me) then -- уменьшаем близко или в прямой видимости
+									if dist < 10 or dist < 25 and p:CanSee(me) then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 										is_reduce = true
 									end
 								end
@@ -740,11 +743,15 @@ local function UpdateShame(me, is_change)
 			shame = shame + (shame_max - 1)
 		end
 	end
-	
+
 	if voyeur < 0 and -voyeur * 2 >= shame then
-		shame = voyeur -- возбуждение вуайериста перекрывает простой стыд от АМ
+		shame = voyeur
 	end
-	
+
+	if exhibitionist < 0 and -exhibitionist * 2 >= shame then
+		shame = exhibitionist -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ
+	end
+
 	-- Check awaitings
 	--[[for name,usr in pairs(Excrementum.WaitToApplyShame) do
 		if rel[name] then
@@ -774,22 +781,22 @@ local function UpdateShame(me, is_change)
 			shame = -2
 		end
 	end]]
-	
-	--обрезаем до вменяемого состояния
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	if shame > 0 then
 		if shame < 1 then
 			shame = 1
 		else
-			shame = math.min(4, shame) -- не больше 4, очевидно
+			shame = math.min(4, shame) -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 4, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		end
-	elseif shame < 0 then -- вуайерист
+	elseif shame < 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		if shame > -1 then
 			shame = -1
 		else
 			shame = math.max(-4, shame)
 		end
 	end
-	
+
 	Excrementum.shame = shame
 	if Excrementum.m_shame then
 		Excrementum.m_shame:setValue(-shame)
@@ -799,9 +806,9 @@ end
 Excrementum.UpdateShame = UpdateShame
 
 
--- Пытается отправить стыд указанного типа всем игрокам рядом.
--- Если такие игроки находятся, то для каждого создаётся (или обновляется) отношение локально.
-local _cache_done_players = {{},{},{},{},{},{}} -- независимый кеш для каждого типа стыда
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
+-- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ) пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+local _cache_done_players = {{},{},{},{},{},{}} -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 local function SendShameMomentToNearest(player, typ, ignore_gender) --print('SendShame = ',typ,', ignore=',ignore_gender)
 	--print('SendShameMomentToNearest ',typ,' ',ignore_gender)
 	if player:isInvisible() then
@@ -810,7 +817,7 @@ local function SendShameMomentToNearest(player, typ, ignore_gender) --print('Sen
 	if not ShameIsEnabled(player) then
 		return
 	end
-	--чистим кеш
+	--пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 	local cache = _cache_done_players[typ]
 	if not cache then
 		return print('EXC ERR: no cache for sending shame moment!')
@@ -825,20 +832,20 @@ local function SendShameMomentToNearest(player, typ, ignore_gender) --print('Sen
 	--local players = getNearestVisiblePlayers(player)
 	local gender = not ignore_gender and player:isFemale()
 	local x0,y0 = player:getX(),player:getY()
-	for p in pairs(Excrementum.nearestPlayers) do -- рассылаем всем игрокам новый статус.
-		-- делаем это каждые 10 сек (потому что статус надо обновлять, но за 10 сек он не устареет)
+	for p in pairs(Excrementum.nearestPlayers) do -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
+		-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 10 пїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅ 10 пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 		--print(cache[p],' ',ignore_gender,' ',p:isFemale(),' ',gender)
 		if not cache[p] and (ignore_gender or p:isFemale() ~= gender) then
 			local x1,y1=p:getX(),p:getY()
 			local dist = player:DistTo(p)
 			--print('dist = ' .. round(dist,1) .. ', visible_at = ' .. round(MathCanSee(x0-x1, y0-y1, p:getLookAngleRadians()),2))
-			if dist < 0.1 or MathCanSee(x0-x1, y0-y1, p:getLookAngleRadians()) < 1.5 then -- направление взгляда
+			if dist < 0.1 or MathCanSee(x0-x1, y0-y1, p:getLookAngleRadians()) < 1.5 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				if typ == 4 then
-					local angle = MathCanSee(x1-x0, y1-y0, player:getLookAngleRadians()) -- угол направления наготы
+					local angle = MathCanSee(x1-x0, y1-y0, player:getLookAngleRadians()) -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 					--print('see_at ' .. round(angle,2))
 					if Excrementum.is_topless and angle < 2
-						or Excrementum.is_groinless >= 3 and angle < 1.5 -- стоя
-						or is_sitting and Excrementum.is_groinless >= 1 and angle < 0.7 -- сидя, осмотр под юбкой
+						or Excrementum.is_groinless >= 3 and angle < 1.5 -- пїЅпїЅпїЅпїЅ
+						or is_sitting and Excrementum.is_groinless >= 1 and angle < 0.7 -- пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					then
 						-- nothing
 					else
@@ -862,13 +869,13 @@ local function SendShameMomentToNearest(player, typ, ignore_gender) --print('Sen
 	--print('FOUND = ',send_arr)
 	if send_arr then
 		sendClientCommand(player, 'Exc', 'Shame', send_arr)
-		UpdateShame(player) -- обновляем интерфейс вне очереди.
+		UpdateShame(player) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	end
 end
 Excrementum.SendShameMomentToNearest = SendShameMomentToNearest
 
--- Проверка всех, кого видно и кто видит. Стыд всем!
--- is_moment значит применить немедленно, иначе положить в другой массив и ждать подтверждения (что другой тоже видел)
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ!
+-- is_moment пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
 --[[local function CheckShame(shameTyp, is_moment, ignore_gender)
 	shameTyp = shameTyp or Excrementum.nearestPlayers_monitor_type
 	local player = Excrementum.p
@@ -880,8 +887,8 @@ Excrementum.SendShameMomentToNearest = SendShameMomentToNearest
 		if typ >= 0 and typ ~= shameTyp then
 			local sq = v:getCurrentSquare() -- the player exists and isValid
 			if sq and player:CanSee(v) and player:DistTo(v) < 18 and (ignore_gender or player:isFemale() ~= v:isFemale()) then
-				
-				_nearest_players[v] = shameTyp -- устанавливаем, чтобы повторно не применять
+
+				_nearest_players[v] = shameTyp -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				--AddShame
 				local name = v:getFullName()
 				if name then
@@ -1008,29 +1015,29 @@ local function CreateModData(data)
 	if not exc then
 		exc = {
 			st = {}, -- stomach queue, like FIFO/FIRO
-			ch = {h=0, w=0, P=0, L=0, C=0, v=0, ps=0, d=0}, --chyme values: сытость, вода, PLC=БЖУ, вязкость, ps=яд, d=мочегонное
+			ch = {h=0, w=0, P=0, L=0, C=0, v=0, ps=0, d=0}, --chyme values: пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ, PLC=пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, ps=пїЅпїЅ, d=пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			int = QList.init(), --intestine queue
 			col = { --colon values
-				V = 0, -- общий объём кала
-				visc = 1, -- "вязкость"
-				og = 0, -- поступающий кал в буфере (еще не добавленный в кишку). Каждые 10 мин берём оттуда 30%. Если меньше 1.2 сытости, то сразу всё.
-				tf = nil, -- time first, метка времени, когда началось накопление.
-				td = nil, -- time defecate, метка времени начала позывов
+				V = 0, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				visc = 1, -- "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+				og = 0, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ). пїЅпїЅпїЅпїЅпїЅпїЅ 10 пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 30%. пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 1.2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ.
+				tf = nil, -- time first, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+				td = nil, -- time defecate, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			},
-			urine = 0, -- моча
-			ss = 0, -- суммарный стресс с прошлого раза (за раз по +0-100%)
-			sc = 0, -- количество замеров стресса и паники.
-			-- 1/2 = norm/mini, далее тройки [x,y,visible] для norm, def_mini, urin_mini
+			urine = 0, -- пїЅпїЅпїЅпїЅ
+			ss = 0, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ +0-100%)
+			sc = 0, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
+			-- 1/2 = norm/mini, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ [x,y,visible] пїЅпїЅпїЅ norm, def_mini, urin_mini
 			layout = {1, 50,500,false, 5,450,false, 25,450,false},
 			da = false, --dirty ass
 			dh = false, --dirty hands
 			df = false, --dirty feet
-			hg = 0, -- долг голода
+			hg = 0, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			rel = {}, -- relations
-			swt = 0, -- количество воды, которое должно пойти в топ (не должно учитываться в мочевом пузыре). Просто копия на случай вылета.
+			swt = 0, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ). пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 			uTm = 0,
-			bk = 0, -- время последнего чтения книги
-			bkp = 1, -- количество прочитанных страниц в прошлый раз
+			bk = 0, -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+			bkp = 1, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 		}
 		data.exc = exc
 	end
@@ -1046,22 +1053,22 @@ local function CreateModData(data)
 	exc.ch.d = exc.ch.d or 0
 end
 --[[
-{ -- таблица всех отношений
-    ['full_name'] = { -- ключ = имя, с кем отношения
-        e = true, -- (eye) был ли виден данный человек при последней проверке (если да, то нет смысла менять что-либо).
-        c = 0, -- (cnt) количество раз, когда человек видел голым. После 10 раза нет стыда.
+{ -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    ['full_name'] = { -- пїЅпїЅпїЅпїЅ = пїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        e = true, -- (eye) пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅ пїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ).
+        c = 0, -- (cnt) пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅ 10 пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
         {
-            t = 0, -- (type) тип отношений. 1) я видел АМ 2) мой АМ видели 3) мой НАМ видели 4) видели голым 5) зомбак спалил АМ
-            l = 1, -- (level) уровень штрафа. Повышение уровня = +0.5
-            b = 0, -- (burn) метка времени, в которой отношения забываются окончательно (если не видеться).
-            h = 0, -- (hide) метка времени, в которой отношения перестают работать (до следующей встречи).
-            a = 0, -- (amount) суммарное время, которое нужно провести рядом, чтобы отношения сгорели. Тает при нахождении рядом.
+            t = 0, -- (type) пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. 1) пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 2) пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 3) пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 4) пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 5) пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
+            l = 1, -- (level) пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ = +0.5
+            b = 0, -- (burn) пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ).
+            h = 0, -- (hide) пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ).
+            a = 0, -- (amount) пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
         },
-        -- ..... другие отношения
+        -- ..... пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     },
-    -- ..... другие люди
+    -- ..... пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 }
-у зомбака числовое имя = 0
+пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ = 0
 --]]
 
 
@@ -1082,7 +1089,7 @@ end
 
 
 
--- Занят ли игрок "важным делом", чтобы его не постигло случайное событие.
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ", пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 local function IsBusyNow(player)
 	local act_now = GetActionName(player,1)
 	if act_now == 'UrinateDropPantsAction' or act_now == 'InvoluntaryUrinate'
@@ -1097,7 +1104,7 @@ end
 --Extract food properties
 --print(Excrementum.getFoodTypeSpeedVisc('Base.Sugar'))
 local  getF_cache, getV_cache = {}, {}
-local function getFoodTypeSpeedVisc(full_type) --print('full_type = ',full_type)-- данные по id
+local function getFoodTypeSpeedVisc(full_type) --print('full_type = ',full_type)-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ id
 	if not full_type then
 		return DEFAULT_SPEED, DEFAULT_VISC
 	end
@@ -1120,7 +1127,7 @@ end
 Excrementum.getFoodTypeSpeedVisc = getFoodTypeSpeedVisc
 
 --print(Excrementum.getFoodSpeedVisc(g('sugar')))
-local function getFoodSpeedVisc(food) -- данные уже по самой еде (нельзя кешировать, ибо состав каждый раз может быть разный)
+local function getFoodSpeedVisc(food) -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)
 	local extra = food:getExtraItems()
 	local extra_cnt = extra and extra:size() or 0
 	local spices = food:getSpices()
@@ -1129,10 +1136,10 @@ local function getFoodSpeedVisc(food) -- данные уже по самой еде (нельзя кеширов
 	if extra_cnt == 0 and spices_cnt == 0 then
 		return base_s, base_v
 	end
-	
+
 	local _ings = Excrementum.DEBUG and {} or nil
-	
-	-- извлекаем типы ингредиентов и специй
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	local cnt_s, cnt_v, sum_s, sum_v = 0,0,0,0
 	for i=0,extra_cnt-1 do
 		local ing_name = extra:get(i)
@@ -1168,8 +1175,8 @@ local function getFoodSpeedVisc(food) -- данные уже по самой еде (нельзя кеширов
 			cnt_v = cnt_v + 1
 		end
 	end
-	
-	--добавляем тип "кастрюльки" к списку ингредиентов в ней
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ
 	if base_s ~= DEFAULT_SPEED then
 		sum_s = sum_s + base_s
 		cnt_s = cnt_s + 1
@@ -1178,8 +1185,8 @@ local function getFoodSpeedVisc(food) -- данные уже по самой еде (нельзя кеширов
 		sum_v = sum_v + base_s
 		cnt_v = cnt_v + 1
 	end
-	
-	-- используем sum_s, если ингредиенты вообще были, иначе базовые свойства данной еды
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ sum_s, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 	if cnt_s > 0 then
 		base_s = sum_s / cnt_s
 	end
@@ -1191,9 +1198,9 @@ end
 Excrementum.getFoodSpeedVisc = getFoodSpeedVisc
 
 
--- Добавляет в химус еду, представленную таблицей (и удаляет по индексу из полости).
--- cavity - полость (желудок, низ желудка), откуда еда берётся
--- row - данные по пищевому комку
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ).
+-- cavity - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ), пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+-- row - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 local function AddToChyme(chyme, row, cavity, idx)
 	chyme.P = chyme.P + row.P
 	chyme.L = chyme.L + row.L
@@ -1202,13 +1209,13 @@ local function AddToChyme(chyme, row, cavity, idx)
 	if row.ps then
 		--chyme.ps = chyme.ps + row.ps
 	end
-	local sum = chyme.h + row.h -- сухой объём химуса (вода типа всасывается иным путём)
+	local sum = chyme.h + row.h -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ)
 	if chyme.h == 0 then
 		chyme.v = row.v
-	else -- меняем вязкость на "среднюю" между тем, что было и что добавилось.
+	else -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 		chyme.v = lerp(chyme.v, row.v, row.h / sum)
 	end
-	if row.ps then -- яд
+	if row.ps then -- пїЅпїЅ
 		chyme.v = chyme.v * 0.5
 	end
 	chyme.h = sum
@@ -1218,18 +1225,18 @@ local function AddToChyme(chyme, row, cavity, idx)
 	end
 end
 
---Добавляем воду в химус
-local URINE_DRINK = 0.75 -- коэффициент, сколько выпитого переходит в мочу.
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
+local URINE_DRINK = 0.75 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ.
 local function AddWaterToChyme(chyme, w)
 	chyme.w = chyme.w + w * URINE_DRINK
 end
 
 
 
--- время переваривания пищевого комка в соответствии с общим объёмом желудка
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local function GetStomachTime(row, V)
 	local sum = row.P + row.L + row.C
-	local p = 1 -- "углеводистость" (для "нулёвых" напитков она максимальна)
+	local p = 1 -- "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" (пїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 	if sum ~= 0 then
 		p = row.C / sum
 	end
@@ -1237,7 +1244,7 @@ local function GetStomachTime(row, V)
 end
 Excrementum.GetStomachTime = GetStomachTime
 
---Подсчёт объёма полости (желудка, химуса и т.д.) по свойствам h и w
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅ.пїЅ.) пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ h пїЅ w
 local function GetStomachV(stomach)
 	local h_sum, w_sum = (stomach.h or 0), (stomach.w or 0)
 	for _,v in ipairs(stomach) do
@@ -1248,7 +1255,7 @@ local function GetStomachV(stomach)
 end
 Excrementum.GetStomachV = GetStomachV
 
---считает осмотическое давление: чем больше, тем больше скорость эвакуации.
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 local function GetOsmoticP(cavity)
 	local sum = (cavity.P + cavity.L + cavity.C)
 	if sum == 0 then
@@ -1262,14 +1269,14 @@ end
 Excrementum.GetOsmoticP = GetOsmoticP
 
 
--- сбрасывает метку времени для пищевого комка
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 local function ResetRowTime(now, v, old_V, new_V)
 	new_V = new_V or old_V
 	local tm_left = v.tt - now
 	if tm_left > 0  then
 		local tm = GetStomachTime(v, old_V)
 		if tm_left > tm + 0.1 then
-			print('ERROR EXC: tm_left > tm ',tm_left,tm); --недостижимый код
+			print('ERROR EXC: tm_left > tm ',tm_left,tm); --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 			tm_left = tm
 		end
 		v.s = v.s * (tm_left / tm)
@@ -1277,7 +1284,7 @@ local function ResetRowTime(now, v, old_V, new_V)
 	end
 end
 
--- сбрасывает начальные метки времени на текущую для пищевых комков желудка
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local function ResetStomachTime(now, stomach, old_V, new_V)
 	new_V = new_V or old_V
 	for _,v in ipairs(stomach) do
@@ -1285,7 +1292,7 @@ local function ResetStomachTime(now, stomach, old_V, new_V)
 		if tm_left > 0  then
 			local tm = GetStomachTime(v, old_V)
 			if tm_left > tm + 0.1 then
-				print('ERROR EXC: tm_left > tm ',tm_left,tm); --недостижимый код
+				print('ERROR EXC: tm_left > tm ',tm_left,tm); --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 				tm_left = tm
 			end
 			v.s = v.s * (tm_left / tm)
@@ -1296,13 +1303,13 @@ local function ResetStomachTime(now, stomach, old_V, new_V)
 end
 
 
---Обновляет значения в Excrementum, основываясь на exc
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ Excrementum, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ exc
 local function UpdateColonValues(exc)
 	local now = Excrementum.now
 	local colon = exc.col
 	Excrementum.feces = colon.V
 	Excrementum.feces_threshold = colon.visc * SandboxVars_Excrementum.ColonBaseThreshold * 0.01
-	if colon.tf then -- через 22 часа порог сам начинает снижаться.
+	if colon.tf then -- пїЅпїЅпїЅпїЅпїЅ 22 пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 		local delta = now - colon.tf
 		if delta >= SandboxVars_Excrementum.ColonMinutes then
 			Excrementum.feces_threshold = Excrementum.feces_threshold - (delta-SandboxVars_Excrementum.ColonMinutes) * 0.00166667 -- / 60) * 0.1
@@ -1329,23 +1336,23 @@ local function UpdateStomachPain(exc, player)
 	Excrementum.StomachTotalW = total_W
 	--print('UpdateStomachPain(); total_V = ',total_V)
 	local is_credit;
-	if total_V > STOMACH_V then -- слишком много съел
+	if total_V > STOMACH_V then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 		Excrementum.StomachPain = (total_V - STOMACH_V) / SandboxVars_Excrementum.AdditionalStomachVolume * 9000 -- * 100 * 90
-		-- нужно убрать голод
+		-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		is_credit = true
 	else
 		Excrementum.StomachPain = 0
 		is_credit = total_V > STOMACH_MIN
 	end
-	if is_credit then -- берём сытость "в долг"
+	if is_credit then -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅ пїЅпїЅпїЅпїЅ"
 		player = player or getSpecificPlayer(0)
 		local stats = player:getStats()
 		local hunger = stats:getHunger()
 		if hunger > 0.14 then
-			exc.hg = exc.hg + (hunger - 0.14) -- запоминаем голод, который отменили (чтобы вернуть!)
-			stats:setHunger(0.14) -- нельзя, чтобы голод был при заполненном желудке
+			exc.hg = exc.hg + (hunger - 0.14) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!)
+			stats:setHunger(0.14) -- пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		end
-	elseif exc.hg > 0 then -- возвращаем голод
+	elseif exc.hg > 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		player = player or getSpecificPlayer(0)
 		local stats = player:getStats()
 		local hunger = stats:getHunger()
@@ -1355,29 +1362,29 @@ local function UpdateStomachPain(exc, player)
 		end
 		exc.hg = 0
 	end
-	
-	-- Совместимость с модами от Hea (SOTO и More Simple Traits)
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ Hea (SOTO пїЅ More Simple Traits)
 	if is_HeaMods and (player:HasTrait("SensitiveDigestion") or player:HasTrait("SensitiveStomach")) then --print('inside')
 		local credit = exc.sdt or 0
 		local level = Excrementum.StomachPain >= 30 and 2 or Excrementum.StomachPain > 0 and 1 or 0 --print('level = ',level)
 		if level > 0 then
-			local need_sickness = level == 2 and 62.5 or 37.5 -- тошнота и лёгкая тошнота
+			local need_sickness = level == 2 and 62.5 or 37.5 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			local bd = Excrementum.bd
 			local sickness = bd:getFoodSicknessLevel() --print('sick/need = ',sickness,' ',need_sickness)
-			if sickness < need_sickness then -- берём в долг
+			if sickness < need_sickness then -- пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
 				bd:setFoodSicknessLevel(need_sickness)
-				exc.sdt = math.min(need_sickness, credit + (need_sickness - sickness)) -- кредит не может быть больше разумного
-			elseif sickness > 82.5 and credit > 0 then -- жесткое ограничение
-				local refund = sickness - 82.5 -- сколько надо вернуть
-				if refund > credit then -- вернуть надо больше, чем должны
+				exc.sdt = math.min(need_sickness, credit + (need_sickness - sickness)) -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			elseif sickness > 82.5 and credit > 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				local refund = sickness - 82.5 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				if refund > credit then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 					bd:setFoodSicknessLevel(sickness - credit)
 					exc.sdt = 0
-				else -- возвращаем часть долга
+				else -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					bd:setFoodSicknessLevel(sickness - refund)
 					exc.sdt = credit - refund
 				end
 			elseif level == 1 and sickness > 37.5 and credit > 0 then
-				--странная ситуация, в которой надо бы вернуть часть кредита, но не весь
+				--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 				local extra = sickness - 37.5
 				if credit > extra then
 					bd:setFoodSicknessLevel(37.5)
@@ -1387,7 +1394,7 @@ local function UpdateStomachPain(exc, player)
 					exc.sdt = 0
 				end
 			end
-		elseif credit > 0 then -- полностью гасим кредит
+		elseif credit > 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			local bd = Excrementum.bd
 			local sickness = bd:getFoodSicknessLevel()
 			bd:setFoodSicknessLevel(sickness - credit)
@@ -1397,7 +1404,7 @@ local function UpdateStomachPain(exc, player)
 
 end
 
--- вызывается каждый раз, когда нужно обновить интерфейс и всех остальных слушателей данного события
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local STOMACH_MED = (STOMACH_V - STOMACH_MIN) / 2 + STOMACH_MIN;
 local function DoUpdate(player, ignore_changes) --print('DoUpdate()')
 	STOMACH_MED = (STOMACH_V - STOMACH_MIN) * 0.5 + STOMACH_MIN;
@@ -1528,7 +1535,7 @@ function Excrementum.SendClientCommand(com, obj, param, player, a, b)
 	sendClientCommand(player, 'Exc', com, args)
 end
 
--- Проверяет, чистая ли одежда. Если да, то удаляет любой запах и какахи. Костыль
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅ пїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function Excrementum.CheckCleanItem(item)
 	if not (instanceof(item, "Clothing") and item:hasModData() and item:getDirtyness() == 0) then
 		return
@@ -1544,7 +1551,7 @@ end
 
 
 --vanilla setDirtyness has cosmetic effect. We still must set it but before we need to recalc all parts
--- Добавляемая грязь делится между частями поровну! Вместо +0.1 будет, к примеру, +0.02, в зависимости от шмотки.
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅпїЅпїЅпїЅ +0.1 пїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, +0.02, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 function Excrementum.AddDirtyness(item, dirt, target_part) --Excrementum.AddDirtyness(g('shorts'),0.1)
 	local visual = item:getVisual()
 	if not visual then
@@ -1573,12 +1580,12 @@ function Excrementum.AddDirtyness(item, dirt, target_part) --Excrementum.AddDirt
 		return
 	end
 	local sum = 0
-	if dirt == 0 then  -- просто суммируем
+	if dirt == 0 then  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		for i=0,cnt-1 do
 			local part = parts:get(i)
 			sum = sum + visual:getDirt(part)
 		end
-	else -- равномерно раскидываем
+	else -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		local micro_dirt = dirt / cnt
 		for i=0,cnt-1 do
 			local part = parts:get(i)
@@ -1590,8 +1597,8 @@ function Excrementum.AddDirtyness(item, dirt, target_part) --Excrementum.AddDirt
 	item:setDirtyness(sum / cnt * 100)
 end
 
---устанавливает всем частям одинаковый процент.
---пока что используется для обнуления
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+--пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function Excrementum.SetDirtyness(item, dirt) --Excrementum.SetDirtyness(g('shorts'),0.5)
 	--dirt = dirt or 0
 	local visual = item:getVisual()
@@ -1675,11 +1682,11 @@ LowerLeg_R 14
 Foot_L     15
 Foot_R     16
 MAX        17
-uh_mult - опциональный множитель длительности при 100% депрессии.
-min_part, max_part - названия частей, включительно, между которыми перебирать;
-ЛИБО min_part - массив названий, а max_part - опционально множитель силы боли (по умолчанию 1:1);
-ЛИБО то же, но min_part - просто название, а не массив.
-temp - учитывать ли общий множитель (по умолчанию да)
+uh_mult - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ 100% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+min_part, max_part - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ;
+пїЅпїЅпїЅпїЅ min_part - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ max_part - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1:1);
+пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ, пїЅпїЅ min_part - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
+temp - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ)
 --]]
 function Excrementum.adjustMaxTime(maxTime, uh_mult, min_part, max_part, temp) -- action independent
 	if maxTime == -1 then
@@ -1728,7 +1735,7 @@ end
 
 local OLD_THIRST = nil
 local SWEAT_SUM = 0
---Так как эффект от поедания применяется в конце действия, вклиниваемся в "onEat"
+--пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ "onEat"
 do
 	-- self.character:Eat(self.item, percentage);
 	local Sandbox_Drink = SandboxVars_Excrementum.UrinateIncreaseMultiplier
@@ -1756,7 +1763,7 @@ do
 		StacyFemaleSkins = 'female',
 		D7x = 'female',
 	}
-	
+
 	function Excrementum.EnableRetextureMod(mod_id, new_val)
 		if not mod_id then
 			IS_RETEXTURE_MOD = true
@@ -1764,8 +1771,8 @@ do
 			RETEXTURE_MODS[mod_id] = new_val
 		end
 	end
-	
-	-- perc - это процент от BaseHunger, а не от реального остатка сытости.
+
+	-- perc - пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ BaseHunger, пїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	local function OnEat(player, food, perc, ...)
 		if not food then
 			return -- no error even if there is a bug in another mod
@@ -1781,14 +1788,14 @@ do
 		local stomach = mod_data.exc.st
 
 		--print('PERC EATEN: ',food:getType(),'; ',round3(perc))
-		local real_hunger = -food:getHungerChange() -- реальный остаток сытости
-		local virt_hunger = -food:getHungChange() -- остаток сытости без бонусов готовки
-		local base_hunger = -food:getBaseHunger() -- табличные данные (без бонусов и учёта откусанного)
+		local real_hunger = -food:getHungerChange() -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		local virt_hunger = -food:getHungChange() -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		local base_hunger = -food:getBaseHunger() -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 		local h = 0
 		if real_hunger ~= 0 then
-			h = (real_hunger/virt_hunger) * base_hunger * perc -- сколько съедаем сытости
+			h = (real_hunger/virt_hunger) * base_hunger * perc -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			local max_food = (SandboxVars_Excrementum.StomachVolume + SandboxVars_Excrementum.AdditionalStomachVolume) * 0.01
-			if h > max_food then --150 -- защита от читерной еды +100500 сытости
+			if h > max_food then --150 -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ +100500 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				perc = perc * (max_food / h)
 				h = max_food
 			end
@@ -1800,29 +1807,29 @@ do
 		end
 		--print('HUNGER EATEN: ',food:getType(),'; ',round3(h))
 		--print('PLC EATEN: ',P,L,C)
-		
-		
-		
+
+
+
 		local time_eaten = player:getHoursSurvived() * 60
 
 		local speed, visc, _ings = getFoodSpeedVisc(food)
-		if h < 0 then -- отрицательные значения не нужны
+		if h < 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 			h = 0
 		end
 
-		local diuretic = 0 -- мочегонное
+		local diuretic = 0 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		if food:isAlcoholic() then --and w >= 0 then
 			local happy = -food:getUnhappyChange() * 0.01 * perc
 			diuretic = (h + ((happy > 0) and happy or 0)) * 0.5
 		end
-		
+
 		local fat = food:getFatigueChange()
 		if fat < 0 then
-			if w < 0 then -- добавляет жажду
-				diuretic = diuretic - w * 0.5 -- половина добавляется к мочегонному эффекту
+			if w < 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				diuretic = diuretic - w * 0.5 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			else
 				fat = -fat * perc
-				local base = math.min(fat, h) -- для витаминов будет 0
+				local base = math.min(fat, h) -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 0
 				diuretic = diuretic + base
 			end
 		end
@@ -1832,12 +1839,12 @@ do
 			ch.d = ch.d + diuretic * 2 * Sandbox_Drink
 		end
 
-		
+
 		local stats = Excrementum.stats
 		local thirst1 = stats:getThirst()
 		local bd = player:getBodyDamage()
 		local poison1 = bd:getPoisonLevel()
-		
+
 		-- remove vanilla moodle
 		if h > 0 then
 			local hunger = stats:getHunger() --print('HUNGER = ', hunger)
@@ -1847,33 +1854,33 @@ do
 				--print('getHunger = ',stats:getHunger())
 			end
 		end
-		
-		
-		
+
+
+
 		old_Eat(player, food, perc, ...) --==========> THIS!!! <===========--
-		
+
 		--print('PLC AFTER: ', food:getProteins()*perc, food:getLipids()*perc, food:getCarbohydrates()*perc)
-		--OLD_THIRST = stats:getThirst() -- НЕ обновляем вычиталку
+		--OLD_THIRST = stats:getThirst() -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		local thirst_delta = thirst1 - stats:getThirst()
 		--print("DRINKED: ",round(thirst_delta,2))
-		w = w - thirst_delta -- эта вода учитывается в другой механике
+		w = w - thirst_delta -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		local posion_delta = bd:getPoisonLevel() - poison1
 
-		if w < 0 then -- повышение жажды просто приводит к питью, вот и всё.
+		if w < 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅ пїЅпїЅ.
 			w = 0
 		end
-		
 
-		
+
+
 		--print('HW = ',h,w)
 		if h + w > 0 and not player:isGodMod() then
-		
+
 			local V = GetStomachV(stomach)
-			
-			--local delta = speed * h * 2, -- голод 0.5 считается нормальным весом еды, поэтому *2
+
+			--local delta = speed * h * 2, -- пїЅпїЅпїЅпїЅпїЅ 0.5 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ *2
 			local data = {
 				--te=time_eaten,
-				tt=0, -- target time, меняется только при изменении объёма желудка
+				tt=0, -- target time, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				s=speed,
 				v=visc,
 				h=h,
@@ -1886,7 +1893,7 @@ do
 			if posion_delta > 0 then
 				data.ps = posion_delta
 			end
-			
+
 			if w == 0 or h > w then -- to queue
 				if Excrementum.DEBUG then
 					data.name = food:getFullType()
@@ -1894,25 +1901,25 @@ do
 				end
 				table.insert(stomach, data)
 				ResetStomachTime(time_eaten, stomach, V, V + h + w)
-				-- Таким образом, для любой еды в очереди верно: h > 0
+				-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: h > 0
 			else -- to chyme
 				AddToChyme(mod_data.exc.ch, data)
 			end
-			
+
 			UpdateStomachPain(mod_data.exc, player)
-			
+
 			if Excrementum.DEBUG then
 				ExcrementumDebugWindow:updateText()
 			end
 		end
-		
-		
+
+
 		--getHungerChange() --3
 		--getBaseHunger --12
-		
-		
-		--ту воду, что не попала в жажду, добавляем в желудок отдельно
-		--if 
+
+
+		--пїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		--if
 		DoUpdate(player)
 	end -- OnEat
 
@@ -1925,15 +1932,15 @@ do
 		end
 		Excrementum.GameTime = getGameTime()
 		CELL = getCell()
-		
+
 		-- Weel Fed moodle mod compatibility. Any other mod will check green stomach correctly.
 		local md = player:getMoodles()
 		Excrementum.md = md
 		if not Excrementum.is_Player_Injected then
 			Excrementum.is_Player_Injected = true
-			-- ищем мудл желудка
+			-- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			local found_idx = nil
-			for i=md:getNumMoodles()-1,0,-1 do -- оно ближе к концу
+			for i=md:getNumMoodles()-1,0,-1 do -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 				local name = md:getMoodleType(i):name()
 				if name == 'FoodEaten' then
 					found_idx = i
@@ -1944,7 +1951,7 @@ do
 				VanillaGreenStomach_InjectOnce(md, found_idx)
 			end
 		end
-		
+
 		Excrementum.p = p
 		Excrementum.female = p:isFemale()
 		Excrementum.bd = p:getBodyDamage()
@@ -1979,9 +1986,9 @@ do
 					overlay.borderColor.a = 0.5
 					self:addChild(overlay)
 				end
-				
-				
-				
+
+
+
 				--[[local old_moodle = MF.ISMoodle.new
 				MF.ISMoodle.new = function(...) --print('new_moodle')
 					local old_fn = ISUIElement.new
@@ -1995,21 +2002,21 @@ do
 					o.backgroundColor.b = 0
 					o.backgroundColor.a = 0.5
 					o.borderColor.a = 0.5
-					
+
 					ISUIElement.new = old_fn
 					return o
 				end--]]
 			end
-			
-		
+
+
 			local m_stomach = MF.ISMoodle:new('exc-stomach',player)
 			Excrementum.m_stomach = m_stomach
 			m_stomach:setThresholds(-90,-60,-30,-Double.MIN_VALUE,1,2,3,4)
-			
+
 			--m_stomach:setTitle(1,1,getText("Moodles_foodeaten_lvl1"))
 			--m_stomach:setDescritpion(1,1,getText("Moodles_foodeaten_lvl1"))
 			--m_stomach:setDescritpion(1,2,getText("Moodles_foodeaten_lvl4"))
-			
+
 			MF.ISMoodle:new('exc-stomach-w',player)
 			Excrementum.m_stomachW = MF.getMoodle('exc-stomach-w')
 			Excrementum.m_stomachW:setThresholds(-90,-60,-30,-Double.MIN_VALUE,1,2,3,4)
@@ -2026,15 +2033,15 @@ do
 			Excrementum.m_smell = MF.getMoodle('exc-smell')
 			Excrementum.m_smell:setThresholds(-4,-3,-2,-Double.MIN_VALUE,1,2,3,4)
 			Excrementum.m_smell._desc_cache = {}
-			
+
 			MF.ISMoodle:new('exc-shame',player)
 			Excrementum.m_shame = MF.getMoodle('exc-shame')
 			Excrementum.m_shame:setThresholds(-4,-3,-2,-Double.MIN_VALUE,1,2,nil,nil)
-		
+
 		end
 
-		
-		Excrementum.tm_GameStarted = player:getHoursSurvived() * 60 -- время входа в игру (25 мин игнор)
+
+		Excrementum.tm_GameStarted = player:getHoursSurvived() * 60 -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ (25 пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
 		--Excrementum.last_thirst = nil
 		if Excrementum.DEBUG then
 			exc = player:getModData().exc
@@ -2057,7 +2064,7 @@ do
 		UpdateShame(player)
 		DoUpdate(player)
 	end)
-	
+
 	Events.OnPlayerDeath.Add(function(player)
 		if player == Excrementum.p then
 			Excrementum.p = nil
@@ -2069,7 +2076,7 @@ do
 			ExcrementumDebugWindow:setVisible(false);
 		end
 	end)
-	
+
 	local HEA_MODS = {
 		SimpleOverhaulTraitsAndOccupations = true,
 		MoreSimpleTraits = true,
@@ -2080,9 +2087,9 @@ do
 		--Sandbox_ColonT = SandboxVars_Excrementum.ColonBaseThreshold / 100
 		--INTESTINE_TIME = SandboxVars_Excrementum.DefecateIntMinutes
 		--COLON_TIME = SandboxVars_Excrementum.ColonMinutes
-		
+
 		local player = Excrementum.p
-		
+
 		--if SandboxVars_Excrementum.Shame == 2 then
 		local activeModIDs = getActivatedMods() --getActivatedMods():contains('Excrementum41old')
 		if activeModIDs then
@@ -2104,7 +2111,7 @@ do
 				UpdateShame(player)
 			end
 		end
-		
+
 
 		local RI = STAR_MODS.RealisticInventory
 		if RI and RI.AddSounds then
@@ -2138,24 +2145,24 @@ do
 			print('Excrementum loading error: ' .. tostring(Excrementum._hash) .. " / " .. tostring(need_hash))
 		end
 		--local player = getSpecificPlayer(0)
-		--Excrementum.tm_GameStarted = player and player:getHoursSurvived() * 60 or 0 -- время входа в игру (25 мин игнор)
-		
+		--Excrementum.tm_GameStarted = player and player:getHoursSurvived() * 60 or 0 -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ (25 пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
+
 		--tempry fix ra's
 		Excrementum.TempryFix()
-		
+
 		Excrementum.OnPlayerMove(player)
 
-		
+
 	end)
 end -- Eating injection
 
 
 ------------------ EVERY 1 MINUTES ----------------
--- смотрим изменение жажды, мочи, перемещение в химус, из химуса.
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 
 
 
-local FOOD_TIME_LIQUID_SURE = 50 -- через сколько минут еда переходит в химус даже из середины очереди
+local FOOD_TIME_LIQUID_SURE = 50 -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local KNOWN_ZONES = {
 	DeepForest = 2,
 	Forest = 3,
@@ -2166,7 +2173,7 @@ local KNOWN_ZONES = {
 	TrailerPark = 4,
 	Nav = 4, -- !!!
 }
-local need_fartnose = false; -- можно ли махать рукой
+local need_fartnose = false; -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
 local function CheckFoodEveryMinute() -- every 1 minute
 	--print('EXC EVERY 1 min')
@@ -2174,7 +2181,7 @@ local function CheckFoodEveryMinute() -- every 1 minute
 	local player = getSpecificPlayer(0) if not player then return end
 	local now = player:getHoursSurvived() * 60;	Excrementum.now = now
 	if now-Excrementum.tm_GameStarted < 1.5 then
-		return -- прошло меньше 1.5 игровых минут с момента запуска игры.
+		return -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 1.5 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ.
 	end
 
 	local data = player:getModData()
@@ -2182,7 +2189,7 @@ local function CheckFoodEveryMinute() -- every 1 minute
 	local stomach = exc.st
 	local chyme = exc.ch
 	local is_god = player:isGodMod()
-	
+
 	if is_god then
 		exc.urine = 0
 		Excrementum.urine = 0
@@ -2193,7 +2200,7 @@ local function CheckFoodEveryMinute() -- every 1 minute
 		exc.col.tf = nil
 		exc.col.td = nil
 		Excrementum.feces = 0
-		
+
 		table.wipe(stomach)
 		chyme.h = 0
 		chyme.w = 0
@@ -2207,7 +2214,7 @@ local function CheckFoodEveryMinute() -- every 1 minute
 		--exc.ss = 0
 		--exc.sc = 0
 
-		--table.wipe(exc.rel)			
+		--table.wipe(exc.rel)
 	elseif player:isDead() then
 		if player:getMoodles():getMoodleLevel(MoodleType.Zombie) > 0 then
 			if exc.urine > 0 then
@@ -2225,9 +2232,9 @@ local function CheckFoodEveryMinute() -- every 1 minute
 		return
 	end
 
-	--считаем объём желудка
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	local V = GetStomachV(stomach)
-	--проверяем, нужно ли какой-то еде переместиться в химус
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 	local i = 1
 	local v = stomach[i]
 	local need_reset = false
@@ -2238,23 +2245,23 @@ local function CheckFoodEveryMinute() -- every 1 minute
 			local tm = GetStomachTime(v, V)
 			T = v.tt + tm * ((v.h - v.w ) / v.h - 1)
 		end
-		if now >= T + FOOD_TIME_LIQUID_SURE then -- настолько жидкая, что стекает
-			if now >= t then -- переварено
+		if now >= T + FOOD_TIME_LIQUID_SURE then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			if now >= t then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				AddToChyme(chyme, v, stomach, i);
-			else -- не переварено
+			else -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				table.insert(chyme, v)
 				table.remove(stomach, i)
 				ResetRowTime(now, v, V)
 			end
 			need_reset = true
 			i = i - 1
-		elseif now >= t then -- пора разжижать (переварено)
+		elseif now >= t then -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 			if i == 1 then --queue is free
-				AddToChyme(chyme, v, stomach, i); 
+				AddToChyme(chyme, v, stomach, i);
 				need_reset = true
 				i = i - 1
 			end
-		elseif now >= T then -- пора разжижать, но точно не переварено
+		elseif now >= T then -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			if i == 1 then
 				table.insert(chyme, v)
 				table.remove(stomach, i)
@@ -2269,8 +2276,8 @@ local function CheckFoodEveryMinute() -- every 1 minute
 	if need_reset then
 		ResetStomachTime(now, stomach, V, GetStomachV(stomach))
 	end
-	
-	-- проверка химуса
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	V = GetStomachV(chyme)
 	for i,v in ipairs(chyme) do
 		local t = v.tt
@@ -2284,21 +2291,21 @@ local function CheckFoodEveryMinute() -- every 1 minute
 	if need_reset then
 		ResetStomachTime(now, chyme, V, GetStomachV(chyme))
 	end
-	
-	
-	--проверка жидкости и ШМ
+
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ
 	local w = chyme.w
 	if w > 0 then
 		local h = chyme.h
-		local E_food = h > 0.5 and 0.5 or h -- учитываем максимум 100 сытости
-		local stomach_absorption = lerp(0.003, 0.0005, E_food * 2) --всасывание воды в желудке
-		
+		local E_food = h > 0.5 and 0.5 or h -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 100 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		local stomach_absorption = lerp(0.003, 0.0005, E_food * 2) --пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+
 		local p = GetOsmoticP(chyme)
-		local max_amount = lerp(0.001, 0.005, p) -- то, что идёт в кишку; 0.01 = 10 мл
-		
+		local max_amount = lerp(0.001, 0.005, p) -- пїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ; 0.01 = 10 пїЅпїЅ
+
 		local sum = max_amount + stomach_absorption
 
-		
+
 		--print(round(stomach_absorption,3)..' + '..round(max_amount,3)..' = '..round(sum,3))
 		if sum > w then
 			sum = w
@@ -2306,7 +2313,7 @@ local function CheckFoodEveryMinute() -- every 1 minute
 		if sum > 0.010 then
 			sum = 0.010
 		end
-		
+
 		exc.urine = exc.urine + sum
 		chyme.w = chyme.w - sum
 		--if Excrementum.StomachPain > 0 then
@@ -2314,17 +2321,17 @@ local function CheckFoodEveryMinute() -- every 1 minute
 		--end
 	end
 
-	-- мочегонное
-	if chyme.d > 0 then -- применяем мочегонный эффект
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	if chyme.d > 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		--local delta = math.min(chyme.d, 0.010, sum)
-		local delta = math.min(chyme.d, 0.005) -- стабильно по +5 мл
+		local delta = math.min(chyme.d, 0.005) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ +5 пїЅпїЅ
 		chyme.d = chyme.d - delta
 		exc.urine = exc.urine + delta
 		--if Excrementum.StomachPain > 0 then
 		--	UpdateStomachPain(exc, player)
 		--end
 	end
-	
+
 	UpdateStomachPain(exc, player)
 
 
@@ -2335,26 +2342,26 @@ local function CheckFoodEveryMinute() -- every 1 minute
 			Excrementum.urine = exc.urine
 		end
 	end
-	
-	--считаем "стрессовую мочу"
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ"
 	local stats = player:getStats()
 	exc.ss = exc.ss + stats:getStress() + stats:getPanic() * 0.01
 	exc.sc = exc.sc + 1
 	Excrementum.Ms = 0.3 * (1 - exc.ss * 0.5 / exc.sc)
-	
-	--шанс описаться
+
+	--пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	do
 		local X = 0.3 + Excrementum.Ms
 		local Y = X + 0.15
 		local pee = false
-		
+
 		if exc.urine > X then
 			Excrementum.UrinePain = 19
 		else
 			Excrementum.UrinePain = 0 -- just ignore
 		end
 
-		
+
 		if exc.urine >= 0.8 then
 			pee = true
 		elseif IS_SINGLEPLAYER and exc.urine >= 0.75 and player:isAsleep() then
@@ -2366,25 +2373,25 @@ local function CheckFoodEveryMinute() -- every 1 minute
 		elseif now - Excrementum.tm_LastSleep < 30 then
 			pee = nil
 		elseif exc.urine >= Y then
-			pee = ZombRand(10000) < 1100  -- ~ 50% за 10 мин.
+			pee = ZombRand(10000) < 1100  -- ~ 50% пїЅпїЅ 10 пїЅпїЅпїЅ.
 		elseif exc.urine > X then
-			local r = (exc.urine - X) * 6.666666667 --/ 0.15, 
-			pee = ZombRand(10000) < 600 * r -- от 0 до 30% за 10 мин, примерно
+			local r = (exc.urine - X) * 6.666666667 --/ 0.15,
+			pee = ZombRand(10000) < 600 * r -- пїЅпїЅ 0 пїЅпїЅ 30% пїЅпїЅ 10 пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		end
 		if pee and not IsBusyNow(player) then
 			--ISTimedActionQueue.add(InvoluntaryUrinate:new(player, 0, false, false, true, false, nil))
 			Excrementum:InvoluntaryUrinate()
 		end
 	end
-	
+
 	if Excrementum.DEBUG then
 		ExcrementumDebugWindow:updateText()
 	end
-	
+
 	-- Check relations
-	
+
 	--[[
-	local tm_now = os.time() 
+	local tm_now = os.time()
 	for name,usr in pairs(Excrementum.WaitToApplyShame) do --expire awaitings
 		for i=1,MAX_SHAMES do
 			local v = usr[i]
@@ -2394,10 +2401,10 @@ local function CheckFoodEveryMinute() -- every 1 minute
 		end
 	end]]
 	UpdateShame(player, true)
-	
+
 	if Excrementum.is_P4LoveAndPerfume and data.P4LoveAndPerfume then
 		local remaining = data.P4LoveAndPerfume.remainingTime or 0
-		if remaining > 0 and Excrementum.smell > 0 then -- компенсируем действие мода обратным действием
+		if remaining > 0 and Excrementum.smell > 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			local bd = player:getBodyDamage()
 			local unhappy = bd:getUnhappynessLevel()
 			bd:setUnhappynessLevel(unhappy + 0.1)
@@ -2425,7 +2432,7 @@ local function CheckFoodEveryMinute() -- every 1 minute
 							break
 						end
 					end
-				end				
+				end
 			end
 		end
 		if not zone_now then
@@ -2435,12 +2442,12 @@ local function CheckFoodEveryMinute() -- every 1 minute
 			if zone_now > Excrementum.ZoneLevel then
 				Excrementum.ZoneLevel = zone_now
 			else
-				Excrementum.ZoneLevel = Excrementum.ZoneLevel-0.03125 -- примерно 80 сек на понижения уровня на обычной скорости мира (5 мин на серверах).
+				Excrementum.ZoneLevel = Excrementum.ZoneLevel-0.03125 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 80 пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (5 пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ).
 			end
 		end
 	end
-	
-	-- проверка на эмоции
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	if now - Excrementum.LastAnim_tm > 0.5 then
 		local is_free_lefthand = false
 		do
@@ -2455,9 +2462,9 @@ local function CheckFoodEveryMinute() -- every 1 minute
 			end
 		end
 		if Excrementum.test_emote then
-			-- Excrementum.test_emote = "fartpainleftarm" -- перс стоит на месте
+			-- Excrementum.test_emote = "fartpainleftarm" -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 			-- Excrementum.test_emote = "peedefself"
-			-- Excrementum.test_emote = "pinchednose" -- не работает
+			-- Excrementum.test_emote = "pinchednose" -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			-- Excrementum.test_emote = "fartnose"
 			player:playEmote(Excrementum.test_emote)
 			Excrementum.LastAnim_tm = now
@@ -2466,13 +2473,13 @@ local function CheckFoodEveryMinute() -- every 1 minute
 			if need_fartnose and Excrementum.room_smell > 0 then
 				need_fartnose = false
 				player:playEmote("fartnose")
-			elseif Excrementum.ColonPain > 0 then -- нужна ли анимация боли в животе
+			elseif Excrementum.ColonPain > 0 then -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				--player:playEmote("fartpainleftarm")
 			end
 		end
 	end
-	
-	--Проверяем ботинки и снимаем с них говно во время движения
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	if player:isPlayerMoving() then
 		local boots = player:getClothingItem_Feet()
 		local data = boots and boots:hasModData() and boots:getModData()
@@ -2494,7 +2501,7 @@ local function CheckFoodEveryMinute() -- every 1 minute
 			end
 		end
 	end
-	
+
 	--ExcrementumWindow.updateWindow()
 	DoUpdate(player)
 end
@@ -2515,35 +2522,35 @@ local function CheckIntestineEveryTenMinutes() -- every 10 minutes
 	local now = player:getHoursSurvived() * 60;	Excrementum.now = now
 	if now-Excrementum.tm_GameStarted < 3 then
 		DoUpdate(player)
-		return -- прошло меньше 3 игровых минут с момента запуска игры.
+		return -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 3 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ.
 	end
 	local exc = player:getModData().exc
 	local intestine = exc.int
 	local colon = exc.col
 	local stomach = exc.st
 	local chyme  = exc.ch
-	
+
 	if player:isAsleep() then
-		Excrementum.tm_LastSleep = now -- обновляем
+		Excrementum.tm_LastSleep = now -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	end
-	
+
 	local os_now = os.time()
 	if os_now - _last_room_calc_tm > 15 then
 		Excrementum.AddTask(7, Excrementum.ResetOnPlayerMove)
 	end
-	
-	--запоминаем пот
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 	exc.swt = SWEAT_SUM
 
-	-- отменяем все штрафы, когда 
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ
 	local is_god = player:isGodMod()
 	if is_god then
 		QList.reinit(intestine)
 		return DoUpdate(player)
-		-- на этом всё
+		-- пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ
 	end
-	
-	--проверка тонкого кишечника
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	local ints = QList.getleft(intestine) -- {time, V, visc, poison? }
 	while ints do
 		--print('T = ' .. (now - ints[1]) .. ' ; INTESTINE_TIME = ' .. INTESTINE_TIME)
@@ -2563,12 +2570,12 @@ local function CheckIntestineEveryTenMinutes() -- every 10 minutes
 			end
 			--ints = QList.getleft(intestine)
 		end
-		break -- строго по одному куску каждые 10 мин
+		break -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 10 пїЅпїЅпїЅ
 	end
 
-	--проверка Толстого кишечника и ШД
-	
-	-- переводим из og в V
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ og пїЅ V
 	local og = colon.og
 	if og > 0 then
 		local old_V = colon.V
@@ -2580,15 +2587,15 @@ local function CheckIntestineEveryTenMinutes() -- every 10 minutes
 			colon.V = colon.V + delta
 			colon.og = og - delta
 		end
-		if old_V < 0.1 and colon.V >= 0.1 then -- нижний порог пройден, засекаем время
+		if old_V < 0.1 and colon.V >= 0.1 then -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 			colon.tf = now
 		end
 	end
-	
-	-- Время тоже уменьшает порог ШД
+
+	-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 	UpdateColonValues(exc)
-	
-	-- Метка времени первых позывов
+
+	-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	if Excrementum.feces > .1 and Excrementum.feces >= Excrementum.feces_threshold then
 		if not colon.td then
 			colon.td = now
@@ -2596,12 +2603,12 @@ local function CheckIntestineEveryTenMinutes() -- every 10 minutes
 	elseif colon.td then
 		colon.td = nil --jj
 	end
-	
-	-- Когда долго терпишь, получаешь дискомфорт
+
+	-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	if colon.td then
 		local sound, is_last_sound_changed;
 		local delta = now - colon.td
-		if delta >= 240 then -- 4 часа и более, боли в животе
+		if delta >= 240 then -- 4 пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			sound = "Exc_Growl3"
 			local add_pain = GetColonPain(delta)
 			Excrementum.ColonPain = add_pain
@@ -2624,10 +2631,10 @@ local function CheckIntestineEveryTenMinutes() -- every 10 minutes
 				end
 			end
 		end
-		if delta >= 120 then -- 2 часа и более, вздутие, дискомфорт
-			StressUpTo(lerp(0.251, 0.501, (delta - 120) * 0.004166667), player) -- интервал 4 часа, но масштабирование бесконечное
+		if delta >= 120 then -- 2 пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			StressUpTo(lerp(0.251, 0.501, (delta - 120) * 0.004166667), player) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 4 пїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		end
-		if delta > 21 and colon.visc < 0.3 then -- понос
+		if delta > 21 and colon.visc < 0.3 then -- пїЅпїЅпїЅпїЅпїЅ
 			--sound = "Exc_Growl4"
 			local plus_delta = colon.visc > 0 and lerp(0, 80, colon.visc) or 0 --print('plus_delta = ',plus_delta)
 			if delta > 21 + plus_delta and not IsBusyNow(player) then --print('not busy')
@@ -2640,35 +2647,35 @@ local function CheckIntestineEveryTenMinutes() -- every 10 minutes
 			end
 		end
 		if sound and (delta < 25 or ZombRand(100) < 10 or is_last_sound_changed) then
-			local tm = os.time() -- для звука считаем реальное время (т.к. во время сна оно ускоряется)
+			local tm = os.time() -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅ.пїЅ. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 			local delta = tm - tm_last_growl
-			if delta < 60 then -- 3 раза подряд нельзя
-				delta = nil -- метка того, что звук нужно заблокировать
-				-- также, нет множества звуков во время сна
+			if delta < 60 then -- 3 пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				delta = nil -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				-- пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 			end
 			if delta ~= nil then
 				tm_last_growl = tm
-				getSoundManager():PlayWorldSound(sound , player:getCurrentSquare(), 0, 3, 0, false) 
+				getSoundManager():PlayWorldSound(sound , player:getCurrentSquare(), 0, 3, 0, false)
 			end
 		end
 	end
-	
-	--проверка яда
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 	if player:getBodyDamage():getPoisonLevel() > 0 then
 		chyme.v = chyme.v * 0.9
 		for _,v in ipairs(stomach) do
 			v.v = v.v * 0.9
 		end
 	end
-	
-	--проверка перехода химуса в тонкий кишечник
-	if chyme[1] == nil then -- если весь химус переварен
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	if chyme[1] == nil then -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		local V, h, w = GetStomachV(chyme)
 		if h > 0 then
 			local P = GetOsmoticP(chyme)
-			local max_amount = lerp(0.05, 0.15, P) -- 0.01 = 10 мл
+			local max_amount = lerp(0.05, 0.15, P) -- 0.01 = 10 пїЅпїЅ
 			if w > 0 then
-				max_amount = max_amount * (h / V) -- чем больше процент еды, тем больше уходит именно еда
+				max_amount = max_amount * (h / V) -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 			end
 			local amount = math.min(h, math.max(0.02, max_amount)) * SandboxVars_Excrementum.ChymeMultiplier * 0.1
 			QList.pushright(intestine, {now, amount, chyme.v})
@@ -2682,24 +2689,24 @@ local function CheckIntestineEveryTenMinutes() -- every 10 minutes
 			UpdateStomachPain(exc, player)
 		end
 	end
-	
 
-	--Повышаем несчастье. Моча = 100% за двое суток. Запах каках = 100% за сутки. Личинка (х2 по сравнению с запахом) = 100% за 0.5 суток
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅ = 100% пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ = 100% пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ2 пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ) = 100% пїЅпїЅ 0.5 пїЅпїЅпїЅпїЅпїЅ
 	local mood = Excrementum.UpdateSmellMoodle(player) + UpdateShame(player)
 	if mood > 0 then
 		local bd = player:getBodyDamage()
 		local unhappy = bd:getUnhappynessLevel()
 		if unhappy < 100 then
 			--unhappy = unhappy + mood * 0.695
-			if not Excrementum._last_ev_tm or Excrementum.now - Excrementum._last_ev_tm > 5 then -- во время процесса и сразу после запах не копится.
+			if not Excrementum._last_ev_tm or Excrementum.now - Excrementum._last_ev_tm > 5 then -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 				--local koef = 0.695
 				local koef = 0.3
-				Excrementum.AddUnhappyness(player, mood * koef, 55, nil, true) -- плаксиво, близко к верхней границе (чтобы любой неосторожный шаг перешел на следующий уровень)
+				Excrementum.AddUnhappyness(player, mood * koef, 55, nil, true) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 			end
 		end
 	end
-	
-	
+
+
 	DoUpdate(player)
 end
 Events.EveryTenMinutes.Add(CheckIntestineEveryTenMinutes) -- every 10 minutes
@@ -2736,24 +2743,24 @@ local _tick_is_sitting = nil
 local _th = 0
 Events.OnTick.Add(function()
 	local tm_now = os.time()
-	--if Excrementum.ColonPain == 0 and Excrementum.UrinePain == 0 and Excrementum.StomachPain == 0 and Excrementum.StomachTotalV == 0 then	
+	--if Excrementum.ColonPain == 0 and Excrementum.UrinePain == 0 and Excrementum.StomachPain == 0 and Excrementum.StomachTotalV == 0 then
 	--	return
 	--end
 	local player = Excrementum.p; if not player then return end
-	
-	-- Учитываем авто выпивание и вычитаем жажду в жару
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
 	do
 		local thirst = Excrementum.stats:getThirst()
 		local thirstm = player:getThirstMultiplier()
 		local delta = thirst - OLD_THIRST
 		OLD_THIRST = thirst
-		if delta > 0 then 
+		if delta > 0 then
 			if thirstm > 1 and delta < 0.0004 then      -- 0.000032 is vanilla maximum with all factors
 				SWEAT_SUM = SWEAT_SUM + delta * (1 - 1 / thirstm)
 			end
-		elseif delta < 0 then -- утоление жажды
+		elseif delta < 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 			local w = -delta
-			if SWEAT_SUM > 0 then -- пропорционально уменьшаем повышенную из-за жары(?) жажду
+			if SWEAT_SUM > 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅ(?) пїЅпїЅпїЅпїЅпїЅ
 				if w > SWEAT_SUM then
 					w = w - SWEAT_SUM
 					SWEAT_SUM = 0
@@ -2764,12 +2771,12 @@ Events.OnTick.Add(function()
 				Excrementum.exc.swt = SWEAT_SUM -- backup
 			end
 			if w > 0 then
-				AddWaterToChyme(Excrementum.exc.ch, w) -- вода сразу попадает в нижнюю часть желудка по складке.
+				AddWaterToChyme(Excrementum.exc.ch, w) -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 				DoUpdate(player)
 			end
 		end
-	end	
-	
+	end
+
 	if Excrementum.ColonPain > 0 then
 		setPainTorsoLower(player, Excrementum.ColonPain)
 	end
@@ -2781,7 +2788,7 @@ Events.OnTick.Add(function()
 	end
 	local bd = Excrementum.bd
 	local hp = bd:getOverallBodyHealth()
-	local m = Excrementum.md 
+	local m = Excrementum.md
 	local sick = m:getMoodleLevel(MoodleType.Sick)
 	local is_negative = m:getMoodleLevel(MoodleType.Bleeding) >= 1 or m:getMoodleLevel(MoodleType.Hyperthermia) == 4
 		or m:getMoodleLevel(MoodleType.Hypothermia) == 4 or m:getMoodleLevel(MoodleType.Thirst) == 4
@@ -2817,7 +2824,7 @@ Events.OnTick.Add(function()
 		end
 	end
 	local basic = 0.00084
-	
+
 	if Excrementum.green_stomach > 0 then -- green stomach moodle
 		local added = 0.012 -- vanilla value (more or less)
 		redOverlay = false
@@ -2857,12 +2864,12 @@ Events.OnTick.Add(function()
 	end
 	--g_showOverlay = showOverlay
 	--g_screenY = screenY
-	
-	-- Ссымся от страха
-	if Excrementum.stats:getNumChasingZombies() > 14 and ZombRand(300) == 1 -- chance 
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	if Excrementum.stats:getNumChasingZombies() > 14 and ZombRand(300) == 1 -- chance
 		and os.time()-_last_involuntary_tm > 10 and m:getMoodleLevel(MoodleType.Panic) == 4
 	then
-		-- проверяем, подошли ли впритык хотя бы 3
+		-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ 3
 		local z = CELL:getNearestVisibleZombie(0)
 		if z and player:DistTo(z) < 2.84 then
 			local num_attack = player:getSurroundingAttackingZombies()
@@ -2881,24 +2888,24 @@ Events.OnTick.Add(function()
 		end
 	end
 	--DEBUG_STR = tostring(player:getSurroundingAttackingZombies()) .. ' / ' .. tostring(Excrementum.stats:getNumChasingZombies())
-	
-	--Проверяем нужного человека, если нужно его отслеживать
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	--[[for name,data in pairs(SHAME_TASKS) do
 		if tm_now > data.finish then
 			SHAME_TASKS[name] = nil
-			break -- ленивая проверка. При удалении всё откладываем на потом.
+			break -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
 		end
 		local p = data.player
-		if p:getCurrentSquare() and player:CanSee(p) then -- сработало
-			-- getForwardDirection - текущее направление без учёта анимации (т.е. моментальное).
+		if p:getCurrentSquare() and player:CanSee(p) then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			-- getForwardDirection - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ.пїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ).
 			if data.is_prepare then
 				sendClientCommand(player, 'Exc', 'seen1', {data.ID})
 			end
 		end
 	end]]
-	
+
 	--Process possible shame
-	if _shame_cnt >= 40 then 
+	if _shame_cnt >= 40 then
 		local act_name = _shame_cnt > 90 and (
 			_shame_cnt == 91 and 'InvoluntaryUrinate' or
 			(_shame_cnt == 92 and 'InvoluntaryDefecate' or 0)
@@ -2924,18 +2931,18 @@ Events.OnTick.Add(function()
 		end
 	end
 	_shame_cnt = _shame_cnt + 1
-	
+
 	--Check sit status change
 	local is_sitting = player:isSitOnGround()
 	if _tick_is_sitting ~= is_sitting then
 		_tick_is_sitting = is_sitting
 		Excrementum.OnClothingUpdate()
 	end
-	
+
 	if Excrementum.tm_transfer and not Excrementum.is_transfer_lock and tm_now - Excrementum.tm_transfer > 0.5 then
 		Excrementum.UpdateSmellMoodle(player)
 	end
-	
+
 	UpdateTasks()
 end)
 
@@ -2953,21 +2960,21 @@ do -------------------- OVERLAY ------------------
 		local screenX = core:getScreenWidth() - 58
 		local s = nil;
 		local mx = getMouseX()
-		if mx > screenX - 150 then -- в опасной зоне.
+		if mx > screenX - 150 then -- пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ.
 			local my = getMouseY()
-			if my < screenY+80 and my > screenY-60  then -- в зоне наведения
+			if my < screenY+80 and my > screenY-60  then -- пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				s = true
-				if mx > screenX + 2 -- у края экрана в зоне мудлетов
-					and my < screenY+35 and my > screenY-15  -- прямо на нужном мудлете
+				if mx > screenX + 2 -- пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					and my < screenY+35 and my > screenY-15  -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				then
-					return -- наведение на ближайший мудл, необходимо скрыть оверлей
+					return -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				end
 			end
 		end
 		local num = Excrementum._g_added or 0
 		num = math.floor((num / 0.01284) * 1000) / 10
-		
-		if s then -- наведена мышь
+
+		if s then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 			s = "Regen: " .. num .. "%"
 		else
 			s = tostring(num) .. "%"
@@ -2978,7 +2985,7 @@ do -------------------- OVERLAY ------------------
 		elseif num == 0 then r,g,b = 0.4, 0.4, 0.4
 		end
 
-		
+
 		TM:DrawStringRight(UIFont.Large, screenX, screenY, s, r, g, b, 0.5); --font, x, y, str, r, g, b, a
 		--textManager:DrawString(UIFont.Large, screenX, screenY + 20, cache_zone, 0.1, 0.8, 1, 1);
 		--print_r(MF.Moodles['exc-stomach'].disable) .y
@@ -2990,16 +2997,16 @@ do -------------------- OVERLAY ------------------
 		--screenX, screenY = getCore():getScreenWidth() - 190, 95
 		--screenXT, screenYT = :getScreenWidth() - 56, 133
 		Events.OnPostUIDraw.Add(ShowRegen);
-		
+
 		---Love and Perfume compatibility
 		if P4UsePerfumeAction then
 			Excrementum.is_P4LoveAndPerfume = true
 
-		end		
-		
+		end
+
 		--Excrementum.GameTime = getGameTime()
-		
-		
+
+
 	end)
 
 	function _GAdded(x,y)
@@ -3009,13 +3016,13 @@ end
 
 
 --------------------------- REAL ACTIONS ----------------------------
--- Ядро переходного момента между "до" и "после".
+-- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅ" пїЅ "пїЅпїЅпїЅпїЅпїЅ".
 
 function Excrementum.DoDefecate(player)
 	local exc = player:getModData().exc
 	local colon = exc.col
 	Excrementum.ColonPain = 0
-	if ZombRand(100) < 30 and colon.V > 0.1 then -- иногда остаётся немного кала (1-10% кишки)
+	if ZombRand(100) < 30 and colon.V > 0.1 then -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (1-10% пїЅпїЅпїЅпїЅпїЅ)
 		colon.V = ZombRand(99) * 0.001
 	else
 		colon.V = 0
@@ -3040,7 +3047,7 @@ function Excrementum.DoUrinate(player) --print('DoUrinate()')
 	exc.uTm = Excrementum.now
 	Excrementum.Ms = 300
 	Excrementum.urine = 0
-	--setPainGroin(player, 0) -- боль проходит сама постепенно
+	--setPainGroin(player, 0) -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	for _,fn in pairs(Excrementum.urinate_fns) do
 		fn()
 	end
@@ -3058,7 +3065,7 @@ function Excrementum.DoDefecateVehicle(player)
 end
 
 
--- Регистрация функций, которые происходят после
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function Excrementum.OnDefecate(fn)
 	table.insert(Excrementum.defecate_fns, fn)
 end
@@ -3130,9 +3137,9 @@ local function countVehicleFeces(vehicle)
 	return cnt
 end
 
---Мудлет вони и попутно подсчёт вонючих шмоток
-local _upd_smell = 0 -- кэш для запаха от перса (одежда + попа)
-local _upd_smell_desc = nil -- кэш для подсказки
+--пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+local _upd_smell = 0 -- пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ + пїЅпїЅпїЅпїЅ)
+local _upd_smell_desc = nil -- пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local _old_smell_desc = nil
 function Excrementum.UpdateSmellMoodle(player, upd_type)
 	--if player:isAsleep() then
@@ -3142,13 +3149,13 @@ function Excrementum.UpdateSmellMoodle(player, upd_type)
 	--end
 	local smell
 	local _desc = {}
-	if upd_type == -1 then -- упрощённое обновление, только запах комнаты, без обновления одежды
+	if upd_type == -1 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		smell = _upd_smell
 		table.insert(_desc, _upd_smell_desc)
 	else
 		Excrementum.tm_transfer = nil
 
-		--Подсчёт несчастья от ссаных шмоток
+		--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		local cloth_defecated, cloth_urinated = 0,0
 		local inv = player:getInventory()
 		local list = inv:getAllCategory('Clothing')
@@ -3186,8 +3193,8 @@ function Excrementum.UpdateSmellMoodle(player, upd_type)
 		cloth_defecated = cloth_defecated * 0.5
 			+ count_feces
 			+ wiping * 0.5
-		
-		--Подсчёт вони от авто
+
+		--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 		--local v_smell = 0
 		local v = player:getVehicle()
 		if v then
@@ -3228,14 +3235,14 @@ function Excrementum.UpdateSmellMoodle(player, upd_type)
 		--table.wipe(_desc)
 		--table.insert(_desc, _upd_smell_desc)
 	end
-		
 
-	-- обновляем мудлет вони
+
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	if (Excrementum.room_smell ~= 0) then
 		smell = smell + Excrementum.room_smell
 		table.insert(_desc, getText("UI_Exc_Room"))
 	end
-	smell = math.min(4, smell) -- не выходим за рамки разумного
+	smell = math.min(4, smell) -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	Excrementum.smell = smell
 	local m_smell = Excrementum.m_smell
 	if smell > 0 and OPTIONS.smell_moodle then
@@ -3244,7 +3251,7 @@ function Excrementum.UpdateSmellMoodle(player, upd_type)
 	else
 		m_smell:setValue(0)
 	end
-	
+
 	local lvl = m_smell:getLevel()
 	if lvl > 0 then
 		_desc = table.concat(_desc, "\n")
@@ -3253,7 +3260,7 @@ function Excrementum.UpdateSmellMoodle(player, upd_type)
 			m_smell:setDescritpion(2, lvl, getText("Moodles_exc-smell_Bad_desc_lvl" .. lvl) .. "\n" .. _desc)
 		end
 	end
-	
+
 
 	return smell
 end
@@ -3283,7 +3290,7 @@ function Excrementum.OnClothingUpdate()
 		return
 	end
 	local is_male = not player:isFemale()
-	local is_topless, is_groinless = not is_male, 4 -- уровень открытости
+	local is_topless, is_groinless = not is_male, 4 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	local ShownGroin = Excrementum.IsShownGroin
 	local ShownBreast = Excrementum.IsShownBreast
 	local show_all = OPTIONS.clothes_blue_parts; --Excrementum.MiniHealthOption.value
@@ -3328,8 +3335,8 @@ function Excrementum.OnClothingUpdate()
 	Excrementum.is_topless = is_topless
 	Excrementum.is_groinless1 = is_groinless
 	Excrementum.is_groinless = is_groinless
-	
-	
+
+
 	if Excrementum.DEBUG and ras_hidden and is_groinless > 0 then
 		if ras_hidden(player, "Default") then
 			if ras_hidden(player, "Sitting") then
@@ -3343,8 +3350,8 @@ function Excrementum.OnClothingUpdate()
 			end
 		end
 	end
-	
-	if is_groinless == 1 or is_groinless == 2 then -- открыто снизу
+
+	if is_groinless == 1 or is_groinless == 2 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		local is_sitting = player:isSitOnGround()
 		if is_sitting then
 			Excrementum.is_groinless1 = 4
@@ -3389,7 +3396,7 @@ end)
 
 
 
------------- Интеграция с модом Mini Health Panel -----------------
+------------ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ Mini Health Panel -----------------
 Events.OnPreMapLoad.Add(function()
 
 
@@ -3416,7 +3423,7 @@ Events.OnPreMapLoad.Add(function()
 			R["AuthenticZLite.Jacket_Bateman"] = true
 			R["AuthenticZLite.Jacket_Trenchcoat"] = true
 			R["AuthenticZLite.Jacket_StraightJacket"] = true
-			
+
 		end
 	end
 
@@ -3435,19 +3442,19 @@ Events.OnPreMapLoad.Add(function()
 	local rewrite4 = {color=Color.new(1,1,0,1), alpha=0.9} -- yellow
 	local rewrite5 = {color=Color.new(1,0,0,1), alpha=0.6} -- red
 	local m = {
-		__newindex = function(t,k,v) -- смещаем лишь перечисленные свойства
+		__newindex = function(t,k,v) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			if rewrite[k] ~= nil then
 				t._save[k] = v
 			else
 				rawset(t,k,v)
 			end
 	 end,
-		__index = function(t,k) -- сложная функция по показу ран и одежды
+		__index = function(t,k) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			if OPTIONS.clothes_blue_parts then
-				if t._save.alpha ~= 0 then -- по умолчанию
+				if t._save.alpha ~= 0 then -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					return t._save[k]
 				end
-				-- если alpha == 0, то опказываем одежду, если есть
+				-- пїЅпїЅпїЅпїЅ alpha == 0, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 				if t._prop ~= 0 then
 					local val = Excrementum[t._prop]
 					if val then
@@ -3468,8 +3475,8 @@ Events.OnPreMapLoad.Add(function()
 			end
 			return t._save[k]
 		end,
-	}	
-	
+	}
+
 	local old_initialize = ISMiniHealth.initialize
 	function ISMiniHealth:initialize(...)
 		old_initialize(self,...)
@@ -3499,8 +3506,8 @@ Events.OnPreMapLoad.Add(function()
 			ISMiniHealth.__inst = self
 		end
 	end
-	
-	--добавляем цифру
+
+	--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	if Excrementum.DEBUG then
 		local old_children = ISMiniHealth.createChildren
 		function ISMiniHealth:createChildren()
@@ -3521,8 +3528,8 @@ end)
 
 
 
---Изменение скуки.
---Пороги указывают значения, за пределами которых менять нельзя.
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
+--пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 function Excrementum.AddBoredom(player, delta, t_min, t_max)
 	local bd = player:getBodyDamage()
 	local b = bd:getBoredomLevel()
@@ -3592,7 +3599,7 @@ function Excrementum.AddUnhappyness(player, delta, t_min, t_max, is_silent)
 			if delta >= 1 then
 				delta = math.floor(delta + 0.5)
 			else
-				delta = math.floor(b) - math.floor(old_b) -- ловим микро изменения
+				delta = math.floor(b) - math.floor(old_b) -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			end
 			if delta < 0 then
 				player:setHaloNote(getText("UI_Exc_UnhappynessChange", delta), 200)
@@ -3647,7 +3654,7 @@ function Excrementum.AddToiletDirt(player, toilet)
 end
 
 function Excrementum.UseToiletWater(player, toilet, units, is_cleaning)
-	if toilet:getWaterAmount() < units then 
+	if toilet:getWaterAmount() < units then
 		-- try add dirt
 		--local data = toilet:getModData()
 		--if data.exc_dirt and data.exc_dirt >= Excrementum.MAX_DIRT_TOILET then
@@ -3688,7 +3695,7 @@ end
 
 local _step_sq = {}
 local _last_step_in = 0
-local _step_check = false -- устанавливается в true, если шанс "сработал" при входе в тайл.
+local _step_check = false -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ true, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ.
 local step_X, step_Y
 local function CheckStepInShit(player,x1,y1)
 	local is_sneak = player:isAiming() or player:isSneaking()
@@ -3702,7 +3709,7 @@ local function CheckStepInShit(player,x1,y1)
 		if w_item:getWorldObjectIndex() ~= -1 then -- still exists
 			local x2,y2 = _step_sq[i+1], _step_sq[i+2]
 			--print('dist = ',math.max(math.abs(x1-x2),math.abs(y1-y2)),' / ',radius)
-			if math.abs(x1-x2) < radius and math.abs(y1-y2) < radius then -- попал в радиус
+			if math.abs(x1-x2) < radius and math.abs(y1-y2) < radius then -- пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 				_last_step_in = os.time()
 				_step_check = false
@@ -3712,34 +3719,34 @@ local function CheckStepInShit(player,x1,y1)
 				getSoundManager():PlayWorldSound('Exc_StepShit' , sq, 0, 15, 0, false)
 				addSound(player, x1, y1, player:getZ(), 12, 10)
 				local boots = player:getWornItem("Shoes") or player:getWornItem("Socks")
-				if not boots then -- просвечиваем ступни
+				if not boots then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				end
 				if boots then
 					local data = boots:getModData()
 					if (not data.feces or data.feces < 3) then
 						data.feces = (data.feces or 0) + 1
 						--feces = feces - 1
-						Excrementum.AddDirtyness(boots, 0.8) -- как минимум делится пополам, ибо пара обуви
+						Excrementum.AddDirtyness(boots, 0.8) -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						--sendClientCommand(player, 'Exc', 'RemoveFeces', {x0,y0,z1})
 						sq:transmitRemoveItemFromSquare(w_item);
 						w_item:removeFromWorld()
 						w_item:removeFromSquare()
 						w_item:setSquare(nil)
 						Excrementum.room_smell = Excrementum.room_smell - 1
-						Excrementum.UpdateSmellMoodle(player) -- апдейтим одежду
+						Excrementum.UpdateSmellMoodle(player) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						return true
 					end
 				else
-					-- добавляем грязь на ноги
+					-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 					--local vis = player:getVisual()
 					--vis:setDirt(BloodBodyPartType.Foot_L, 1) -- max
 					--vis:setDirt(BloodBodyPartType.Foot_R, 1)
 					--player:resetModel()
 					player:addDirt(BloodBodyPartType.Foot_L, 50, false)
 					player:addDirt(BloodBodyPartType.Foot_R, 50, false)
-					return false -- не удалили само говно
+					return false -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				end
-			
+
 			end
 		end
 	end
@@ -3747,9 +3754,9 @@ end
 
 
 
---Функция запускает две змейки.
---Каждая идёт лесенкой, старается держаться диагонали и не может выходить из комнаты.
---Какая дальше пройдёт, та и выбирает "угол".
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
+--пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+--пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅ".
 local function SearchRoomCorner(room, sq)
 	local dx,dy=0,0
 	local s1,dist1,s = sq,0
@@ -3812,22 +3819,22 @@ end
 
 local old_X, old_Y
 function Excrementum.OnPlayerMove(player)
-	if player and player ~= Excrementum.p then -- не тот игрок
+	if player and player ~= Excrementum.p then -- пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		return
 	end
-	if player:getVehicle() then -- в машине нельзя наступить
+	if player:getVehicle() then -- пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		return
 	end
 	local x1,y1 = player:getX(), player:getY()
 	local x0,y0 = math.floor(x1), math.floor(y1)
-	if x0 == old_X and y0 == old_Y then -- не было смены тайла
+	if x0 == old_X and y0 == old_Y then -- пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		if _step_check then
 			CheckStepInShit(player,x1,y1)
 		end
 		return
 	end
 	local z1 = player:getZ()
-	if math.floor(z1) ~= math.ceil(z1) then -- между этажами
+	if math.floor(z1) ~= math.ceil(z1) then -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		return
 	end
 	--print("New Coords: ",x0,' ',y0)
@@ -3836,7 +3843,7 @@ function Excrementum.OnPlayerMove(player)
 	table.wipe(_step_sq)
 	_step_check = false
 	local sq = player:getCurrentSquare()
-	if not sq then -- че за нах вообще, такого не может быть, но всё же
+	if not sq then -- пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅ пїЅпїЅ
 		return
 	end
 	Excrementum.room_smell_days = nil
@@ -3851,7 +3858,7 @@ function Excrementum.OnPlayerMove(player)
 		local all = room:getSquares()
 		local size = all:size()
 		local sq0 = size > 0 and all:get(0)
-		if sq0 and sq0:hasModData() then -- главный (первый) тайл комнаты. В него и сохраняем все данные о комнате, в НАДЕЖДЕ, что он не изменится.
+		if sq0 and sq0:hasModData() then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ) пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 			local data = sq0:getModData()
 			if data then
 				local ur = data.ex_sml or 0
@@ -3862,7 +3869,7 @@ function Excrementum.OnPlayerMove(player)
 					Excrementum.room_smell_days = d
 					feces = 18/(size+6) - 1.5 + d*0.33 + ur
 					if feces < 0 then
-						feces = 0 -- "отсутствующий" запах не может быть приятным.
+						feces = 0 -- "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 					end
 				end
 			end
@@ -3873,10 +3880,10 @@ function Excrementum.OnPlayerMove(player)
 	_last_room = room
 	-- check feces directly
 	-- 0.2 if walking, 0.4 if running
-	-- Считаем шанс. Если не сработал, то игнор тайла
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	_last_room_calc_tm = os.time()
 	local delta_tm = _last_room_calc_tm - _last_step_in
-	if delta_tm > 60 then -- 60 секунд иммунитет к говну на земле
+	if delta_tm > 60 then -- 60 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		local rnd = ZombRand(100)
 		--local MAX_CHANCE = 68
 		if rnd < 68 then
@@ -3904,16 +3911,16 @@ function Excrementum.OnPlayerMove(player)
 					end
 				end
 				if rnd < 10 + chance then --print('SUCCESS!')
-					_step_check = x0 ~= step_X and y0 ~= step_Y -- нельзя повторно наступить в тот же тайл.
+					_step_check = x0 ~= step_X and y0 ~= step_Y -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ.
 					--CheckStepInShit(player,x1,y1)
 				end
 			end
 		end
 	end
-	-- в любом случае перебираем, чтобы обнаружить запах
+	-- пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	local items = sq:getWorldObjects()
 	local cnt = items:size()
-	for i=cnt-1, math.max(0,cnt-10), -1 do -- перебираем с конца не более 10 предметов. (говно в куче вещей не доступно как бы)
+	for i=cnt-1, math.max(0,cnt-10), -1 do -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 10 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. (пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ)
 		local w = items:get(i)
 		local item = w:getItem()
 		if item:hasTag("Feces") then
@@ -3929,14 +3936,14 @@ function Excrementum.OnPlayerMove(player)
 	if _step_check then
 		if CheckStepInShit(player,x1,y1) then
 			feces = feces - 1
-			if feces < 0 then -- такого не может быть, но на всякий случай пусть будет подстраховка
+			if feces < 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				feces = 0
 			end
 		end
 	end
 	if old_smell ~= feces then
 		Excrementum.room_smell = feces
-		Excrementum.UpdateSmellMoodle(player, -1) -- не апдейтим одежду
+		Excrementum.UpdateSmellMoodle(player, -1) -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	end
 end
 Events.OnPlayerMove.Add(Excrementum.OnPlayerMove)
@@ -3969,7 +3976,9 @@ local function onServerCommand(mod, com, args)
 			if typ == 2 or typ == 3 then
 				typ = 1
 			elseif typ == 4 and player:HasTrait("Voyeuristic") then
-				typ = 6 -- бонус вместо штрафа
+				typ = 6 -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+			elseif typ == 4 and player:HasTrait("Exhibitionist") then
+				typ = 6 -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			end
 			if ShameIsEnabled(player) then
 				ApplyShame(p:getFullName(), typ)
@@ -3999,6 +4008,8 @@ Events.OnGameBoot.Add(function()
 	-- id, name, cost, desc, b_profession, b_removeInMP
 	--if not isSinglePlayer then
 		TraitFactory.addTrait("Voyeuristic", getText("UI_trait_ExcVoyeuristic"), 2, getText("UI_trait_VoyeuristicDesc"), false);
+		TraitFactory.addTrait("Exhibitionist", getText("UI_trait_ExcExhibitionist"), 2, getText("UI_trait_ExhibitionistDesc"), false);
+
 	--end
 end);
 
@@ -4058,7 +4069,7 @@ doLua = function(s)
 end
 
 
---Перечисляет одежду, которую нужно будет снять.
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
 function Excrementum.DebugShowDrop(p, is_male_pee, is_any)
 	local res = Excrementum.GetAllPantsGroin(p, is_male_pee, is_any)
 	if type(res) ~= 'table' then
